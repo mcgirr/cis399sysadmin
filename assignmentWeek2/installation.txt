@@ -23,7 +23,7 @@ The timezone was set to Pacific time.
 
 We chose to use the guided install - in terms of partitioning.
 This used the entire disk and automatically partitioned it to only use Debian.
-In the process it also created and swap and boot partition.
+In the process it also created a swap and boot partition.
 
 The hostname was created.
 The root user was created and a password was chosen.
