@@ -1,1 +1,42 @@
-test
+Installation log
+----------------
+
+OS chosen:
+Debian GNU/Linux 7.5 system (codename “wheezy”), for the 64-bit PC (“amd64”) architecture
+
+Installation route:
+DVD iso
+
+The OS was downloaded from www.debian.org 
+This was a DVD image via HTTP/FTP
+The link used was
+http://cdimage.debian.org/debian-cd/7.5.0/amd64/iso-dvd/
+
+The iso was burned to a DVD
+
+This DVD was inserted into the Dell machine and the graphical installation was used
+from the boot menu.
+
+American English was selected for the keyboard layout.
+American English was selected for the language.
+The timezone was set to Pacific time.
+
+We chose to use the guided install - in terms of partitioning.
+This used the entire disk and automatically partitioned it to only use Debian.
+In the process it also created and swap and boot partition.
+
+The hostname was created.
+The root user was created and a password was chosen.
+
+A user account was created.
+
+Beyond the standard desktop environment software package on the DVD, the ssh server
+package was also installed.
+
+Grub was also installed.
+
+Upon reboot the mirror list for repo's for the apt package manager was edited at 
+/etc/apt/sources.list 
+
+This was to enable it to also include proprietary blobs. 
+This was done with vi.
