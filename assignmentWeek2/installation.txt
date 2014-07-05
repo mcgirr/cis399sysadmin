@@ -1,4 +1,4 @@
-Installation log
+﻿Installation log
 ----------------
 
 OS chosen:
@@ -22,8 +22,11 @@ American English was selected for the language.
 The timezone was set to Pacific time.
 
 We chose to use the guided install - in terms of partitioning.
-This used the entire disk and automatically partitioned it to only use Debian.
-In the process it also created a swap and boot partition.
+At the Partition Disks screen, we selected Guided - use entire disk
+If the computer has multiple hard disks, it may present more than one option in the next screen.
+However since ours only shows one, we select the only device - the HDD
+*NOTE - AS THE INSTALLER SAYS, THIS OPTION WIPES THE ENTIRE DRIVE TO PLACE DEBIAN ON IT*
+In the process it also created a swap and boot partition, it did not ask for size, so it probably bases the size off the hard disk used.
 
 The hostname was created.
 The root user was created and a password was chosen.
