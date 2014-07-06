@@ -1,6 +1,8 @@
 ﻿Installation log
 ----------------
 
+By Bill Horstkamp and Mike McGirr
+
 OS chosen:
 Debian GNU/Linux 7.5 system (codename “wheezy”), for the 64-bit PC (“amd64”) architecture
 
@@ -28,10 +30,13 @@ However since ours only shows one, we select the only device - the HDD
 *NOTE - AS THE INSTALLER SAYS, THIS OPTION WIPES THE ENTIRE DRIVE TO PLACE DEBIAN ON IT*
 In the process it also created a swap and boot partition, it did not ask for size, so it probably bases the size off the hard disk used.
 
-The hostname was created.
+The swap partition was 8 GB (device /dev/sda3)
+The boot partition was 256 MB in the FAT format (device /dev/sda1)
+
+The hostname was created and named pancakes
 The root user was created and a password was chosen.
 
-A user account was created.
+Two user accounts were created and passwords were chosen.
 
 Beyond the standard desktop environment software package on the DVD, the ssh server
 package was also installed.
