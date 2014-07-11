@@ -1,0 +1,875 @@
+
+               +                
+               #                
+              ###               
+             #####              
+             ######             
+            ; #####;            User: mike
+           +##.#####            Hostname: uselinuxonyourmacbookpro
+          +##########           Distro: Arch Linux
+         #############;         Kernel: 3.15.4-1-ARCH
+        ###############+        Uptime: 1 day, 22:48
+       #######   #######        Window Manager: 
+     .######;     ;###;`".      Desktop Environment: GNOME
+    .#######;     ;#####.       Shell: /usr/bin/zsh
+    #########.   .########`     Terminal: xterm-256color
+   ######'           '######    Packages: 1573
+  ;####                 ####;   CPU: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+  ##'                     '##   RAM: 3716 MB / 7863 MB 
+ #'                         `#  Disk: 150G / 175G
+
+ 14:56:06 up 1 day, 22:48,  3 users,  load average: 0.99, 0.86, 0.53
+USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     :0        Wed16   ?xdm?   4:37m  0.53s gdm-session-worker [pam/gdm-pas
+mike     pts/0     Wed16   25:28m  0.09s  0.09s /usr/bin/zsh
+mike     pts/1     14:56    3.00s  0.06s  0.00s w
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 02:56]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 02:56]
+└─[$] <> yaourt rust                  
+1 core/dnssec-anchors 20140629-1 [installed]
+    DNSSEC trust anchors for the root zone
+2 community/python-itsdangerous 0.24-1
+    Various helpers to pass trusted data to untrusted environments
+3 community/python2-itsdangerous 0.24-1
+    Various helpers to pass trusted data to untrusted environments
+4 community/rust 0.11.0-1 [installed]
+    A safe, concurrent, practical language
+5 aur/antievilmaid-trustedgrub 1.1.5-1 (2)
+    TrustedGRUB for Anti Evil Maid.
+6 aur/aurora-noscript 2.5.8-1 (0)
+    provides extra protection for aurora allowing JavaScript, Java and Flash and other plugins to be executed only by trusted web sites of your choice
+7 aur/bbcrust 0.1.0-3 (2)
+    A modified version of python shell pyCrust
+8 aur/cargo-git 20140708-1 (7)
+    Downloads dependencies for and compiles Rust projects.
+9 aur/g2ipmsg 0.9.6-2 (3)
+    Creator of padded cells for untrusted applications.
+10 aur/gedit-rust 20140704-1 (1)
+    Rust syntax highlighting for Gedit.
+11 aur/haskell-xss-sanitize 0.3.4.2-1 (1)
+    sanitize untrusted HTML to prevent XSS attacks
+12 aur/icarustouch 1.0-2 (1)
+    Multitouch keyboard for MIDI devices using the Kivy toolkit
+13 aur/irrlamb 0.1.1-1 (19)
+    3D game involving physics & frustrating gameplay
+14 aur/kate-syntax-rust-git 20140613-1 (1)
+    Rust syntax highlighting for the KDE Katepart.
+15 aur/klystron 396-3 (0)
+    A framework for a Thrust clone
+16 aur/klystron-svn 354-1 (0)
+    A framework for a Thrust clone
+17 aur/kvirustotal 0.30.0-1 (13)
+    Online antivirus and anti-phishing tool
+18 aur/libtnc 1.25-1 (0)
+    OS independent implementation of the Trusted Network Connect (TNC) specification
+19 aur/luxtrust-middleware 6.1-1 (0)
+    Luxtrust smarcard middleware.
+20 aur/malwaredetect 0.1-1 (6)
+    Submits a file's SHA1 sum to VirusTotal to determine whether it is a known piece of malware
+21 aur/monkeysphere 0.36-1 (17)
+    Leverage the OpenPGP web of trust for OpenSSH and Web authentication
+22 aur/monkeysphere-git 20110926-3 (6)
+    Leverage the OpenPGP web of trust for OpenSSH and Web authentication
+23 aur/piecrust 1.2.0-1 (1)
+    Static website generator and lightweight CMS in php that’s all managed with text files.
+24 aur/pybitmessage 0.4.2-3 (23)
+    Decentralized and trustless P2P communications protocol for sending encrypted messages to another person or to many subscribers
+25 aur/python-cargo-lite 1.1.2-2 (0)
+    An interim package manager for the Rust language
+26 aur/python-itsdangerous-git 80.1803415-1 (1)
+    Various helpers to pass trusted data to untrusted environments (git python3 version)
+27 aur/rockdodger 0.6-2 (2)
+    Space Rocks is a game - Dodge the space rocks, use your shields, fire your thrusters, cross your fingers, and kiss your ship goodbye
+28 aur/rust-bindgen 0.10-2 (1)
+    Binding generator for rust language
+29 aur/rust-doc-git 2:0.10.1962.ge55f64f-1 (25)
+    A safe, concurrent, practical language from Mozilla. (Language and API documentation)
+30 aur/rust-geom-git r106.d694792-1 (0)
+    Geometry primitives (basic linear algebra) for Rust
+31 aur/rust-git 2:0.10.1962.ge55f64f-1 (25)
+    A safe, concurrent, practical language from Mozilla.
+32 aur/rust-http 20131212-1 (0)
+    Rust HTTP library
+33 aur/rust-mustache 20131020-1 (0)
+    Mustache templating system for Rust programming language
+34 aur/rust-nightly 20140409-1 (2)
+    A safe, concurrent, practical language
+35 aur/rust-nightly-bin 0.11.0_2014.07.11-1 (8)
+    A safe, concurrent, practical language from Mozilla.
+36 aur/rust-opengles-git r183.8a617c2-1 (0)
+    OpenGL ES 2.0 bindings for Rust
+37 aur/rust-postgres 20131021-1 (0)
+    Native PostgreSQL driver for the Rust programming language
+38 aur/rust-sdl-git 20130210-1 (0)
+    SDL bindings for Rust
+39 aur/rust-sfml-git 20130629-2 (0)
+    Rust binding for SFML, the Simple and Fast Multimedia Library.
+40 aur/rust-sqlite 20131020-1 (0)
+    Sqlite bindings for Rust programming language.
+41 aur/servo-git 2877.800c2b3-2 (5)
+    Servo Parallel Browser Project: web browser written in Rust
+42 aur/thrust 1.7.0-1 (10)
+    A C++ library of parallel algorithms similar to the STL
+43 aur/thrustburst 1.051-1 (2)
+    Side scrolling shoot-em-up arcade game
+44 aur/tqsllib 2.2-4 (4)
+    Trusted QSL Library
+45 aur/trustdesk-basic 2.8.1-2 (1)
+    Software for Using a SmartCard as the Austrian 'Bürgerkarte'
+46 aur/trustedqsl 2.0.1-1 (8)
+    TrustedQSL - Logbook of the World
+47 aur/trustedqsl-devel 2.0-2 (1)
+    TrustedQSL - Logbook of the World, development version
+48 aur/ttf-geo 2-1 (2)
+    Geo expresses both the directness of some of the 1920s faces and the rather disingenuous consumerist thrust of the 1980s and 1990s descendants of theirs. 
+    by: Ben Weiner
+49 aur/uncrustify 0.60-1 (48)
+    A source code beautifier
+50 aur/uncrustify-git 20120712-1 (1)
+    A source code beautifier
+51 aur/universalindentgui 1.2.0-1 (32)
+    A GUI for GNU Indent, Uncrustify, Artistic Styler, PHP Stylist, Ruby Beautify, HTML Tidy and many other
+52 aur/universalindentgui-svn 972-1 (Out of Date) (9)
+    A GUI for GNU Indent, Uncrustify, Artistic Styler, PHP Stylist, Ruby Beautify, HTML Tidy and many other
+53 aur/uplink 1.55-3 (11)
+    Trust is a weakness - a futuristic computer crime game. Requires uplink.zip from original CD.
+54 aur/uplink-official 1.55-1 (2)
+    Trust is a weakness - a futuristic computer crime game. Requires official .deb package from the Introversion online store.
+55 aur/wotsap 0.6-2 (0)
+    A tool to find paths in the OpenPGP Web of Trust
+56 aur/xsw 0.3.5-3 (30)
+    Slideshow presentation tool for those who are frustrated with PowerPoint and its clones
+==> Enter n° of packages to be installed (ex: 1 2 3 or 1-3)
+==> -------------------------------------------------------
+==> 
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 02:56]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 02:56]
+└─[$] <> ping mikemcgirr.com
+PING mikemcgirr.com (50.116.4.100) 56(84) bytes of data.
+64 bytes from li430-100.members.linode.com (50.116.4.100): icmp_seq=1 ttl=53 time=19.8 ms
+64 bytes from li430-100.members.linode.com (50.116.4.100): icmp_seq=2 ttl=53 time=20.1 ms
+64 bytes from li430-100.members.linode.com (50.116.4.100): icmp_seq=3 ttl=53 time=19.6 ms
+^C
+--- mikemcgirr.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 19.694/19.915/20.160/0.223 ms
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 02:57]
+└─[$] <> ping 128.223.203.17
+PING 128.223.203.17 (128.223.203.17) 56(84) bytes of data.
+From 128.223.90.18 icmp_seq=1 Packet filtered
+From 128.223.90.18 icmp_seq=2 Packet filtered
+From 128.223.90.18 icmp_seq=3 Packet filtered
+From 128.223.90.18 icmp_seq=4 Packet filtered
+^C
+--- 128.223.203.17 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3004ms
+
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 02:57]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+
+
+
+^[[A^[[A^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 02:58]
+└─[$] <> ssh -p 22 root@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 02:59]
+└─[$] <> ssh mike@128.223.203.17 
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 02:59]
+└─[$] <> whois 128.223.203.17
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/whois_tou.html
+#
+
+
+#
+# The following results may also be obtained via:
+# http://whois.arin.net/rest/nets;q=128.223.203.17?showDetails=true&showARIN=false&ext=netref2
+#
+
+NetRange:       128.223.0.0 - 128.223.255.255
+CIDR:           128.223.0.0/16
+OriginAS:       
+NetName:        UONET
+NetHandle:      NET-128-223-0-0-1
+Parent:         NET-128-0-0-0-0
+NetType:        Direct Assignment
+RegDate:        1987-04-07
+Updated:        2011-07-10
+Ref:            http://whois.arin.net/rest/net/NET-128-223-0-0-1
+
+OrgName:        University of Oregon
+OrgId:          UNIVER-193
+Address:        UO Information Services
+Address:        1225 Kincaid Street
+City:           Eugene
+StateProv:      OR
+PostalCode:     97403
+Country:        US
+RegDate:        
+Updated:        2014-02-18
+Ref:            http://whois.arin.net/rest/org/UNIVER-193
+
+OrgAbuseHandle: UAD4-ARIN
+OrgAbuseName:   UOnet Abuse Desk
+OrgAbusePhone:  +1-541-346-4397 
+OrgAbuseEmail:  abuse@uoregon.edu
+OrgAbuseRef:    http://whois.arin.net/rest/poc/UAD4-ARIN
+
+OrgTechHandle: JAD46-ARIN
+OrgTechName:   Dominguez, Jose Alfredo
+OrgTechPhone:  +1-541-346-4397 
+OrgTechEmail:  jad@network-services.uoregon.edu
+OrgTechRef:    http://whois.arin.net/rest/poc/JAD46-ARIN
+
+OrgNOCHandle: UONET-ARIN
+OrgNOCName:   UOnet NOC
+OrgNOCPhone:  +1-541-346-4397 
+OrgNOCEmail:  nethelp@ns.uoregon.edu
+OrgNOCRef:    http://whois.arin.net/rest/poc/UONET-ARIN
+
+OrgTechHandle: EDMIS1-ARIN
+OrgTechName:   Edmiston, Jason 
+OrgTechPhone:  +1-541-346-1759 
+OrgTechEmail:  jfe@uoregon.edu
+OrgTechRef:    http://whois.arin.net/rest/poc/EDMIS1-ARIN
+
+RNOCHandle: UONET-ARIN
+RNOCName:   UOnet NOC
+RNOCPhone:  +1-541-346-4397 
+RNOCEmail:  nethelp@ns.uoregon.edu
+RNOCRef:    http://whois.arin.net/rest/poc/UONET-ARIN
+
+RAbuseHandle: UAD4-ARIN
+RAbuseName:   UOnet Abuse Desk
+RAbusePhone:  +1-541-346-4397 
+RAbuseEmail:  abuse@uoregon.edu
+RAbuseRef:    http://whois.arin.net/rest/poc/UAD4-ARIN
+
+RTechHandle: JAD46-ARIN
+RTechName:   Dominguez, Jose Alfredo
+RTechPhone:  +1-541-346-4397 
+RTechEmail:  jad@network-services.uoregon.edu
+RTechRef:    http://whois.arin.net/rest/poc/JAD46-ARIN
+
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/whois_tou.html
+#
+
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:00]
+└─[$] <> ssh -p 22 root@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:02]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:04]
+└─[$] <> ssh -p 22 mmcgirr@ix.cs.uoregon.edu
+mmcgirr@ix.cs.uoregon.edu's password: 
+
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:04]
+└─[$] <> ssh -p 22 root@50.116.4.100        
+Agent admitted failure to sign using the key.
+Agent admitted failure to sign using the key.
+Welcome to Ubuntu 14.04 LTS (GNU/Linux 3.15.3-x86_64-linode44 x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+Last login: Wed Jul  9 02:03:43 2014 from c-67-171-229-3.hsd1.wa.comcast.net
+┌─[root@li430-100] - [~] - [Fri Jul 11, 10:04]
+└─[$] <> exit
+Connection to 50.116.4.100 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:05]
+└─[$] <> ssh -p 22 mike@128.223.203.17      
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:05]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+ssh: connect to host 128.223.203.17 port 22: Connection timed out
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:09]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:12]
+└─[$] <> ssh -p 20 mike@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:12]
+└─[$] <> ssh -p 20 mike@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:16]
+└─[$] <> ssh -p 20 mike@128.223.203.17
+ssh: connect to host 128.223.203.17 port 20: Network is unreachable
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:30]
+└─[$] <> ssh -p 20 mike@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:30]
+└─[$] <> ssh -p 20 mike@128.223.203.17
+^[[A^[[Dc^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:31]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Wed Jul  9 07:59:35 2014 from 128.223.223.121
+mike@pancakes:~$ su
+Password: 
+root@pancakes:/home/mike# useradd -m -s /bin/bash bill
+root@pancakes:/home/mike# su bill
+bill@pancakes:/home/mike$ cd
+bill@pancakes:~$ ls
+bill@pancakes:~$ ls -a
+.  ..  .bash_logout  .bashrc  .profile
+bill@pancakes:~$ exit
+exit
+root@pancakes:/home/mike# exit
+exit
+mike@pancakes:~$ ls /home
+bill  mike
+mike@pancakes:~$ visudo
+-bash: visudo: command not found
+mike@pancakes:~$ su
+Password: 
+root@pancakes:/home/mike# visudo
+root@pancakes:/home/mike# exit
+exit
+mike@pancakes:~$ su
+Password: 
+root@pancakes:/home/mike# passwd bill
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+root@pancakes:/home/mike# su bill
+bill@pancakes:/home/mike$ sudo sh
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+[sudo] password for bill: 
+bill@pancakes:/home/mike$ exit
+exit
+root@pancakes:/home/mike# exit
+exit
+mike@pancakes:~$ exit
+logout
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:35]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Fri Jul 11 08:33:47 2014 from 128.223.223.121
+mike@pancakes:~$ su
+Password: 
+root@pancakes:/home/mike# nano /etc/ssh/sshd_config 
+root@pancakes:/home/mike# service ssh restart
+[ ok ] Restarting OpenBSD Secure Shell server: sshd.
+root@pancakes:/home/mike# exit
+exit
+mike@pancakes:~$ exit
+logout
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:36]
+└─[$] <> ssh -p 22 bill@128.223.203.17
+bill@128.223.203.17's password: 
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+bill@pancakes:~$ exit
+logout
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:37]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Fri Jul 11 08:37:52 2014 from 128.223.223.121
+mike@pancakes:~$ su
+Password: 
+root@pancakes:/home/mike# htop
+bash: htop: command not found
+root@pancakes:/home/mike# top
+
+top - 08:40:07 up 9 min,  2 users,  load average: 0.00, 0.07, 0.05
+Tasks:  91 total,   1 running,  90 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.2 sy,  0.0 ni, 99.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   3995360 total,   347524 used,  3647836 free,    99676 buffers
+KiB Swap:  8251388 total,        0 used,  8251388 free,   104220 cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S  %CPU %MEM    TIME+  COMMAND          
+    1 root      20   0 10648  812  676 S   0.0  0.0   0:01.80 init             
+    2 root      20   0     0    0    0 S   0.0  0.0   0:00.00 kthreadd         
+    3 root      20   0     0    0    0 S   0.0  0.0   0:00.02 ksoftirqd/0      
+    6 root      rt   0     0    0    0 S   0.0  0.0   0:00.00 migration/0      
+    7 root      rt   0     0    0    0 S   0.0  0.0   0:00.00 watchdog/0       
+    8 root      rt   0     0    0    0 S   0.0  0.0   0:00.00 migration/1      
+   10 root      20   0     0    0    0 S   0.0  0.0   0:00.01 ksoftirqd/1      
+   11 root      20   0     0    0    0 S   0.0  0.0   0:00.09 kworker/0:1      
+   12 root      rt   0     0    0    0 S   0.0  0.0   0:00.00 watchdog/1       
+   13 root       0 -20     0    0    0 S   0.0  0.0   0:00.00 cpuset           
+   14 root       0 -20     0    0    0 S   0.0  0.0   0:00.00 khelper          
+   15 root      20   0     0    0    0 S   0.0  0.0   0:00.00 kdevtmpfs        
+   16 root       0 -20     0    0    0 S   0.0  0.0   0:00.00 netns            
+   17 root      20   0     0    0    0 S   0.0  0.0   0:00.00 sync_supers      
+   18 root      20   0     0    0    0 S   0.0  0.0   0:00.00 bdi-default      
+   19 root       0 -20     0    0    0 S   0.0  0.0   0:00.00 kintegrityd      
+   20 root       0 -20     0    0    0 S   0.0  0.0   0:00.00 kblockd          
+   21 root      20   0     0    0    0 S   0.0  0.0   0:00.10 kworker/1:1      
+   22 root      20   0     0    0    0 S   0.0  0.0   0:00.00 khungtaskd       
+   23 root      20   0     0    0    0 S   0.0  0.0   0:00.00 kswapd0          
+   24 root      25   5     0    0    0 S   0.0  0.0   0:00.00 ksmd             
+   25 root      39  19     0    0    0 S   0.0  0.0   0:00.00 khugepaged       
+   26 root      20   0     0    0    0 S   0.0  0.0   0:00.00 fsnotify_mark    
+   27 root       0 -20     0    0    0 S   0.0  0.0   0:00.00 crypto           
+   30 root      20   0     0    0    0 S   0.0  0.0   0:00.08 kworker/0:2      
+  110 root      20   0     0    0    0 S   0.0  0.0   0:00.00 khubd            
+  146 root       0 -20     0    0    0 S   0.0  0.0   0:00.00 ata_sff          
+  155 root      20   0     0    0    0 S   0.0  0.0   0:00.00 scsi_eh_0        
+  156 root      20   0     0    0    0 S   0.0  0.0   0:00.00 scsi_eh_1        
+  158 root      20   0     0    0    0 S   0.0  0.0   0:00.00 kworker/u:2      
+  159 root      20   0     0    0    0 S   0.0  0.0   0:00.00 scsi_eh_2        
+  160 root      20   0     0    0    0 S   0.0  0.0   0:00.00 scsi_eh_3        
+  161 root      20   0     0    0    0 S   0.0  0.0   0:00.00 kworker/u:3      
+  176 root      20   0     0    0    0 S   0.0  0.0   0:00.00 kworker/1:2      
+  196 root      20   0     0    0    0 S   0.0  0.0   0:00.01 jbd2/sda1-8      
+  197 root       0 -20     0    0    0 S   0.0  0.0   0:00.00 ext4-dio-unwrit  
+  341 root      20   0 21704 1696  800 S   0.0  0.0   0:00.07 udevd            
+  460 root      20   0 21700 1292  420 S   0.0  0.0   0:00.00 udevd            
+root@pancakes:/home/mike# clear
+
+root@pancakes:/home/mike# Write failed: Broken pipe
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:52]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Fri Jul 11 08:39:36 2014 from 128.223.223.121
+mike@pancakes:~$ su
+Password: 
+root@pancakes:/home/mike# nano /etc/ssh/sshd_config 
+root@pancakes:/home/mike# service ssh restart
+[ ok ] Restarting OpenBSD Secure Shell server: sshd.
+root@pancakes:/home/mike# exit
+exit
+mike@pancakes:~$ exit
+logout
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:55]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Fri Jul 11 08:55:11 2014 from 128.223.223.121
+mike@pancakes:~$ su root
+Password: 
+root@pancakes:/home/mike# su bill
+bill@pancakes:/home/mike$ ls .ssh/
+ls: cannot open directory .ssh/: Permission denied
+bill@pancakes:/home/mike$ su
+Password: 
+root@pancakes:/home/mike# cd /home/
+bill/ mike/ 
+root@pancakes:/home/mike# cd /home/bill/.ssh
+root@pancakes:/home/bill/.ssh# ls
+authorized_keys2
+root@pancakes:/home/bill/.ssh# vim authorized_keys2 
+bash: vim: command not found
+root@pancakes:/home/bill/.ssh# nano authorized_keys2 
+root@pancakes:/home/bill/.ssh# exit
+exit
+bill@pancakes:/home/mike$ exit
+exit
+root@pancakes:/home/mike# exit
+exit
+mike@pancakes:~$ exit
+logout
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:58]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Fri Jul 11 08:58:51 2014 from 128.223.223.121
+mike@pancakes:~$ exit
+logout
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Fri Jul 11, 03:59]
+└─[$] <> ssh -p 22 mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Fri Jul 11 09:01:31 2014 from 128.223.223.121
+mike@pancakes:~$ sudo apt-get update
+[sudo] password for mike: 
+Err http://security.debian.org wheezy/updates Release.gpg
+  Could not resolve 'security.debian.org'
+Reading package lists... Done
+W: Failed to fetch http://security.debian.org/dists/wheezy/updates/Release.gpg  Could not resolve 'security.debian.org'
+
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+mike@pancakes:~$ cat /etc/resolv.conf 
+# Generated by NetworkManager
+mike@pancakes:~$ ls -l /etc/resolv.conf 
+-rw-r--r-- 1 root root 30 Jul  7 09:32 /etc/resolv.conf
+mike@pancakes:~$ ps auxw | grep NetworkManager
+root      2402  0.0  0.1 149720  5156 ?        Ssl  08:30   0:00 /usr/sbin/NetworkManager
+mike      4247  0.0  0.0   7836   872 pts/2    S+   09:05   0:00 grep NetworkManager
+mike@pancakes:~$ cat /etc/network/interfaces 
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo eth0
+iface lo inet loopback
+iface eth0 inet static
+	address 128.223.203.17
+	netmask 255.255.255.0
+	gateway 128.223.203.1
+mike@pancakes:~$ grep -i networkmanager /etc/init.d/*
+/etc/init.d/network-manager:NAME="NetworkManager"
+/etc/init.d/network-manager:test -f /etc/default/NetworkManager && . /etc/default/NetworkManager
+mike@pancakes:~$ sudo apt-get purge network-manager
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages will be REMOVED:
+  gnome* network-manager* network-manager-gnome*
+0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
+After this operation, 10.1 MB disk space will be freed.
+Do you want to continue [Y/n]? Y
+(Reading database ... 129118 files and directories currently installed.)
+Removing gnome ...
+Removing network-manager-gnome ...
+Purging configuration files for network-manager-gnome ...
+Removing network-manager ...
+[ ok ] Stopping network connection manager: NetworkManager.
+Purging configuration files for network-manager ...
+Processing triggers for man-db ...
+Processing triggers for gconf2 ...
+Processing triggers for hicolor-icon-theme ...
+Processing triggers for desktop-file-utils ...
+Processing triggers for gnome-menus ...
+mike@pancakes:~$ vi /etc/resolv.conf 
+mike@pancakes:~$ sudo vi /etc/resolv.conf 
+mike@pancakes:~$ sudo apt-get update
+Get:1 http://security.debian.org wheezy/updates Release.gpg [836 B]
+Get:2 http://security.debian.org wheezy/updates Release [102 kB]
+Get:3 http://security.debian.org wheezy/updates/main Sources [119 kB]
+Get:4 http://security.debian.org wheezy/updates/contrib Sources [14 B]
+Get:5 http://security.debian.org wheezy/updates/main amd64 Packages [195 kB]
+Get:6 http://security.debian.org wheezy/updates/contrib amd64 Packages [14 B]
+Get:7 http://security.debian.org wheezy/updates/contrib Translation-en [14 B]
+Get:8 http://security.debian.org wheezy/updates/main Translation-en [109 kB]
+Fetched 526 kB in 1s (368 kB/s)         
+Reading package lists... Done
+mike@pancakes:~$ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages will be upgraded:
+  apt apt-utils dbus dbus-x11 dpkg gnupg gpgv icedtea-6-jre-cacao icedtea-6-jre-jamvm icedtea-netx icedtea-netx-common iceweasel libapt-inst1.5
+  libapt-pkg4.12 libavcodec53 libavformat53 libavutil51 libc-bin libc6 libdbus-1-3 libgadu3 libgnutls26 libmms0 libmozjs24d libnspr4 libopenjpeg2
+  libpostproc52 libsmbclient libssl1.0.0 libswscale2 libwbclient0 libxfont1 libxml2 linux-image-3.2.0-4-amd64 locales multiarch-support openjdk-6-jre
+  openjdk-6-jre-headless openjdk-6-jre-lib openssl python-libxml2 samba-common samba-common-bin smbclient xulrunner-24.0
+45 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 126 MB of archives.
+After this operation, 28.6 MB disk space will be freed.
+Do you want to continue [Y/n]? y
+Get:1 http://security.debian.org/ wheezy/updates/main dpkg amd64 1.16.15 [2,657 kB]
+Get:2 http://security.debian.org/ wheezy/updates/main libc-bin amd64 2.13-38+deb7u3 [1,272 kB]
+Get:3 http://security.debian.org/ wheezy/updates/main libc6 amd64 2.13-38+deb7u3 [4,221 kB]
+Get:4 http://security.debian.org/ wheezy/updates/main libapt-pkg4.12 amd64 0.9.7.9+deb7u2 [890 kB]                                                            
+Get:5 http://security.debian.org/ wheezy/updates/main gpgv amd64 1.4.12-7+deb7u4 [227 kB]                                                                     
+Get:6 http://security.debian.org/ wheezy/updates/main gnupg amd64 1.4.12-7+deb7u4 [1,954 kB]                                                                  
+Get:7 http://security.debian.org/ wheezy/updates/main apt amd64 0.9.7.9+deb7u2 [1,261 kB]                                                                     
+Get:8 http://security.debian.org/ wheezy/updates/main libapt-inst1.5 amd64 0.9.7.9+deb7u2 [167 kB]                                                            
+Get:9 http://security.debian.org/ wheezy/updates/main libgnutls26 amd64 2.12.20-8+deb7u2 [618 kB]                                                             
+Get:10 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1e-2+deb7u11 [1,258 kB]                                                          
+Get:11 http://security.debian.org/ wheezy/updates/main libavutil51 amd64 6:0.8.13-1 [102 kB]                                                                  
+Get:12 http://security.debian.org/ wheezy/updates/main libopenjpeg2 amd64 1.3+dfsg-4.8 [87.5 kB]                                                              
+Get:13 http://security.debian.org/ wheezy/updates/main libavcodec53 amd64 6:0.8.13-1 [2,516 kB]                                                               
+Get:14 http://security.debian.org/ wheezy/updates/main libavformat53 amd64 6:0.8.13-1 [475 kB]                                                                
+Get:15 http://security.debian.org/ wheezy/updates/main libdbus-1-3 amd64 1.6.8-1+deb7u3 [172 kB]                                                              
+Get:16 http://security.debian.org/ wheezy/updates/main libmms0 amd64 0.6.2-3+deb7u1 [40.8 kB]                                                                 
+Get:17 http://security.debian.org/ wheezy/updates/main libnspr4 amd64 2:4.9.2-1+deb7u2 [141 kB]                                                               
+Get:18 http://security.debian.org/ wheezy/updates/main libpostproc52 amd64 6:0.8.13-1 [97.8 kB]                                                               
+Get:19 http://security.debian.org/ wheezy/updates/main libwbclient0 amd64 2:3.6.6-6+deb7u4 [95.8 kB]                                                          
+Get:20 http://security.debian.org/ wheezy/updates/main libsmbclient amd64 2:3.6.6-6+deb7u4 [1,538 kB]                                                         
+Get:21 http://security.debian.org/ wheezy/updates/main libswscale2 amd64 6:0.8.13-1 [130 kB]                                                                  
+Get:22 http://security.debian.org/ wheezy/updates/main libxml2 amd64 2.8.0+dfsg1-7+wheezy1 [904 kB]                                                           
+Get:23 http://security.debian.org/ wheezy/updates/main linux-image-3.2.0-4-amd64 amd64 3.2.60-1+deb7u1 [23.4 MB]                                              
+Get:24 http://security.debian.org/ wheezy/updates/main smbclient amd64 2:3.6.6-6+deb7u4 [5,873 kB]                                                            
+Get:25 http://security.debian.org/ wheezy/updates/main samba-common all 2:3.6.6-6+deb7u4 [214 kB]                                                             
+Get:26 http://security.debian.org/ wheezy/updates/main samba-common-bin amd64 2:3.6.6-6+deb7u4 [3,712 kB]                                                     
+Get:27 http://security.debian.org/ wheezy/updates/main icedtea-6-jre-cacao amd64 6b31-1.13.3-1~deb7u1 [810 kB]                                                
+Get:28 http://security.debian.org/ wheezy/updates/main openjdk-6-jre amd64 6b31-1.13.3-1~deb7u1 [238 kB]                                                      
+Get:29 http://security.debian.org/ wheezy/updates/main icedtea-6-jre-jamvm amd64 6b31-1.13.3-1~deb7u1 [619 kB]                                                
+Get:30 http://security.debian.org/ wheezy/updates/main openjdk-6-jre-headless amd64 6b31-1.13.3-1~deb7u1 [32.9 MB]                                            
+Get:31 http://security.debian.org/ wheezy/updates/main openjdk-6-jre-lib all 6b31-1.13.3-1~deb7u1 [6,215 kB]                                                  
+Get:32 http://security.debian.org/ wheezy/updates/main multiarch-support amd64 2.13-38+deb7u3 [151 kB]                                                        
+Get:33 http://security.debian.org/ wheezy/updates/main apt-utils amd64 0.9.7.9+deb7u2 [378 kB]                                                                
+Get:34 http://security.debian.org/ wheezy/updates/main locales all 2.13-38+deb7u3 [5,657 kB]                                                                  
+Get:35 http://security.debian.org/ wheezy/updates/main dbus amd64 1.6.8-1+deb7u3 [399 kB]                                                                     
+Get:36 http://security.debian.org/ wheezy/updates/main dbus-x11 amd64 1.6.8-1+deb7u3 [59.0 kB]                                                                
+Get:37 http://security.debian.org/ wheezy/updates/main iceweasel amd64 24.6.0esr-1~deb7u1 [2,866 kB]                                                          
+Get:38 http://security.debian.org/ wheezy/updates/main xulrunner-24.0 amd64 24.6.0esr-1~deb7u1 [17.9 MB]                                                      
+Get:39 http://security.debian.org/ wheezy/updates/main libmozjs24d amd64 24.6.0esr-1~deb7u1 [1,681 kB]                                                        
+Get:40 http://security.debian.org/ wheezy/updates/main libgadu3 amd64 1:1.11.2-1+deb7u2 [76.3 kB]                                                             
+Get:41 http://security.debian.org/ wheezy/updates/main libxfont1 amd64 1:1.4.5-4 [164 kB]                                                                     
+Get:42 http://security.debian.org/ wheezy/updates/main openssl amd64 1.0.1e-2+deb7u11 [701 kB]                                                                
+Get:43 http://security.debian.org/ wheezy/updates/main python-libxml2 amd64 2.8.0+dfsg1-7+wheezy1 [346 kB]                                                    
+Get:44 http://security.debian.org/ wheezy/updates/main icedtea-netx-common all 1.4-3~deb7u2 [855 kB]                                                          
+Get:45 http://security.debian.org/ wheezy/updates/main icedtea-netx amd64 1.4-3~deb7u2 [20.7 kB]                                                              
+Fetched 126 MB in 2min 4s (1,009 kB/s)                                                                                                                        
+Reading changelogs... Done
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+(Reading database ... 128806 files and directories currently installed.)
+Preparing to replace dpkg 1.16.12 (using .../dpkg_1.16.15_amd64.deb) ...
+Unpacking replacement dpkg ...
+Processing triggers for man-db ...
+Setting up dpkg (1.16.15) ...
+(Reading database ... 128807 files and directories currently installed.)
+Preparing to replace libc-bin 2.13-38+deb7u1 (using .../libc-bin_2.13-38+deb7u3_amd64.deb) ...
+Unpacking replacement libc-bin ...
+Processing triggers for man-db ...
+Setting up libc-bin (2.13-38+deb7u3) ...
+(Reading database ... 128806 files and directories currently installed.)
+Preparing to replace libc6:amd64 2.13-38+deb7u1 (using .../libc6_2.13-38+deb7u3_amd64.deb) ...
+Unpacking replacement libc6:amd64 ...
+Setting up libc6:amd64 (2.13-38+deb7u3) ...
+(Reading database ... 128806 files and directories currently installed.)
+Preparing to replace libapt-pkg4.12:amd64 0.9.7.9+deb7u1 (using .../libapt-pkg4.12_0.9.7.9+deb7u2_amd64.deb) ...
+Unpacking replacement libapt-pkg4.12:amd64 ...
+Setting up libapt-pkg4.12:amd64 (0.9.7.9+deb7u2) ...
+(Reading database ... 128806 files and directories currently installed.)
+Preparing to replace gpgv 1.4.12-7+deb7u3 (using .../gpgv_1.4.12-7+deb7u4_amd64.deb) ...
+Unpacking replacement gpgv ...
+Processing triggers for man-db ...
+Setting up gpgv (1.4.12-7+deb7u4) ...
+(Reading database ... 128806 files and directories currently installed.)
+Preparing to replace gnupg 1.4.12-7+deb7u3 (using .../gnupg_1.4.12-7+deb7u4_amd64.deb) ...
+Unpacking replacement gnupg ...
+Processing triggers for man-db ...
+Processing triggers for install-info ...
+Setting up gnupg (1.4.12-7+deb7u4) ...
+(Reading database ... 128806 files and directories currently installed.)
+Preparing to replace apt 0.9.7.9+deb7u1 (using .../apt_0.9.7.9+deb7u2_amd64.deb) ...
+Unpacking replacement apt ...
+Processing triggers for man-db ...
+Setting up apt (0.9.7.9+deb7u2) ...
+gpg: key B98321F9: "Squeeze Stable Release Key <debian-release@lists.debian.org>" not changed
+gpg: key 473041FA: "Debian Archive Automatic Signing Key (6.0/squeeze) <ftpmaster@debian.org>" not changed
+gpg: key 65FFB764: "Wheezy Stable Release Key <debian-release@lists.debian.org>" not changed
+gpg: key 46925553: "Debian Archive Automatic Signing Key (7.0/wheezy) <ftpmaster@debian.org>" not changed
+gpg: Total number processed: 4
+gpg:              unchanged: 4
+(Reading database ... 128806 files and directories currently installed.)
+Preparing to replace libapt-inst1.5:amd64 0.9.7.9+deb7u1 (using .../libapt-inst1.5_0.9.7.9+deb7u2_amd64.deb) ...
+Unpacking replacement libapt-inst1.5:amd64 ...
+Preparing to replace libgnutls26:amd64 2.12.20-8+deb7u1 (using .../libgnutls26_2.12.20-8+deb7u2_amd64.deb) ...
+Unpacking replacement libgnutls26:amd64 ...
+Preparing to replace libssl1.0.0:amd64 1.0.1e-2+deb7u7 (using .../libssl1.0.0_1.0.1e-2+deb7u11_amd64.deb) ...
+Unpacking replacement libssl1.0.0:amd64 ...
+Preparing to replace libavutil51:amd64 6:0.8.10-1 (using .../libavutil51_6%3a0.8.13-1_amd64.deb) ...
+Unpacking replacement libavutil51:amd64 ...
+Preparing to replace libopenjpeg2:amd64 1.3+dfsg-4.7 (using .../libopenjpeg2_1.3+dfsg-4.8_amd64.deb) ...
+Unpacking replacement libopenjpeg2:amd64 ...
+Preparing to replace libavcodec53:amd64 6:0.8.10-1 (using .../libavcodec53_6%3a0.8.13-1_amd64.deb) ...
+Unpacking replacement libavcodec53:amd64 ...
+Preparing to replace libavformat53:amd64 6:0.8.10-1 (using .../libavformat53_6%3a0.8.13-1_amd64.deb) ...
+Unpacking replacement libavformat53:amd64 ...
+Preparing to replace libdbus-1-3:amd64 1.6.8-1+deb7u1 (using .../libdbus-1-3_1.6.8-1+deb7u3_amd64.deb) ...
+Unpacking replacement libdbus-1-3:amd64 ...
+Preparing to replace libmms0:amd64 0.6.2-3 (using .../libmms0_0.6.2-3+deb7u1_amd64.deb) ...
+Unpacking replacement libmms0:amd64 ...
+Preparing to replace libnspr4:amd64 2:4.9.2-1+deb7u1 (using .../libnspr4_2%3a4.9.2-1+deb7u2_amd64.deb) ...
+Unpacking replacement libnspr4:amd64 ...
+Preparing to replace libpostproc52:amd64 6:0.8.10-1 (using .../libpostproc52_6%3a0.8.13-1_amd64.deb) ...
+Unpacking replacement libpostproc52:amd64 ...
+Preparing to replace libwbclient0:amd64 2:3.6.6-6+deb7u3 (using .../libwbclient0_2%3a3.6.6-6+deb7u4_amd64.deb) ...
+Unpacking replacement libwbclient0:amd64 ...
+Preparing to replace libsmbclient:amd64 2:3.6.6-6+deb7u3 (using .../libsmbclient_2%3a3.6.6-6+deb7u4_amd64.deb) ...
+Unpacking replacement libsmbclient:amd64 ...
+Preparing to replace libswscale2:amd64 6:0.8.10-1 (using .../libswscale2_6%3a0.8.13-1_amd64.deb) ...
+Unpacking replacement libswscale2:amd64 ...
+Preparing to replace libxml2:amd64 2.8.0+dfsg1-7+nmu3 (using .../libxml2_2.8.0+dfsg1-7+wheezy1_amd64.deb) ...
+Unpacking replacement libxml2:amd64 ...
+Preparing to replace linux-image-3.2.0-4-amd64 3.2.57-3 (using .../linux-image-3.2.0-4-amd64_3.2.60-1+deb7u1_amd64.deb) ...
+Unpacking replacement linux-image-3.2.0-4-amd64 ...
+Examining /etc/kernel/postrm.d .
+run-parts: executing /etc/kernel/postrm.d/initramfs-tools 3.2.0-4-amd64 /boot/vmlinuz-3.2.0-4-amd64
+run-parts: executing /etc/kernel/postrm.d/zz-update-grub 3.2.0-4-amd64 /boot/vmlinuz-3.2.0-4-amd64
+Preparing to replace smbclient 2:3.6.6-6+deb7u3 (using .../smbclient_2%3a3.6.6-6+deb7u4_amd64.deb) ...
+Unpacking replacement smbclient ...
+Preparing to replace samba-common 2:3.6.6-6+deb7u3 (using .../samba-common_2%3a3.6.6-6+deb7u4_all.deb) ...
+Unpacking replacement samba-common ...
+Preparing to replace samba-common-bin 2:3.6.6-6+deb7u3 (using .../samba-common-bin_2%3a3.6.6-6+deb7u4_amd64.deb) ...
+Unpacking replacement samba-common-bin ...
+Preparing to replace icedtea-6-jre-cacao:amd64 6b27-1.12.5-1 (using .../icedtea-6-jre-cacao_6b31-1.13.3-1~deb7u1_amd64.deb) ...
+Unpacking replacement icedtea-6-jre-cacao:amd64 ...
+Preparing to replace openjdk-6-jre:amd64 6b27-1.12.5-1 (using .../openjdk-6-jre_6b31-1.13.3-1~deb7u1_amd64.deb) ...
+Unpacking replacement openjdk-6-jre:amd64 ...
+Preparing to replace icedtea-6-jre-jamvm:amd64 6b27-1.12.5-1 (using .../icedtea-6-jre-jamvm_6b31-1.13.3-1~deb7u1_amd64.deb) ...
+Unpacking replacement icedtea-6-jre-jamvm:amd64 ...
+Preparing to replace openjdk-6-jre-headless:amd64 6b27-1.12.5-1 (using .../openjdk-6-jre-headless_6b31-1.13.3-1~deb7u1_amd64.deb) ...
+Unpacking replacement openjdk-6-jre-headless:amd64 ...
+Preparing to replace openjdk-6-jre-lib 6b27-1.12.5-1 (using .../openjdk-6-jre-lib_6b31-1.13.3-1~deb7u1_all.deb) ...
+Unpacking replacement openjdk-6-jre-lib ...
+Preparing to replace multiarch-support 2.13-38+deb7u1 (using .../multiarch-support_2.13-38+deb7u3_amd64.deb) ...
+Unpacking replacement multiarch-support ...
+Processing triggers for man-db ...
+Processing triggers for hicolor-icon-theme ...
+Processing triggers for desktop-file-utils ...
+Processing triggers for gnome-menus ...
+Setting up multiarch-support (2.13-38+deb7u3) ...
+(Reading database ... 128807 files and directories currently installed.)
+Preparing to replace apt-utils 0.9.7.9+deb7u1 (using .../apt-utils_0.9.7.9+deb7u2_amd64.deb) ...
+Unpacking replacement apt-utils ...
+Preparing to replace locales 2.13-38+deb7u1 (using .../locales_2.13-38+deb7u3_all.deb) ...
+Unpacking replacement locales ...
+Preparing to replace dbus 1.6.8-1+deb7u1 (using .../dbus_1.6.8-1+deb7u3_amd64.deb) ...
+Unpacking replacement dbus ...
+Preparing to replace dbus-x11 1.6.8-1+deb7u1 (using .../dbus-x11_1.6.8-1+deb7u3_amd64.deb) ...
+Unpacking replacement dbus-x11 ...
+Preparing to replace iceweasel 24.4.0esr-1~deb7u2 (using .../iceweasel_24.6.0esr-1~deb7u1_amd64.deb) ...
+Leaving 'diversion of /usr/bin/firefox to /usr/bin/firefox.real by iceweasel'
+Unpacking replacement iceweasel ...
+Preparing to replace xulrunner-24.0 24.4.0esr-1~deb7u2 (using .../xulrunner-24.0_24.6.0esr-1~deb7u1_amd64.deb) ...
+Unpacking replacement xulrunner-24.0 ...
+Preparing to replace libmozjs24d 24.4.0esr-1~deb7u2 (using .../libmozjs24d_24.6.0esr-1~deb7u1_amd64.deb) ...
+Unpacking replacement libmozjs24d ...
+Preparing to replace libgadu3 1:1.11.2-1+deb7u1 (using .../libgadu3_1%3a1.11.2-1+deb7u2_amd64.deb) ...
+Unpacking replacement libgadu3 ...
+Preparing to replace libxfont1 1:1.4.5-3 (using .../libxfont1_1%3a1.4.5-4_amd64.deb) ...
+Unpacking replacement libxfont1 ...
+Preparing to replace openssl 1.0.1e-2+deb7u7 (using .../openssl_1.0.1e-2+deb7u11_amd64.deb) ...
+Unpacking replacement openssl ...
+Preparing to replace python-libxml2 2.8.0+dfsg1-7+nmu3 (using .../python-libxml2_2.8.0+dfsg1-7+wheezy1_amd64.deb) ...
+Unpacking replacement python-libxml2 ...
+Preparing to replace icedtea-netx-common 1.3.2-1 (using .../icedtea-netx-common_1.4-3~deb7u2_all.deb) ...
+Unpacking replacement icedtea-netx-common ...
+Preparing to replace icedtea-netx:amd64 1.3.2-1 (using .../icedtea-netx_1.4-3~deb7u2_amd64.deb) ...
+Unpacking replacement icedtea-netx:amd64 ...
+Processing triggers for man-db ...
+Processing triggers for mime-support ...
+Processing triggers for desktop-file-utils ...
+Processing triggers for gnome-menus ...
+Processing triggers for hicolor-icon-theme ...
+Processing triggers for menu ...
+Setting up libapt-inst1.5:amd64 (0.9.7.9+deb7u2) ...
+Setting up libgnutls26:amd64 (2.12.20-8+deb7u2) ...
+Setting up libssl1.0.0:amd64 (1.0.1e-2+deb7u11) ...
+Setting up libavutil51:amd64 (6:0.8.13-1) ...
+Setting up libopenjpeg2:amd64 (1.3+dfsg-4.8) ...
+Setting up libavcodec53:amd64 (6:0.8.13-1) ...
+Setting up libavformat53:amd64 (6:0.8.13-1) ...
+Setting up libdbus-1-3:amd64 (1.6.8-1+deb7u3) ...
+Setting up libmms0:amd64 (0.6.2-3+deb7u1) ...
+Setting up libnspr4:amd64 (2:4.9.2-1+deb7u2) ...
+Setting up libpostproc52:amd64 (6:0.8.13-1) ...
+Setting up libwbclient0:amd64 (2:3.6.6-6+deb7u4) ...
+Setting up libsmbclient:amd64 (2:3.6.6-6+deb7u4) ...
+Setting up libswscale2:amd64 (6:0.8.13-1) ...
+Setting up libxml2:amd64 (2.8.0+dfsg1-7+wheezy1) ...
+Setting up linux-image-3.2.0-4-amd64 (3.2.60-1+deb7u1) ...
+Running depmod.
+Examining /etc/kernel/postinst.d.
+run-parts: executing /etc/kernel/postinst.d/initramfs-tools 3.2.0-4-amd64 /boot/vmlinuz-3.2.0-4-amd64
+update-initramfs: Generating /boot/initrd.img-3.2.0-4-amd64
+W: Possible missing firmware /lib/firmware/tigon/tg3_tso5.bin for module tg3
+W: Possible missing firmware /lib/firmware/tigon/tg3_tso.bin for module tg3
+W: Possible missing firmware /lib/firmware/tigon/tg3.bin for module tg3
+run-parts: executing /etc/kernel/postinst.d/pm-utils 3.2.0-4-amd64 /boot/vmlinuz-3.2.0-4-amd64
+run-parts: executing /etc/kernel/postinst.d/zz-update-grub 3.2.0-4-amd64 /boot/vmlinuz-3.2.0-4-amd64
+Generating grub.cfg ...
+Found background image: /usr/share/images/desktop-base/desktop-grub.png
+Found linux image: /boot/vmlinuz-3.2.0-4-amd64
+Found initrd image: /boot/initrd.img-3.2.0-4-amd64
+done
+Setting up samba-common (2:3.6.6-6+deb7u4) ...
+Setting up smbclient (2:3.6.6-6+deb7u4) ...
+Setting up samba-common-bin (2:3.6.6-6+deb7u4) ...
+Setting up apt-utils (0.9.7.9+deb7u2) ...
+Setting up locales (2.13-38+deb7u3) ...
+Generating locales (this might take a while)...
+  en_US.UTF-8... done
+Generation complete.
+Setting up dbus (1.6.8-1+deb7u3) ...
+[ ok ] system message bus already started; not starting..
+Setting up dbus-x11 (1.6.8-1+deb7u3) ...
+Setting up libmozjs24d (24.6.0esr-1~deb7u1) ...
+Setting up xulrunner-24.0 (24.6.0esr-1~deb7u1) ...
+Setting up iceweasel (24.6.0esr-1~deb7u1) ...
+Setting up libgadu3 (1:1.11.2-1+deb7u2) ...
+Setting up libxfont1 (1:1.4.5-4) ...
+Setting up openssl (1.0.1e-2+deb7u11) ...
+Setting up python-libxml2 (2.8.0+dfsg1-7+wheezy1) ...
+Setting up icedtea-netx-common (1.4-3~deb7u2) ...
+Setting up openjdk-6-jre-headless:amd64 (6b31-1.13.3-1~deb7u1) ...
+Installing new version of config file /etc/java-6-openjdk/security/java.policy ...
+Installing new version of config file /etc/java-6-openjdk/security/java.security ...
+Setting up openjdk-6-jre-lib (6b31-1.13.3-1~deb7u1) ...
+Setting up icedtea-6-jre-cacao:amd64 (6b31-1.13.3-1~deb7u1) ...
+Setting up openjdk-6-jre:amd64 (6b31-1.13.3-1~deb7u1) ...
+Setting up icedtea-6-jre-jamvm:amd64 (6b31-1.13.3-1~deb7u1) ...
+Setting up icedtea-netx:amd64 (1.4-3~deb7u2) ...
+Processing triggers for menu ...
+mike@pancakes:~$ 
+
