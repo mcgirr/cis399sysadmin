@@ -1,0 +1,34 @@
+mike@pancakes:~$ pstree
+init─┬─accounts-daemon───{accounts-daemon}
+     ├─acpid
+     ├─at-spi-bus-laun─┬─dbus-daemon
+     │                 └─3*[{at-spi-bus-laun}]
+     ├─at-spi2-registr───{at-spi2-registr}
+     ├─atd
+     ├─bluetoothd
+     ├─console-kit-dae───64*[{console-kit-dae}]
+     ├─cron
+     ├─2*[dbus-daemon]
+     ├─gdm3─┬─gdm-simple-slav─┬─Xorg───2*[{Xorg}]
+     │      │                 ├─gdm-session-wor─┬─gnome-session─┬─gdm-simple-g+
+     │      │                 │                 │               ├─gnome-settin+
+     │      │                 │                 │               ├─metacity───2+
+     │      │                 │                 │               ├─polkit-gnome+
+     │      │                 │                 │               └─3*[{gnome-se+
+     │      │                 │                 └─2*[{gdm-session-wor}]
+     │      │                 ├─gdm-session-wor───{gdm-session-wor}
+     │      │                 └─{gdm-simple-slav}
+     │      └─{gdm3}
+     ├─6*[getty]
+     ├─gvfsd
+     ├─polkitd───{polkitd}
+     ├─pulseaudio───2*[{pulseaudio}]
+     ├─rpc.idmapd
+     ├─rpc.statd
+     ├─rpcbind
+     ├─rsyslogd───3*[{rsyslogd}]
+     ├─rtkit-daemon───2*[{rtkit-daemon}]
+     ├─sshd───sshd───sshd───bash───pstree
+     ├─udevd───2*[udevd]
+     └─upowerd───2*[{upowerd}]
+
