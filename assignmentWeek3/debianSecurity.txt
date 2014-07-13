@@ -1,0 +1,20 @@
+The list of the security advisories for our version of Debian 
+(version 7.5 Wheezy) was retrieved from the following page: 
+https://www.debian.org/security/#DSAS
+
+The one's that have been released since our installation are
+
+[11 Jul 2014] DSA-2977 libav - security update
+[10 Jul 2014] DSA-2976 eglibc - security update
+[09 Jul 2014] DSA-2975 phpmyadmin - security update
+[08 Jul 2014] DSA-2974 php5 - security update
+[07 Jul 2014] DSA-2973 vlc - security update
+[06 Jul 2014] DSA-2972 linux - security update
+[02 Jul 2014] DSA-2971 dbus - security update
+[29 Jun 2014] DSA-2970 cacti - security update 
+
+We plan on ssh'ing into the server 3 times a week and running 
+the update commands
+sudo apt-get update
+sudo apt-get upgrade
+
