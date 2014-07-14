@@ -1,0 +1,2358 @@
+
+               +                
+               #                
+              ###               
+             #####              
+             ######             
+            ; #####;            User: mike
+           +##.#####            Hostname: uselinuxonyourmacbookpro
+          +##########           Distro: Arch Linux
+         #############;         Kernel: 3.15.5-1-ARCH
+        ###############+        Uptime: 0:00
+       #######   #######        Window Manager: 
+     .######;     ;###;`".      Desktop Environment: GNOME
+    .#######;     ;#####.       Shell: /usr/bin/zsh
+    #########.   .########`     Terminal: xterm-256color
+   ######'           '######    Packages: 1575
+  ;####                 ####;   CPU: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+  ##'                     '##   RAM: 626 MB / 7863 MB 
+ #'                         `#  Disk: 151G / 175G
+
+ 14:35:52 up 0 min,  2 users,  load average: 1.36, 0.38, 0.13
+USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     :0        14:35   ?xdm?  31.39s  0.10s gdm-session-worker [pam/gdm-pas
+mike     pts/0     14:35    3.00s  0.05s  0.00s w
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 02:35]
+└─[$] <> ssh mike@128.223.203.17  
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 07:23:00 2014 from 128-223-223-121-wireless.uoregon.edu
+ 07:38:24 up 23 min,  2 users,  load average: 0.00, 0.02, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 07:38    0.00s  0.10s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo insserv -r rpcbind
+[sudo] password for mike: 
+insserv: Service rpcbind has to be enabled to start service nfs-common
+insserv: exiting now!
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 02:40]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 07:38:24 2014 from 128-223-223-121-wireless.uoregon.edu
+ 07:43:43 up 29 min,  2 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 07:43    0.00s  0.10s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo netstat -utpaw
+[sudo] password for mike: 
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 *:41991                 *:*                     LISTEN      1831/rpc.statd  
+tcp        0      0 *:sunrpc                *:*                     LISTEN      1800/rpcbind    
+tcp        0      0 *:ssh                   *:*                     LISTEN      2405/sshd       
+tcp        0      0 pancakes.ilab.cs.uo:ssh 128-223-223-121-w:25633 ESTABLISHED 3289/sshd: mike [pr
+tcp6       0      0 [::]:sunrpc             [::]:*                  LISTEN      1800/rpcbind    
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      2405/sshd       
+tcp6       0      0 [::]:48831              [::]:*                  LISTEN      1831/rpc.statd  
+udp        0      0 *:703                   *:*                                 1800/rpcbind    
+udp        0      0 localhost:735           *:*                                 1831/rpc.statd  
+udp        0      0 *:sunrpc                *:*                                 1800/rpcbind    
+udp        0      0 *:53611                 *:*                                 1831/rpc.statd  
+udp6       0      0 [::]:703                [::]:*                              1800/rpcbind    
+udp6       0      0 [::]:56278              [::]:*                              1831/rpc.statd  
+udp6       0      0 [::]:sunrpc             [::]:*                              1800/rpcbind    
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 02:42]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 07:43:43 2014 from 128-223-223-121-wireless.uoregon.edu
+ 07:45:03 up 30 min,  2 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 07:45    0.00s  0.09s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo insserv -r rpcbind
+[sudo] password for mike: 
+insserv: Service rpcbind has to be enabled to start service nfs-common
+insserv: exiting now!
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 02:44]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 07:45:03 2014 from 128-223-223-121-wireless.uoregon.edu
+ 07:49:29 up 34 min,  2 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 07:49    0.00s  0.10s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo apt-get update
+[sudo] password for mike: 
+Get:1 http://security.debian.org wheezy/updates Release.gpg [836 B]
+Get:2 http://security.debian.org wheezy/updates Release [102 kB]              
+Hit http://ftp.us.debian.org wheezy Release.gpg                               
+Get:3 http://ftp.us.debian.org wheezy-updates Release.gpg [836 B]             
+Hit http://ftp.us.debian.org wheezy Release       
+Hit http://security.debian.org wheezy/updates/main Sources            
+Hit http://security.debian.org wheezy/updates/contrib Sources
+Get:4 http://ftp.us.debian.org wheezy-updates Release [124 kB]
+Hit http://security.debian.org wheezy/updates/main amd64 Packages
+Hit http://security.debian.org wheezy/updates/contrib amd64 Packages
+Hit http://security.debian.org wheezy/updates/contrib Translation-en
+Hit http://security.debian.org wheezy/updates/main Translation-en
+Hit http://ftp.us.debian.org wheezy/main Sources
+Hit http://ftp.us.debian.org wheezy/contrib Sources
+Hit http://ftp.us.debian.org wheezy/non-free Sources
+Hit http://ftp.us.debian.org wheezy/main amd64 Packages
+Hit http://ftp.us.debian.org wheezy/contrib amd64 Packages
+Hit http://ftp.us.debian.org wheezy/non-free amd64 Packages
+Hit http://ftp.us.debian.org wheezy/contrib Translation-en
+Hit http://ftp.us.debian.org wheezy/main Translation-en
+Hit http://ftp.us.debian.org wheezy/non-free Translation-en
+Get:5 http://ftp.us.debian.org wheezy-updates/main Sources [4,478 B]
+Get:6 http://ftp.us.debian.org wheezy-updates/contrib Sources [14 B]
+Get:7 http://ftp.us.debian.org wheezy-updates/non-free Sources [14 B]
+Get:8 http://ftp.us.debian.org wheezy-updates/main amd64 Packages/DiffIndex [1,471 B]
+Get:9 http://ftp.us.debian.org wheezy-updates/contrib amd64 Packages [14 B]
+Get:10 http://ftp.us.debian.org wheezy-updates/non-free amd64 Packages [14 B]
+Get:11 http://ftp.us.debian.org wheezy-updates/contrib Translation-en [14 B]
+Get:12 http://ftp.us.debian.org wheezy-updates/main Translation-en/DiffIndex [919 B]
+Get:13 http://ftp.us.debian.org wheezy-updates/non-free Translation-en [14 B]
+Fetched 235 kB in 2s (85.7 kB/s)       
+Reading package lists... Done
+
+mike at pancakes in ~ 
+$ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 02:47]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 07:49:29 2014 from 128-223-223-121-wireless.uoregon.edu
+ 07:52:27 up 37 min,  2 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 07:52    1.00s  0.10s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo apt-get install puppet
+[sudo] password for mike: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  aisleriot argyll browser-plugin-gnash cheese crda dnsmasq-base file-roller
+  finger gdebi gedit gedit-common gedit-plugins gir1.2-gdata-0.0
+  gir1.2-gnomekeyring-1.0 gir1.2-goa-1.0 gir1.2-gtop-2.0
+  gir1.2-gucharmap-2.90 gir1.2-javascriptcoregtk-3.0 gir1.2-rb-3.0
+  gir1.2-tracker-0.14 gir1.2-webkit-3.0 glchess glines gnash gnash-common
+  gnect gnibbles gnobots2 gnome-color-manager gnome-documents gnome-games
+  gnome-games-data gnome-games-extra-data gnome-nettool
+  gnome-shell-extensions gnome-sudoku gnome-tweak-tool gnome-video-effects
+  gnomine gnotravex gnotski gnuchess gnuchess-book grilo-plugins-0.1 gtali
+  guile-2.0-libs hamster-applet iagno inkscape iputils-tracepath iw
+  libblas3gf libboost-program-options1.49.0 libboost-thread1.49.0
+  libdee-1.0-4 libdiscid0 libdmapsharing-3.0-2 libgexiv2-1 libgpod-common
+  libgpod4 libgrilo-0.1-0 libgtkmm-2.4-1c2a libgupnp-av-1.0-2
+  libgupnp-dlna-1.0-2 libicc2 libimdi0 libjim0debian2 liblinear-tools
+  liblinear1 libminiupnpc5 libmtp-common libmtp-runtime libmtp9 libnatpmp1
+  libnetfilter-conntrack3 libnl-3-200 libnl-genl-3-200 libnl-route-3-200
+  libraw5 librhythmbox-core6 libsofia-sip-ua-glib3 libsofia-sip-ua0
+  libsvm-tools libwnck-common libwnck22 libxss1 lightsoff mahjongg
+  media-player-info minissdpd mobile-broadband-provider-info modemmanager
+  nmap p7zip-full perlmagick python-gconf python-gnome2 python-mako
+  python-markupsafe python-pyorbit python-wnck python-zeitgeist quadrapassel
+  rhythmbox rhythmbox-data rhythmbox-plugin-cdrecorder rhythmbox-plugins
+  rygel rygel-playbin rygel-preferences rygel-tracker seahorse shotwell
+  shotwell-common simple-scan sound-juicer swell-foop telepathy-rakia
+  transmission-common transmission-gtk unoconv usb-modeswitch
+  usb-modeswitch-data wireless-regdb wpasupplicant xdg-user-dirs-gtk
+  zeitgeist-core
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  augeas-lenses debconf-utils facter libaugeas-ruby1.8 libaugeas0 libruby1.8
+  libruby1.9.1 libyaml-0-2 puppet-common ruby ruby-json ruby-shadow ruby1.8
+  ruby1.9.1
+Suggested packages:
+  augeas-doc augeas-tools puppet-el vim-puppet etckeeper ruby-selinux
+  librrd-ruby1.8 ri ruby-dev ruby1.8-examples ri1.8 ruby-switch
+  ruby1.9.1-examples ri1.9.1 graphviz ruby1.9.1-dev
+Recommended packages:
+  rdoc
+The following NEW packages will be installed:
+  augeas-lenses debconf-utils facter libaugeas-ruby1.8 libaugeas0 libruby1.8
+  libruby1.9.1 libyaml-0-2 puppet puppet-common ruby ruby-json ruby-shadow
+  ruby1.8 ruby1.9.1
+0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
+Need to get 9,053 kB of archives.
+After this operation, 26.0 MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Get:1 http://ftp.us.debian.org/debian/ wheezy/main libyaml-0-2 amd64 0.1.4-2+deb7u4 [58.2 kB]
+Get:2 http://ftp.us.debian.org/debian/ wheezy/main libruby1.9.1 amd64 1.9.3.194-8.1+deb7u2 [4,415 kB]
+Get:3 http://ftp.us.debian.org/debian/ wheezy/main ruby1.9.1 amd64 1.9.3.194-8.1+deb7u2 [209 kB]
+Get:4 http://ftp.us.debian.org/debian/ wheezy/main ruby all 1:1.9.3 [6,484 B] 
+Get:5 http://ftp.us.debian.org/debian/ wheezy/main libruby1.8 amd64 1.8.7.358-7.1+deb7u1 [2,091 kB]
+Get:6 http://ftp.us.debian.org/debian/ wheezy/main ruby1.8 amd64 1.8.7.358-7.1+deb7u1 [320 kB]                                                                
+Get:7 http://ftp.us.debian.org/debian/ wheezy/main ruby-json amd64 1.7.3-3 [78.5 kB]                                                                          
+Get:8 http://ftp.us.debian.org/debian/ wheezy/main facter all 1.6.10-1 [68.4 kB]                                                                              
+Get:9 http://ftp.us.debian.org/debian/ wheezy/main augeas-lenses all 0.10.0-1 [195 kB]                                                                        
+Get:10 http://ftp.us.debian.org/debian/ wheezy/main libaugeas0 amd64 0.10.0-1 [190 kB]                                                                        
+Get:11 http://ftp.us.debian.org/debian/ wheezy/main libaugeas-ruby1.8 amd64 0.4.1-1.1 [10.6 kB]                                                               
+Get:12 http://ftp.us.debian.org/debian/ wheezy/main ruby-shadow amd64 2.1.4-2 [13.3 kB]                                                                       
+Get:13 http://ftp.us.debian.org/debian/ wheezy/main puppet-common all 2.7.23-1~deb7u3 [1,065 kB]                                                              
+Get:14 http://ftp.us.debian.org/debian/ wheezy/main puppet all 2.7.23-1~deb7u3 [278 kB]                                                                       
+Get:15 http://ftp.us.debian.org/debian/ wheezy/main debconf-utils all 1.5.49 [55.8 kB]                                                                        
+Fetched 9,053 kB in 14s (605 kB/s)                                                                                                                            
+Selecting previously unselected package libyaml-0-2:amd64.
+(Reading database ... 132436 files and directories currently installed.)
+Unpacking libyaml-0-2:amd64 (from .../libyaml-0-2_0.1.4-2+deb7u4_amd64.deb) ...
+Selecting previously unselected package libruby1.9.1.
+Unpacking libruby1.9.1 (from .../libruby1.9.1_1.9.3.194-8.1+deb7u2_amd64.deb) ...
+Selecting previously unselected package ruby1.9.1.
+Unpacking ruby1.9.1 (from .../ruby1.9.1_1.9.3.194-8.1+deb7u2_amd64.deb) ...
+Selecting previously unselected package ruby.
+Unpacking ruby (from .../ruby_1%3a1.9.3_all.deb) ...
+Selecting previously unselected package libruby1.8.
+Unpacking libruby1.8 (from .../libruby1.8_1.8.7.358-7.1+deb7u1_amd64.deb) ...
+Selecting previously unselected package ruby1.8.
+Unpacking ruby1.8 (from .../ruby1.8_1.8.7.358-7.1+deb7u1_amd64.deb) ...
+Selecting previously unselected package ruby-json.
+Unpacking ruby-json (from .../ruby-json_1.7.3-3_amd64.deb) ...
+Selecting previously unselected package facter.
+Unpacking facter (from .../facter_1.6.10-1_all.deb) ...
+Selecting previously unselected package augeas-lenses.
+Unpacking augeas-lenses (from .../augeas-lenses_0.10.0-1_all.deb) ...
+Selecting previously unselected package libaugeas0.
+Unpacking libaugeas0 (from .../libaugeas0_0.10.0-1_amd64.deb) ...
+Selecting previously unselected package libaugeas-ruby1.8.
+Unpacking libaugeas-ruby1.8 (from .../libaugeas-ruby1.8_0.4.1-1.1_amd64.deb) ...
+Selecting previously unselected package ruby-shadow.
+Unpacking ruby-shadow (from .../ruby-shadow_2.1.4-2_amd64.deb) ...
+Selecting previously unselected package puppet-common.
+Unpacking puppet-common (from .../puppet-common_2.7.23-1~deb7u3_all.deb) ...
+Selecting previously unselected package puppet.
+Unpacking puppet (from .../puppet_2.7.23-1~deb7u3_all.deb) ...
+Selecting previously unselected package debconf-utils.
+Unpacking debconf-utils (from .../debconf-utils_1.5.49_all.deb) ...
+Processing triggers for man-db ...
+Processing triggers for menu ...
+Setting up libyaml-0-2:amd64 (0.1.4-2+deb7u4) ...
+Setting up libruby1.9.1 (1.9.3.194-8.1+deb7u2) ...
+Setting up ruby1.9.1 (1.9.3.194-8.1+deb7u2) ...
+update-alternatives: using /usr/bin/gem1.9.1 to provide /usr/bin/gem (gem) in auto mode
+update-alternatives: using /usr/bin/ruby1.9.1 to provide /usr/bin/ruby (ruby) in auto mode
+Setting up ruby (1:1.9.3) ...
+Setting up libruby1.8 (1.8.7.358-7.1+deb7u1) ...
+Setting up ruby1.8 (1.8.7.358-7.1+deb7u1) ...
+Setting up ruby-json (1.7.3-3) ...
+Setting up facter (1.6.10-1) ...
+Setting up augeas-lenses (0.10.0-1) ...
+Setting up libaugeas0 (0.10.0-1) ...
+Setting up libaugeas-ruby1.8 (0.4.1-1.1) ...
+Setting up ruby-shadow (2.1.4-2) ...
+Setting up puppet-common (2.7.23-1~deb7u3) ...
+Setting up puppet (2.7.23-1~deb7u3) ...
+[....] Starting puppet agent
+puppet not configured to start, please edit /etc/default/puppet to enable
+. ok 
+Setting up debconf-utils (1.5.49) ...
+Processing triggers for menu ...
+
+mike at pancakes in ~ 
+$ sudo apt-get install augeas-doc augeas-tools puppet-el vim-puppet etckeeper ruby-selinux
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  aisleriot argyll browser-plugin-gnash cheese crda dnsmasq-base file-roller finger gdebi gedit gedit-common gedit-plugins gir1.2-gdata-0.0
+  gir1.2-gnomekeyring-1.0 gir1.2-goa-1.0 gir1.2-gtop-2.0 gir1.2-gucharmap-2.90 gir1.2-javascriptcoregtk-3.0 gir1.2-rb-3.0 gir1.2-tracker-0.14
+  gir1.2-webkit-3.0 glchess glines gnash gnash-common gnect gnibbles gnobots2 gnome-color-manager gnome-documents gnome-games gnome-games-data
+  gnome-games-extra-data gnome-nettool gnome-shell-extensions gnome-sudoku gnome-tweak-tool gnome-video-effects gnomine gnotravex gnotski gnuchess
+  gnuchess-book grilo-plugins-0.1 gtali guile-2.0-libs hamster-applet iagno inkscape iputils-tracepath iw libblas3gf libboost-program-options1.49.0
+  libboost-thread1.49.0 libdee-1.0-4 libdiscid0 libdmapsharing-3.0-2 libgexiv2-1 libgpod-common libgpod4 libgrilo-0.1-0 libgtkmm-2.4-1c2a libgupnp-av-1.0-2
+  libgupnp-dlna-1.0-2 libicc2 libimdi0 libjim0debian2 liblinear-tools liblinear1 libminiupnpc5 libmtp-common libmtp-runtime libmtp9 libnatpmp1
+  libnetfilter-conntrack3 libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libraw5 librhythmbox-core6 libsofia-sip-ua-glib3 libsofia-sip-ua0 libsvm-tools
+  libwnck-common libwnck22 libxss1 lightsoff mahjongg media-player-info minissdpd mobile-broadband-provider-info modemmanager nmap p7zip-full perlmagick
+  python-gconf python-gnome2 python-mako python-markupsafe python-pyorbit python-wnck python-zeitgeist quadrapassel rhythmbox rhythmbox-data
+  rhythmbox-plugin-cdrecorder rhythmbox-plugins rygel rygel-playbin rygel-preferences rygel-tracker seahorse shotwell shotwell-common simple-scan
+  sound-juicer swell-foop telepathy-rakia transmission-common transmission-gtk unoconv usb-modeswitch usb-modeswitch-data wireless-regdb wpasupplicant
+  xdg-user-dirs-gtk zeitgeist-core
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  emacsen-common vim-addon-manager
+The following NEW packages will be installed:
+  augeas-doc augeas-tools emacsen-common etckeeper puppet-el ruby-selinux vim-addon-manager vim-puppet
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,593 kB of archives.
+After this operation, 6,052 kB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Abort.
+
+mike at pancakes in ~ 
+$ sudo apt-get install augeas-doc augeas-tools puppet-el vim-puppet etckeeper ruby-selinux
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  aisleriot argyll browser-plugin-gnash cheese crda dnsmasq-base file-roller finger gdebi gedit gedit-common gedit-plugins gir1.2-gdata-0.0
+  gir1.2-gnomekeyring-1.0 gir1.2-goa-1.0 gir1.2-gtop-2.0 gir1.2-gucharmap-2.90 gir1.2-javascriptcoregtk-3.0 gir1.2-rb-3.0 gir1.2-tracker-0.14
+  gir1.2-webkit-3.0 glchess glines gnash gnash-common gnect gnibbles gnobots2 gnome-color-manager gnome-documents gnome-games gnome-games-data
+  gnome-games-extra-data gnome-nettool gnome-shell-extensions gnome-sudoku gnome-tweak-tool gnome-video-effects gnomine gnotravex gnotski gnuchess
+  gnuchess-book grilo-plugins-0.1 gtali guile-2.0-libs hamster-applet iagno inkscape iputils-tracepath iw libblas3gf libboost-program-options1.49.0
+  libboost-thread1.49.0 libdee-1.0-4 libdiscid0 libdmapsharing-3.0-2 libgexiv2-1 libgpod-common libgpod4 libgrilo-0.1-0 libgtkmm-2.4-1c2a libgupnp-av-1.0-2
+  libgupnp-dlna-1.0-2 libicc2 libimdi0 libjim0debian2 liblinear-tools liblinear1 libminiupnpc5 libmtp-common libmtp-runtime libmtp9 libnatpmp1
+  libnetfilter-conntrack3 libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libraw5 librhythmbox-core6 libsofia-sip-ua-glib3 libsofia-sip-ua0 libsvm-tools
+  libwnck-common libwnck22 libxss1 lightsoff mahjongg media-player-info minissdpd mobile-broadband-provider-info modemmanager nmap p7zip-full perlmagick
+  python-gconf python-gnome2 python-mako python-markupsafe python-pyorbit python-wnck python-zeitgeist quadrapassel rhythmbox rhythmbox-data
+  rhythmbox-plugin-cdrecorder rhythmbox-plugins rygel rygel-playbin rygel-preferences rygel-tracker seahorse shotwell shotwell-common simple-scan
+  sound-juicer swell-foop telepathy-rakia transmission-common transmission-gtk unoconv usb-modeswitch usb-modeswitch-data wireless-regdb wpasupplicant
+  xdg-user-dirs-gtk zeitgeist-core
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  emacsen-common vim-addon-manager
+The following NEW packages will be installed:
+  augeas-doc augeas-tools emacsen-common etckeeper puppet-el ruby-selinux vim-addon-manager vim-puppet
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,593 kB of archives.
+After this operation, 6,052 kB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Abort.
+
+mike at pancakes in ~ 
+$ sudo apt-get install augeas-doc augeas-tools puppet-el vim-puppet etckeeper ruby-selinux
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  aisleriot argyll browser-plugin-gnash cheese crda dnsmasq-base file-roller finger gdebi gedit gedit-common gedit-plugins gir1.2-gdata-0.0
+  gir1.2-gnomekeyring-1.0 gir1.2-goa-1.0 gir1.2-gtop-2.0 gir1.2-gucharmap-2.90 gir1.2-javascriptcoregtk-3.0 gir1.2-rb-3.0 gir1.2-tracker-0.14
+  gir1.2-webkit-3.0 glchess glines gnash gnash-common gnect gnibbles gnobots2 gnome-color-manager gnome-documents gnome-games gnome-games-data
+  gnome-games-extra-data gnome-nettool gnome-shell-extensions gnome-sudoku gnome-tweak-tool gnome-video-effects gnomine gnotravex gnotski gnuchess
+  gnuchess-book grilo-plugins-0.1 gtali guile-2.0-libs hamster-applet iagno inkscape iputils-tracepath iw libblas3gf libboost-program-options1.49.0
+  libboost-thread1.49.0 libdee-1.0-4 libdiscid0 libdmapsharing-3.0-2 libgexiv2-1 libgpod-common libgpod4 libgrilo-0.1-0 libgtkmm-2.4-1c2a libgupnp-av-1.0-2
+  libgupnp-dlna-1.0-2 libicc2 libimdi0 libjim0debian2 liblinear-tools liblinear1 libminiupnpc5 libmtp-common libmtp-runtime libmtp9 libnatpmp1
+  libnetfilter-conntrack3 libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libraw5 librhythmbox-core6 libsofia-sip-ua-glib3 libsofia-sip-ua0 libsvm-tools
+  libwnck-common libwnck22 libxss1 lightsoff mahjongg media-player-info minissdpd mobile-broadband-provider-info modemmanager nmap p7zip-full perlmagick
+  python-gconf python-gnome2 python-mako python-markupsafe python-pyorbit python-wnck python-zeitgeist quadrapassel rhythmbox rhythmbox-data
+  rhythmbox-plugin-cdrecorder rhythmbox-plugins rygel rygel-playbin rygel-preferences rygel-tracker seahorse shotwell shotwell-common simple-scan
+  sound-juicer swell-foop telepathy-rakia transmission-common transmission-gtk unoconv usb-modeswitch usb-modeswitch-data wireless-regdb wpasupplicant
+  xdg-user-dirs-gtk zeitgeist-core
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  emacsen-common vim-addon-manager
+The following NEW packages will be installed:
+  augeas-doc augeas-tools emacsen-common etckeeper puppet-el ruby-selinux vim-addon-manager vim-puppet
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,593 kB of archives.
+After this operation, 6,052 kB of additional disk space will be used.
+Do you want to continue [Y/n]? Y
+Get:1 http://ftp.us.debian.org/debian/ wheezy/main augeas-doc all 0.10.0-1 [777 kB]
+Get:2 http://ftp.us.debian.org/debian/ wheezy/main augeas-tools amd64 0.10.0-1 [41.1 kB]
+Get:3 http://ftp.us.debian.org/debian/ wheezy/main emacsen-common all 2.0.5 [20.9 kB]
+Get:4 http://ftp.us.debian.org/debian/ wheezy/main etckeeper all 0.63 [36.3 kB]
+Get:5 http://ftp.us.debian.org/debian/ wheezy/main puppet-el all 2.7.23-1~deb7u3 [270 kB]
+Get:6 http://ftp.us.debian.org/debian/ wheezy/main ruby-selinux amd64 2.1.9-5 [159 kB]
+Get:7 http://ftp.us.debian.org/debian/ wheezy/main vim-puppet all 2.7.23-1~deb7u3 [270 kB]
+Get:8 http://ftp.us.debian.org/debian/ wheezy/main vim-addon-manager all 0.5.2 [19.0 kB]
+Fetched 1,593 kB in 3s (402 kB/s)           
+Preconfiguring packages ...
+Selecting previously unselected package augeas-doc.
+(Reading database ... 135519 files and directories currently installed.)
+Unpacking augeas-doc (from .../augeas-doc_0.10.0-1_all.deb) ...
+Selecting previously unselected package augeas-tools.
+Unpacking augeas-tools (from .../augeas-tools_0.10.0-1_amd64.deb) ...
+Selecting previously unselected package emacsen-common.
+Unpacking emacsen-common (from .../emacsen-common_2.0.5_all.deb) ...
+Selecting previously unselected package etckeeper.
+Unpacking etckeeper (from .../etckeeper_0.63_all.deb) ...
+Selecting previously unselected package puppet-el.
+Unpacking puppet-el (from .../puppet-el_2.7.23-1~deb7u3_all.deb) ...
+Selecting previously unselected package ruby-selinux.
+Unpacking ruby-selinux (from .../ruby-selinux_2.1.9-5_amd64.deb) ...
+Selecting previously unselected package vim-puppet.
+Unpacking vim-puppet (from .../vim-puppet_2.7.23-1~deb7u3_all.deb) ...
+Selecting previously unselected package vim-addon-manager.
+Unpacking vim-addon-manager (from .../vim-addon-manager_0.5.2_all.deb) ...
+Processing triggers for man-db ...
+Setting up augeas-doc (0.10.0-1) ...
+Setting up augeas-tools (0.10.0-1) ...
+Setting up emacsen-common (2.0.5) ...
+Setting up etckeeper (0.63) ...
+Initialized empty Git repository in /etc/.git/
+[master (root-commit) 3021516] Initial commit
+ Author: mike <mike@pancakes>
+ 1903 files changed, 90179 insertions(+)
+ create mode 100755 .etckeeper
+ create mode 100644 .gitignore
+ create mode 100644 .java/.systemPrefs/.system.lock
+ create mode 100644 .java/.systemPrefs/.systemRootModFile
+ create mode 100644 ConsoleKit/seats.d/00-primary.seat
+ create mode 100644 ImageMagick/coder.xml
+ create mode 100644 ImageMagick/colors.xml
+ create mode 100644 ImageMagick/delegates.xml
+ create mode 100644 ImageMagick/log.xml
+ create mode 100644 ImageMagick/magic.xml
+ create mode 100644 ImageMagick/mime.xml
+ create mode 100644 ImageMagick/policy.xml
+ create mode 100644 ImageMagick/quantization-table.xml
+ create mode 100644 ImageMagick/thresholds.xml
+ create mode 100644 ImageMagick/type-dejavu.xml
+ create mode 100644 ImageMagick/type-ghostscript.xml
+ create mode 100644 ImageMagick/type-windows.xml
+ create mode 100644 ImageMagick/type.xml
+ create mode 100644 Muttrc
+ create mode 100644 Muttrc.d/charset.rc
+ create mode 100644 Muttrc.d/colors.rc
+ create mode 100644 Muttrc.d/compressed-folders.rc
+ create mode 100644 Muttrc.d/gpg.rc
+ create mode 100644 Muttrc.d/smime.rc
+ create mode 100644 PackageKit/PackageKit.conf
+ create mode 100644 PackageKit/Vendor.conf
+ create mode 100644 PackageKit/events/post-transaction.d/README
+ create mode 100644 PackageKit/events/pre-transaction.d/README
+ create mode 100644 UPower/UPower.conf
+ create mode 120000 X11/X
+ create mode 100755 X11/Xreset
+ create mode 100644 X11/Xreset.d/README
+ create mode 100644 X11/Xresources/x11-common
+ create mode 100755 X11/Xsession
+ create mode 100644 X11/Xsession.d/20x11-common_process-args
+ create mode 100644 X11/Xsession.d/30x11-common_xresources
+ create mode 100644 X11/Xsession.d/35x11-common_xhost-local
+ create mode 100644 X11/Xsession.d/40x11-common_xsessionrc
+ create mode 100644 X11/Xsession.d/50x11-common_determine-startup
+ create mode 100644 X11/Xsession.d/55gnome-session_gnomerc
+ create mode 100644 X11/Xsession.d/60xbrlapi
+ create mode 100644 X11/Xsession.d/60xdg-user-dirs-update
+ create mode 100644 X11/Xsession.d/75dbus_dbus-launch
+ create mode 100644 X11/Xsession.d/90consolekit
+ create mode 100644 X11/Xsession.d/90qt-a11y
+ create mode 100644 X11/Xsession.d/90x11-common_ssh-agent
+ create mode 100644 X11/Xsession.d/99x11-common_start
+ create mode 100644 X11/Xsession.options
+ create mode 100644 X11/XvMCConfig
+ create mode 100644 X11/Xwrapper.config
+ create mode 100644 X11/app-defaults/Bitmap
+ create mode 100644 X11/app-defaults/Bitmap-color
+ create mode 100644 X11/app-defaults/Bitmap-nocase
+ create mode 100644 X11/app-defaults/Clock-color
+ create mode 100644 X11/app-defaults/Editres
+ create mode 100644 X11/app-defaults/Editres-color
+ create mode 100644 X11/app-defaults/GXditview
+ create mode 100644 X11/app-defaults/GXditview-color
+ create mode 100644 X11/app-defaults/KOI8RXTerm
+ create mode 100644 X11/app-defaults/KOI8RXTerm-color
+ create mode 100644 X11/app-defaults/UXTerm
+ create mode 100644 X11/app-defaults/UXTerm-color
+ create mode 100644 X11/app-defaults/Viewres
+ create mode 100644 X11/app-defaults/Viewres-color
+ create mode 100644 X11/app-defaults/XCalc
+ create mode 100644 X11/app-defaults/XCalc-color
+ create mode 100644 X11/app-defaults/XClipboard
+ create mode 100644 X11/app-defaults/XClock
+ create mode 100644 X11/app-defaults/XClock-color
+ create mode 100644 X11/app-defaults/XConsole
+ create mode 100644 X11/app-defaults/XFontSel
+ create mode 100644 X11/app-defaults/XLoad
+ create mode 100644 X11/app-defaults/XLogo
+ create mode 100644 X11/app-defaults/XLogo-color
+ create mode 100644 X11/app-defaults/XMore
+ create mode 100644 X11/app-defaults/XSm
+ create mode 100644 X11/app-defaults/XTerm
+ create mode 100644 X11/app-defaults/XTerm-color
+ create mode 100644 X11/app-defaults/Xditview
+ create mode 100644 X11/app-defaults/Xditview-chrtr
+ create mode 100644 X11/app-defaults/Xedit
+ create mode 100644 X11/app-defaults/Xedit-color
+ create mode 100644 X11/app-defaults/Xfd
+ create mode 100644 X11/app-defaults/Xgc
+ create mode 100644 X11/app-defaults/Xgc-color
+ create mode 100644 X11/app-defaults/Xmag
+ create mode 100644 X11/app-defaults/Xman
+ create mode 100644 X11/app-defaults/Xmessage
+ create mode 100644 X11/app-defaults/Xmessage-color
+ create mode 100644 X11/app-defaults/Xvidtune
+ create mode 100644 X11/default-display-manager
+ create mode 100644 X11/fonts/100dpi/xfonts-100dpi.alias
+ create mode 100644 X11/fonts/75dpi/xfonts-75dpi.alias
+ create mode 100644 X11/fonts/Type1/xfonts-mathml.scale
+ create mode 100644 X11/fonts/Type1/xfonts-scalable.scale
+ create mode 100644 X11/fonts/misc/xfonts-base.alias
+ create mode 100644 X11/rgb.txt
+ create mode 100644 X11/xinit/xinitrc
+ create mode 100755 X11/xinit/xserverrc
+ create mode 100644 acpi/events/powerbtn-acpi-support
+ create mode 100755 acpi/powerbtn-acpi-support.sh
+ create mode 100644 adduser.conf
+ create mode 100644 aliases
+ create mode 120000 alternatives/Mail
+ create mode 120000 alternatives/Mail.1.gz
+ create mode 100644 alternatives/README
+ create mode 120000 alternatives/animate
+ create mode 120000 alternatives/animate.1.gz
+ create mode 120000 alternatives/aptitude
+ create mode 120000 alternatives/aptitude.8.gz
+ create mode 120000 alternatives/aptitude.cs.8.gz
+ create mode 120000 alternatives/aptitude.de.8.gz
+ create mode 120000 alternatives/aptitude.es.8.gz
+ create mode 120000 alternatives/aptitude.fi.8.gz
+ create mode 120000 alternatives/aptitude.fr.8.gz
+ create mode 120000 alternatives/aptitude.gl.8.gz
+ create mode 120000 alternatives/aptitude.it.8.gz
+ create mode 120000 alternatives/aptitude.ja.8.gz
+ create mode 120000 alternatives/aptitude.pl.8.gz
+ create mode 120000 alternatives/awk
+ create mode 120000 alternatives/awk.1.gz
+ create mode 120000 alternatives/bash_completion_gem
+ create mode 120000 alternatives/bf_compact
+ create mode 120000 alternatives/bf_copy
+ create mode 120000 alternatives/bf_tar
+ create mode 120000 alternatives/bogofilter
+ create mode 120000 alternatives/bogolexer
+ create mode 120000 alternatives/bogotune
+ create mode 120000 alternatives/bogoupgrade
+ create mode 120000 alternatives/bogoutil
+ create mode 120000 alternatives/builtins.7.gz
+ create mode 120000 alternatives/cli
+ create mode 120000 alternatives/cli-gacutil.1.gz
+ create mode 120000 alternatives/cli.1.gz
+ create mode 120000 alternatives/compare
+ create mode 120000 alternatives/compare.1.gz
+ create mode 120000 alternatives/composite
+ create mode 120000 alternatives/composite.1.gz
+ create mode 120000 alternatives/conjure
+ create mode 120000 alternatives/conjure.1.gz
+ create mode 120000 alternatives/convert
+ create mode 120000 alternatives/convert.1.gz
+ create mode 120000 alternatives/cpp
+ create mode 120000 alternatives/desktop-background
+ create mode 120000 alternatives/desktop-background.xml
+ create mode 120000 alternatives/desktop-grub
+ create mode 120000 alternatives/desktop-splash
+ create mode 120000 alternatives/display
+ create mode 120000 alternatives/display.1.gz
+ create mode 120000 alternatives/editor
+ create mode 120000 alternatives/editor.1.gz
+ create mode 120000 alternatives/erb
+ create mode 120000 alternatives/erb.1.gz
+ create mode 120000 alternatives/ex
+ create mode 120000 alternatives/ex.1.gz
+ create mode 120000 alternatives/ex.fr.1.gz
+ create mode 120000 alternatives/ex.it.1.gz
+ create mode 120000 alternatives/ex.pl.1.gz
+ create mode 120000 alternatives/ex.ru.1.gz
+ create mode 120000 alternatives/flash-mozilla.so
+ create mode 120000 alternatives/from
+ create mode 120000 alternatives/from.1.gz
+ create mode 120000 alternatives/ftp
+ create mode 120000 alternatives/ftp.1.gz
+ create mode 120000 alternatives/gconftool
+ create mode 120000 alternatives/gconftool.1.gz
+ create mode 120000 alternatives/gem
+ create mode 120000 alternatives/gem.1.gz
+ create mode 120000 alternatives/global-assembly-cache-tool
+ create mode 120000 alternatives/gnome-text-editor
+ create mode 120000 alternatives/gnome-text-editor.1.gz
+ create mode 120000 alternatives/gnome-www-browser
+ create mode 120000 alternatives/gnome-www-browser.1.gz
+ create mode 120000 alternatives/identify
+ create mode 120000 alternatives/identify.1.gz
+ create mode 120000 alternatives/import
+ create mode 120000 alternatives/import.1.gz
+ create mode 120000 alternatives/infobrowser
+ create mode 120000 alternatives/infobrowser.1.gz
+ create mode 120000 alternatives/irb
+ create mode 120000 alternatives/irb.1.gz
+ create mode 120000 alternatives/itweb-settings
+ create mode 120000 alternatives/itweb-settings.1.gz
+ create mode 120000 alternatives/java
+ create mode 120000 alternatives/java.1.gz
+ create mode 120000 alternatives/javaws
+ create mode 120000 alternatives/javaws.1.gz
+ create mode 120000 alternatives/jexec
+ create mode 120000 alternatives/jexec-binfmt
+ create mode 120000 alternatives/keytool
+ create mode 120000 alternatives/keytool.1.gz
+ create mode 120000 alternatives/ksh
+ create mode 120000 alternatives/ksh.1.gz
+ create mode 120000 alternatives/lft
+ create mode 120000 alternatives/lft.1.gz
+ create mode 120000 alternatives/libblas.so.3
+ create mode 120000 alternatives/libblas.so.3gf
+ create mode 120000 alternatives/libgksu-gconf-defaults
+ create mode 120000 alternatives/liblapack.so.3
+ create mode 120000 alternatives/liblapack.so.3gf
+ create mode 120000 alternatives/locate
+ create mode 120000 alternatives/locate.1.gz
+ create mode 120000 alternatives/lucli
+ create mode 120000 alternatives/lucli.1.gz
+ create mode 120000 alternatives/lzcat
+ create mode 120000 alternatives/lzcat.1.gz
+ create mode 120000 alternatives/lzcmp
+ create mode 120000 alternatives/lzcmp.1.gz
+ create mode 120000 alternatives/lzdiff
+ create mode 120000 alternatives/lzdiff.1.gz
+ create mode 120000 alternatives/lzegrep
+ create mode 120000 alternatives/lzegrep.1.gz
+ create mode 120000 alternatives/lzfgrep
+ create mode 120000 alternatives/lzfgrep.1.gz
+ create mode 120000 alternatives/lzgrep
+ create mode 120000 alternatives/lzgrep.1.gz
+ create mode 120000 alternatives/lzless
+ create mode 120000 alternatives/lzless.1.gz
+ create mode 120000 alternatives/lzma
+ create mode 120000 alternatives/lzma.1.gz
+ create mode 120000 alternatives/lzmore
+ create mode 120000 alternatives/lzmore.1.gz
+ create mode 120000 alternatives/mail
+ create mode 120000 alternatives/mail.1.gz
+ create mode 120000 alternatives/mailx
+ create mode 120000 alternatives/mailx.1.gz
+ create mode 120000 alternatives/mogrify
+ create mode 120000 alternatives/mogrify.1.gz
+ create mode 120000 alternatives/montage
+ create mode 120000 alternatives/montage.1.gz
+ create mode 120000 alternatives/mt
+ create mode 120000 alternatives/mt.1.gz
+ create mode 120000 alternatives/mutt
+ create mode 120000 alternatives/nawk
+ create mode 120000 alternatives/nawk.1.gz
+ create mode 120000 alternatives/nc
+ create mode 120000 alternatives/nc.1.gz
+ create mode 120000 alternatives/net
+ create mode 120000 alternatives/net.8.gz
+ create mode 120000 alternatives/netcat
+ create mode 120000 alternatives/netcat.1.gz
+ create mode 120000 alternatives/nmblookup
+ create mode 120000 alternatives/nmblookup.1.gz
+ create mode 120000 alternatives/odt2txt
+ create mode 120000 alternatives/odt2txt.1.gz
+ create mode 120000 alternatives/orbd
+ create mode 120000 alternatives/orbd.1.gz
+ create mode 120000 alternatives/pack200
+ create mode 120000 alternatives/pack200.1.gz
+ create mode 120000 alternatives/pager
+ create mode 120000 alternatives/pager.1.gz
+ create mode 120000 alternatives/pico
+ create mode 120000 alternatives/pico.1.gz
+ create mode 120000 alternatives/policytool
+ create mode 120000 alternatives/policytool.1.gz
+ create mode 120000 alternatives/rcp
+ create mode 120000 alternatives/rcp.1.gz
+ create mode 120000 alternatives/rdoc
+ create mode 120000 alternatives/rdoc.1.gz
+ create mode 120000 alternatives/rename
+ create mode 120000 alternatives/rename.1.gz
+ create mode 120000 alternatives/ri
+ create mode 120000 alternatives/ri.1.gz
+ create mode 120000 alternatives/rlogin
+ create mode 120000 alternatives/rlogin.1.gz
+ create mode 120000 alternatives/rmid
+ create mode 120000 alternatives/rmid.1.gz
+ create mode 120000 alternatives/rmiregistry
+ create mode 120000 alternatives/rmiregistry.1.gz
+ create mode 120000 alternatives/rmt
+ create mode 120000 alternatives/rmt.8.gz
+ create mode 120000 alternatives/rsh
+ create mode 120000 alternatives/rsh.1.gz
+ create mode 120000 alternatives/ruby
+ create mode 120000 alternatives/ruby.1.gz
+ create mode 120000 alternatives/rview
+ create mode 120000 alternatives/rvim
+ create mode 120000 alternatives/rzsh
+ create mode 120000 alternatives/rzsh.1.gz
+ create mode 120000 alternatives/servertool
+ create mode 120000 alternatives/servertool.1.gz
+ create mode 120000 alternatives/start-here-16.png
+ create mode 120000 alternatives/start-here-22.png
+ create mode 120000 alternatives/start-here-24.png
+ create mode 120000 alternatives/start-here-256.png
+ create mode 120000 alternatives/start-here-32.png
+ create mode 120000 alternatives/start-here-48.png
+ create mode 120000 alternatives/start-here.svg
+ create mode 120000 alternatives/stream
+ create mode 120000 alternatives/stream.1.gz
+ create mode 120000 alternatives/tcptraceroute
+ create mode 120000 alternatives/tcptraceroute.8.gz
+ create mode 120000 alternatives/telnet
+ create mode 120000 alternatives/telnet.1.gz
+ create mode 120000 alternatives/testparm
+ create mode 120000 alternatives/testparm.1.gz
+ create mode 120000 alternatives/testrb
+ create mode 120000 alternatives/testrb.1.gz
+ create mode 120000 alternatives/tnameserv
+ create mode 120000 alternatives/tnameserv.1.gz
+ create mode 120000 alternatives/traceproto
+ create mode 120000 alternatives/traceproto.1.gz
+ create mode 120000 alternatives/traceroute
+ create mode 120000 alternatives/traceroute.1.gz
+ create mode 120000 alternatives/traceroute.sbin
+ create mode 120000 alternatives/traceroute6
+ create mode 120000 alternatives/traceroute6.1.gz
+ create mode 120000 alternatives/unlzma
+ create mode 120000 alternatives/unlzma.1.gz
+ create mode 120000 alternatives/unpack200
+ create mode 120000 alternatives/unpack200.1.gz
+ create mode 120000 alternatives/updatedb
+ create mode 120000 alternatives/usr.bin.ksh
+ create mode 120000 alternatives/vi
+ create mode 120000 alternatives/vi.1.gz
+ create mode 120000 alternatives/vi.fr.1.gz
+ create mode 120000 alternatives/vi.it.1.gz
+ create mode 120000 alternatives/vi.pl.1.gz
+ create mode 120000 alternatives/vi.ru.1.gz
+ create mode 120000 alternatives/view
+ create mode 120000 alternatives/view.1.gz
+ create mode 120000 alternatives/view.fr.1.gz
+ create mode 120000 alternatives/view.it.1.gz
+ create mode 120000 alternatives/view.pl.1.gz
+ create mode 120000 alternatives/view.ru.1.gz
+ create mode 120000 alternatives/vim
+ create mode 120000 alternatives/vimdiff
+ create mode 120000 alternatives/w
+ create mode 120000 alternatives/w.1.gz
+ create mode 120000 alternatives/write
+ create mode 120000 alternatives/write.1.gz
+ create mode 120000 alternatives/www-browser
+ create mode 120000 alternatives/www-browser.1.gz
+ create mode 120000 alternatives/x-session-manager
+ create mode 120000 alternatives/x-session-manager.1.gz
+ create mode 120000 alternatives/x-terminal-emulator
+ create mode 120000 alternatives/x-terminal-emulator.1.gz
+ create mode 120000 alternatives/x-window-manager
+ create mode 120000 alternatives/x-window-manager.1.gz
+ create mode 120000 alternatives/x-www-browser
+ create mode 120000 alternatives/x-www-browser.1.gz
+ create mode 120000 alternatives/zsh
+ create mode 120000 alternatives/zsh-usrbin
+ create mode 100644 anacrontab
+ create mode 100644 apache2/mods-available/mod-dnssd.conf
+ create mode 100644 apache2/mods-available/mod-dnssd.load
+ create mode 100644 apg.conf
+ create mode 100755 apm/event.d/20hdparm
+ create mode 100755 apm/event.d/anacron
+ create mode 100644 apt/apt.conf.d/00CDMountPoint
+ create mode 100644 apt/apt.conf.d/00trustcdrom
+ create mode 100644 apt/apt.conf.d/01autoremove
+ create mode 100644 apt/apt.conf.d/05etckeeper
+ create mode 100644 apt/apt.conf.d/20dbus
+ create mode 100644 apt/apt.conf.d/20listchanges
+ create mode 100644 apt/apt.conf.d/20packagekit
+ create mode 100644 apt/apt.conf.d/50unattended-upgrades
+ create mode 100644 apt/apt.conf.d/70debconf
+ create mode 100644 apt/listchanges.conf
+ create mode 100644 apt/sources.list
+ create mode 100644 apt/trustdb.gpg
+ create mode 100644 apt/trusted.gpg
+ create mode 100644 apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg
+ create mode 100644 apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg
+ create mode 100644 apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg
+ create mode 100644 apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg
+ create mode 100644 at-spi2/accessibility.conf
+ create mode 100644 at.deny
+ create mode 100644 avahi/avahi-daemon.conf
+ create mode 100644 avahi/hosts
+ create mode 100644 avahi/services/udisks.service
+ create mode 100644 bash.bashrc
+ create mode 100644 bash_completion
+ create mode 100644 bash_completion.d/axi-cache
+ create mode 100644 bash_completion.d/colormgr-completion.bash
+ create mode 100644 bash_completion.d/dconf-bash-completion.sh
+ create mode 100644 bash_completion.d/debconf
+ create mode 100644 bash_completion.d/desktop-file-validate
+ create mode 100644 bash_completion.d/etckeeper
+ create mode 120000 bash_completion.d/gem
+ create mode 100644 bash_completion.d/gem1.9.1
+ create mode 100644 bash_completion.d/git
+ create mode 100644 bash_completion.d/grub
+ create mode 100644 bash_completion.d/gvfs-bash-completion.sh
+ create mode 100644 bash_completion.d/initramfs-tools
+ create mode 100644 bash_completion.d/inkscape
+ create mode 100644 bash_completion.d/insserv
+ create mode 100644 bash_completion.d/libreoffice.sh
+ create mode 100644 bash_completion.d/pon
+ create mode 100644 bash_completion.d/zeitgeist-daemon
+ create mode 100644 bindresvport.blacklist
+ create mode 100644 bluetooth/audio.conf
+ create mode 100644 bluetooth/input.conf
+ create mode 100644 bluetooth/main.conf
+ create mode 100644 bluetooth/network.conf
+ create mode 100644 bluetooth/proximity.conf
+ create mode 100644 bluetooth/rfcomm.conf
+ create mode 100644 bluetooth/serial.conf
+ create mode 100644 bogofilter.cf
+ create mode 100644 bonobo-activation/bonobo-activation-config.xml
+ create mode 100644 ca-certificates.conf
+ create mode 100755 ca-certificates/update.d/jks-keystore
+ create mode 100644 calendar/default
+ create mode 100644 chatscripts/gprs
+ create mode 100644 chatscripts/pap
+ create mode 100644 chatscripts/provider
+ create mode 100644 clutter-imcontext/clutter.immodules
+ create mode 100644 colord.conf
+ create mode 100644 console-setup/Lat15-Fixed16.psf.gz
+ create mode 100644 console-setup/cached_UTF-8_del.kmap.gz
+ create mode 100644 console-setup/compose.ARMSCII-8.inc
+ create mode 100644 console-setup/compose.CP1251.inc
+ create mode 100644 console-setup/compose.CP1255.inc
+ create mode 100644 console-setup/compose.CP1256.inc
+ create mode 100644 console-setup/compose.GEORGIAN-ACADEMY.inc
+ create mode 100644 console-setup/compose.GEORGIAN-PS.inc
+ create mode 100644 console-setup/compose.IBM1133.inc
+ create mode 100644 console-setup/compose.ISIRI-3342.inc
+ create mode 100644 console-setup/compose.ISO-8859-1.inc
+ create mode 100644 console-setup/compose.ISO-8859-10.inc
+ create mode 100644 console-setup/compose.ISO-8859-11.inc
+ create mode 100644 console-setup/compose.ISO-8859-13.inc
+ create mode 100644 console-setup/compose.ISO-8859-14.inc
+ create mode 100644 console-setup/compose.ISO-8859-15.inc
+ create mode 100644 console-setup/compose.ISO-8859-16.inc
+ create mode 100644 console-setup/compose.ISO-8859-2.inc
+ create mode 100644 console-setup/compose.ISO-8859-3.inc
+ create mode 100644 console-setup/compose.ISO-8859-4.inc
+ create mode 100644 console-setup/compose.ISO-8859-5.inc
+ create mode 100644 console-setup/compose.ISO-8859-6.inc
+ create mode 100644 console-setup/compose.ISO-8859-7.inc
+ create mode 100644 console-setup/compose.ISO-8859-8.inc
+ create mode 100644 console-setup/compose.ISO-8859-9.inc
+ create mode 100644 console-setup/compose.KOI8-R.inc
+ create mode 100644 console-setup/compose.KOI8-U.inc
+ create mode 100644 console-setup/compose.TIS-620.inc
+ create mode 100644 console-setup/compose.VISCII.inc
+ create mode 100644 console-setup/remap.inc
+ create mode 100644 cron.d/.placeholder
+ create mode 100644 cron.d/anacron
+ create mode 100644 cron.daily/.placeholder
+ create mode 100755 cron.daily/0anacron
+ create mode 100755 cron.daily/apt
+ create mode 100755 cron.daily/aptitude
+ create mode 100755 cron.daily/bsdmainutils
+ create mode 100755 cron.daily/dpkg
+ create mode 100755 cron.daily/etckeeper
+ create mode 100755 cron.daily/exim4-base
+ create mode 100755 cron.daily/logrotate
+ create mode 100755 cron.daily/man-db
+ create mode 100755 cron.daily/mlocate
+ create mode 100755 cron.daily/passwd
+ create mode 100644 cron.hourly/.placeholder
+ create mode 100644 cron.monthly/.placeholder
+ create mode 100755 cron.monthly/0anacron
+ create mode 100644 cron.weekly/.placeholder
+ create mode 100755 cron.weekly/0anacron
+ create mode 100755 cron.weekly/apt-xapian-index
+ create mode 100755 cron.weekly/man-db
+ create mode 100644 crontab
+ create mode 100644 cruft/filters-unex/etckeeper
+ create mode 100644 cups/cups-files.conf
+ create mode 100644 cups/cupsd.conf
+ create mode 100644 cups/cupsd.conf.default
+ create mode 100644 cups/raw.convs
+ create mode 100644 cups/raw.types
+ create mode 100644 cups/snmp.conf
+ create mode 120000 cups/ssl/server.crt
+ create mode 120000 cups/ssl/server.key
+ create mode 100644 dbus-1/session.conf
+ create mode 100644 dbus-1/system.conf
+ create mode 100644 dbus-1/system.d/ConsoleKit.conf
+ create mode 100644 dbus-1/system.d/avahi-dbus.conf
+ create mode 100644 dbus-1/system.d/bluetooth.conf
+ create mode 100644 dbus-1/system.d/com.hp.hplip.conf
+ create mode 100644 dbus-1/system.d/com.ubuntu.SoftwareProperties.conf
+ create mode 100644 dbus-1/system.d/gdm.conf
+ create mode 100644 dbus-1/system.d/org.debian.AptXapianIndex.conf
+ create mode 100644 dbus-1/system.d/org.debian.apt.conf
+ create mode 100644 dbus-1/system.d/org.freedesktop.Accounts.conf
+ create mode 100644 dbus-1/system.d/org.freedesktop.ColorManager.conf
+ create mode 100644 dbus-1/system.d/org.freedesktop.ModemManager.conf
+ create mode 100644 dbus-1/system.d/org.freedesktop.PackageKit.conf
+ create mode 100644 dbus-1/system.d/org.freedesktop.PolicyKit1.conf
+ create mode 100644 dbus-1/system.d/org.freedesktop.RealtimeKit1.conf
+ create mode 100644 dbus-1/system.d/org.freedesktop.UDisks.conf
+ create mode 100644 dbus-1/system.d/org.freedesktop.UPower.conf
+ create mode 100644 dbus-1/system.d/org.freedesktop.colord-sane.conf
+ create mode 100644 dbus-1/system.d/org.gnome.CPUFreqSelector.conf
+ create mode 100644 dbus-1/system.d/org.gnome.SettingsDaemon.DateTimeMechanism.conf
+ create mode 100644 dbus-1/system.d/org.opensuse.CupsPkHelper.Mechanism.conf
+ create mode 100644 dbus-1/system.d/pulseaudio-system.conf
+ create mode 100644 dbus-1/system.d/wpa_supplicant.conf
+ create mode 100644 debconf.conf
+ create mode 100644 debian_version
+ create mode 100644 default/acpid
+ create mode 100644 default/alsa-base
+ create mode 100644 default/anacron
+ create mode 100644 default/avahi-daemon
+ create mode 100644 default/bluetooth
+ create mode 100644 default/bsdmainutils
+ create mode 100644 default/cacerts
+ create mode 100644 default/console-setup
+ create mode 100644 default/crda
+ create mode 100644 default/cron
+ create mode 100644 default/cups
+ create mode 100644 default/dbus
+ create mode 100644 default/devpts
+ create mode 100644 default/exim4
+ create mode 100644 default/grub
+ create mode 100644 default/halt
+ create mode 100644 default/hdparm
+ create mode 100644 default/hwclock
+ create mode 100644 default/kdm.d/10_desktop-base
+ create mode 100644 default/keyboard
+ create mode 100644 default/locale
+ create mode 100644 default/minissdpd
+ create mode 100644 default/networking
+ create mode 100644 default/nfs-common
+ create mode 100644 default/nss
+ create mode 100644 default/ntfs-3g
+ create mode 100644 default/pulseaudio
+ create mode 100644 default/puppet
+ create mode 100644 default/rcS
+ create mode 100644 default/rsync
+ create mode 100644 default/rsyslog
+ create mode 100644 default/saned
+ create mode 100644 default/speech-dispatcher
+ create mode 100644 default/ssh
+ create mode 100644 default/tmpfs
+ create mode 100644 default/useradd
+ create mode 100644 deluser.conf
+ create mode 100644 dhcp/dhclient-enter-hooks.d/debug
+ create mode 120000 dhcp/dhclient-enter-hooks.d/samba
+ create mode 100644 dhcp/dhclient-exit-hooks.d/debug
+ create mode 100644 dhcp/dhclient-exit-hooks.d/rfc3442-classless-routes
+ create mode 100644 dhcp/dhclient.conf
+ create mode 100755 dhcp3/dhclient-enter-hooks.d/samba
+ create mode 120000 dictionaries-common/default.aff
+ create mode 120000 dictionaries-common/default.hash
+ create mode 100644 dictionaries-common/ispell-default
+ create mode 120000 dictionaries-common/words
+ create mode 100644 discover-modprobe.conf
+ create mode 100644 discover.conf.d/00discover
+ create mode 100644 dpkg/dpkg.cfg
+ create mode 100644 dpkg/origins/debian
+ create mode 120000 dpkg/origins/default
+ create mode 100644 drirc
+ create mode 100644 emacs/site-start.d/00debian-vars.el
+ create mode 100644 emacs/site-start.d/50dictionaries-common.el
+ create mode 100644 emacs/site-start.el
+ create mode 100644 email-addresses
+ create mode 100644 environment
+ create mode 100755 etckeeper/commit.d/10vcs-test
+ create mode 100755 etckeeper/commit.d/30bzr-add
+ create mode 100755 etckeeper/commit.d/30darcs-add
+ create mode 100755 etckeeper/commit.d/30git-add
+ create mode 100755 etckeeper/commit.d/30hg-addremove
+ create mode 100755 etckeeper/commit.d/50vcs-commit
+ create mode 100644 etckeeper/commit.d/README
+ create mode 100644 etckeeper/etckeeper.conf
+ create mode 100755 etckeeper/init.d/10restore-metadata
+ create mode 100755 etckeeper/init.d/20restore-etckeeper
+ create mode 100755 etckeeper/init.d/40vcs-init
+ create mode 100755 etckeeper/init.d/50vcs-ignore
+ create mode 100755 etckeeper/init.d/50vcs-perm
+ create mode 100755 etckeeper/init.d/50vcs-pre-commit-hook
+ create mode 100755 etckeeper/init.d/60darcs-deleted-symlinks
+ create mode 100755 etckeeper/init.d/70vcs-add
+ create mode 100644 etckeeper/init.d/README
+ create mode 100755 etckeeper/list-installed.d/50list-installed
+ create mode 100755 etckeeper/post-install.d/50vcs-commit
+ create mode 100644 etckeeper/post-install.d/README
+ create mode 100755 etckeeper/pre-commit.d/20warn-problem-files
+ create mode 100755 etckeeper/pre-commit.d/30store-metadata
+ create mode 100644 etckeeper/pre-commit.d/README
+ create mode 100755 etckeeper/pre-install.d/10packagelist
+ create mode 100755 etckeeper/pre-install.d/50uncommitted-changes
+ create mode 100644 etckeeper/pre-install.d/README
+ create mode 100755 etckeeper/unclean.d/50test
+ create mode 100644 etckeeper/unclean.d/README
+ create mode 100755 etckeeper/uninit.d/01prompt
+ create mode 100755 etckeeper/uninit.d/50remove-metadata
+ create mode 100755 etckeeper/uninit.d/50vcs-uninit
+ create mode 100644 etckeeper/uninit.d/README
+ create mode 100755 etckeeper/update-ignore.d/01update-ignore
+ create mode 100644 etckeeper/update-ignore.d/README
+ create mode 100755 etckeeper/vcs.d/50vcs-cmd
+ create mode 100644 exim4/conf.d/acl/00_exim4-config_header
+ create mode 100644 exim4/conf.d/acl/20_exim4-config_local_deny_exceptions
+ create mode 100644 exim4/conf.d/acl/30_exim4-config_check_mail
+ create mode 100644 exim4/conf.d/acl/30_exim4-config_check_rcpt
+ create mode 100644 exim4/conf.d/acl/40_exim4-config_check_data
+ create mode 100644 exim4/conf.d/auth/00_exim4-config_header
+ create mode 100644 exim4/conf.d/auth/30_exim4-config_examples
+ create mode 100644 exim4/conf.d/main/01_exim4-config_listmacrosdefs
+ create mode 100644 exim4/conf.d/main/02_exim4-config_options
+ create mode 100644 exim4/conf.d/main/03_exim4-config_tlsoptions
+ create mode 100644 exim4/conf.d/main/90_exim4-config_log_selector
+ create mode 100644 exim4/conf.d/retry/00_exim4-config_header
+ create mode 100644 exim4/conf.d/retry/30_exim4-config
+ create mode 100644 exim4/conf.d/rewrite/00_exim4-config_header
+ create mode 100644 exim4/conf.d/rewrite/31_exim4-config_rewriting
+ create mode 100644 exim4/conf.d/router/00_exim4-config_header
+ create mode 100644 exim4/conf.d/router/100_exim4-config_domain_literal
+ create mode 100644 exim4/conf.d/router/150_exim4-config_hubbed_hosts
+ create mode 100644 exim4/conf.d/router/200_exim4-config_primary
+ create mode 100644 exim4/conf.d/router/300_exim4-config_real_local
+ create mode 100644 exim4/conf.d/router/400_exim4-config_system_aliases
+ create mode 100644 exim4/conf.d/router/500_exim4-config_hubuser
+ create mode 100644 exim4/conf.d/router/600_exim4-config_userforward
+ create mode 100644 exim4/conf.d/router/700_exim4-config_procmail
+ create mode 100644 exim4/conf.d/router/800_exim4-config_maildrop
+ create mode 100644 exim4/conf.d/router/850_exim4-config_lowuid
+ create mode 100644 exim4/conf.d/router/900_exim4-config_local_user
+ create mode 100644 exim4/conf.d/router/mmm_mail4root
+ create mode 100644 exim4/conf.d/transport/00_exim4-config_header
+ create mode 100644 exim4/conf.d/transport/10_exim4-config_transport-macros
+ create mode 100644 exim4/conf.d/transport/30_exim4-config_address_file
+ create mode 100644 exim4/conf.d/transport/30_exim4-config_address_pipe
+ create mode 100644 exim4/conf.d/transport/30_exim4-config_address_reply
+ create mode 100644 exim4/conf.d/transport/30_exim4-config_mail_spool
+ create mode 100644 exim4/conf.d/transport/30_exim4-config_maildir_home
+ create mode 100644 exim4/conf.d/transport/30_exim4-config_maildrop_pipe
+ create mode 100644 exim4/conf.d/transport/30_exim4-config_procmail_pipe
+ create mode 100644 exim4/conf.d/transport/30_exim4-config_remote_smtp
+ create mode 100644 exim4/conf.d/transport/30_exim4-config_remote_smtp_smarthost
+ create mode 100644 exim4/conf.d/transport/35_exim4-config_address_directory
+ create mode 100644 exim4/exim4.conf.template
+ create mode 100644 exim4/passwd.client
+ create mode 100644 exim4/update-exim4.conf.conf
+ create mode 100644 fonts/conf.avail/10-autohint.conf
+ create mode 100644 fonts/conf.avail/10-no-sub-pixel.conf
+ create mode 100644 fonts/conf.avail/10-sub-pixel-bgr.conf
+ create mode 100644 fonts/conf.avail/10-sub-pixel-rgb.conf
+ create mode 100644 fonts/conf.avail/10-sub-pixel-vbgr.conf
+ create mode 100644 fonts/conf.avail/10-sub-pixel-vrgb.conf
+ create mode 100644 fonts/conf.avail/10-unhinted.conf
+ create mode 100644 fonts/conf.avail/11-lcdfilter-default.conf
+ create mode 100644 fonts/conf.avail/11-lcdfilter-legacy.conf
+ create mode 100644 fonts/conf.avail/11-lcdfilter-light.conf
+ create mode 100644 fonts/conf.avail/20-fix-globaladvance.conf
+ create mode 100644 fonts/conf.avail/20-unhint-small-vera.conf
+ create mode 100644 fonts/conf.avail/25-unhint-nonlatin.conf
+ create mode 100644 fonts/conf.avail/30-metric-aliases.conf
+ create mode 100644 fonts/conf.avail/30-urw-aliases.conf
+ create mode 100644 fonts/conf.avail/31-cantarell.conf
+ create mode 100644 fonts/conf.avail/40-nonlatin.conf
+ create mode 100644 fonts/conf.avail/45-latin.conf
+ create mode 100644 fonts/conf.avail/49-sansserif.conf
+ create mode 100644 fonts/conf.avail/50-user.conf
+ create mode 100644 fonts/conf.avail/51-local.conf
+ create mode 100644 fonts/conf.avail/60-latin.conf
+ create mode 100644 fonts/conf.avail/65-droid-sans-fonts.conf
+ create mode 100644 fonts/conf.avail/65-fonts-persian.conf
+ create mode 100644 fonts/conf.avail/65-khmer.conf
+ create mode 100644 fonts/conf.avail/65-nonlatin.conf
+ create mode 100644 fonts/conf.avail/69-unifont.conf
+ create mode 100644 fonts/conf.avail/70-force-bitmaps.conf
+ create mode 100644 fonts/conf.avail/70-no-bitmaps.conf
+ create mode 100644 fonts/conf.avail/70-yes-bitmaps.conf
+ create mode 100644 fonts/conf.avail/80-delicious.conf
+ create mode 100644 fonts/conf.avail/90-synthetic.conf
+ create mode 120000 fonts/conf.d/20-fix-globaladvance.conf
+ create mode 120000 fonts/conf.d/20-unhint-small-vera.conf
+ create mode 120000 fonts/conf.d/30-metric-aliases.conf
+ create mode 120000 fonts/conf.d/30-urw-aliases.conf
+ create mode 120000 fonts/conf.d/40-nonlatin.conf
+ create mode 120000 fonts/conf.d/45-latin.conf
+ create mode 120000 fonts/conf.d/49-sansserif.conf
+ create mode 120000 fonts/conf.d/50-user.conf
+ create mode 120000 fonts/conf.d/51-local.conf
+ create mode 120000 fonts/conf.d/60-latin.conf
+ create mode 120000 fonts/conf.d/65-droid-sans-fonts.conf
+ create mode 120000 fonts/conf.d/65-fonts-persian.conf
+ create mode 120000 fonts/conf.d/65-nonlatin.conf
+ create mode 120000 fonts/conf.d/69-unifont.conf
+ create mode 120000 fonts/conf.d/70-no-bitmaps.conf
+ create mode 120000 fonts/conf.d/80-delicious.conf
+ create mode 120000 fonts/conf.d/90-synthetic.conf
+ create mode 100644 fonts/conf.d/99pdftoopvp.conf
+ create mode 100644 fonts/conf.d/README
+ create mode 100644 fonts/fonts.conf
+ create mode 100644 fonts/fonts.dtd
+ create mode 100644 foomatic/defaultspooler
+ create mode 100644 foomatic/filter.conf
+ create mode 100644 fstab
+ create mode 100644 fuse.conf
+ create mode 100644 gai.conf
+ create mode 100644 gconf/2/evoldap.conf
+ create mode 100644 gconf/2/path
+ create mode 100644 gconf/gconf.xml.defaults/%gconf-tree.xml
+ create mode 100644 gconf/gconf.xml.mandatory/%gconf-tree.xml
+ create mode 100755 gdm3/Init/Default
+ create mode 100755 gdm3/PostLogin/Default.sample
+ create mode 100755 gdm3/PostSession/Default
+ create mode 100755 gdm3/PreSession/Default
+ create mode 100755 gdm3/Xsession
+ create mode 100644 gdm3/daemon.conf
+ create mode 100644 gdm3/greeter.gsettings
+ create mode 100644 ghostscript/cidfmap.d/90gs-cjk-resource-cns1.conf
+ create mode 100644 ghostscript/cidfmap.d/90gs-cjk-resource-gb1.conf
+ create mode 100644 ghostscript/cidfmap.d/90gs-cjk-resource-japan1.conf
+ create mode 100644 ghostscript/cidfmap.d/90gs-cjk-resource-japan2.conf
+ create mode 100644 ghostscript/cidfmap.d/90gs-cjk-resource-korea1.conf
+ create mode 100644 ghostscript/fontmap.d/10gsfonts.conf
+ create mode 100644 gimp/2.0/controllerrc
+ create mode 100644 gimp/2.0/gimprc
+ create mode 100644 gimp/2.0/gtkrc
+ create mode 100644 gimp/2.0/menurc
+ create mode 100644 gimp/2.0/sessionrc
+ create mode 100644 gimp/2.0/templaterc
+ create mode 100644 gimp/2.0/unitrc
+ create mode 100644 gnashpluginrc
+ create mode 100644 gnashrc
+ create mode 100644 gnashthumbnailrc
+ create mode 100644 gnome-vfs-2.0/modules/default-modules.conf
+ create mode 100644 gnome-vfs-2.0/modules/extra-modules.conf
+ create mode 100644 gnome-vfs-mime-magic
+ create mode 100644 gnome/defaults.list
+ create mode 100644 gnome/menus.blacklist
+ create mode 100644 groff/man.local
+ create mode 100644 groff/mdoc.local
+ create mode 100644 group
+ create mode 100644 group-
+ create mode 100755 grub.d/00_header
+ create mode 100755 grub.d/05_debian_theme
+ create mode 100755 grub.d/10_linux
+ create mode 100755 grub.d/20_linux_xen
+ create mode 100755 grub.d/30_os-prober
+ create mode 100755 grub.d/40_custom
+ create mode 100755 grub.d/41_custom
+ create mode 100644 grub.d/README
+ create mode 100644 gshadow
+ create mode 100644 gshadow-
+ create mode 100644 gssapi_mech.conf
+ create mode 100644 gtk-2.0/im-multipress.conf
+ create mode 100644 gtk-3.0/im-multipress.conf
+ create mode 100644 hdparm.conf
+ create mode 100644 host.conf
+ create mode 100644 hostname
+ create mode 100644 hosts
+ create mode 100644 hosts.allow
+ create mode 100644 hosts.deny
+ create mode 100644 hotplug/usb/Argyll.usermap
+ create mode 100644 hp/hplip.conf
+ create mode 100644 icedtea-web/javaws.policy
+ create mode 100644 iceweasel/pref/iceweasel.js
+ create mode 100644 iceweasel/profile/bookmarks.html
+ create mode 100644 iceweasel/profile/chrome/userChrome-example.css
+ create mode 100644 iceweasel/profile/chrome/userContent-example.css
+ create mode 100644 iceweasel/profile/localstore.rdf
+ create mode 100644 iceweasel/profile/mimeTypes.rdf
+ create mode 100644 iceweasel/profile/prefs.js
+ create mode 100644 iceweasel/searchplugins/common/debsearch.xml
+ create mode 100644 iceweasel/searchplugins/common/duckduckgo.xml
+ create mode 100644 iceweasel/searchplugins/locale/en-US/amazondotcom.xml
+ create mode 100644 iceweasel/searchplugins/locale/en-US/bing.xml
+ create mode 100644 iceweasel/searchplugins/locale/en-US/eBay.xml
+ create mode 100644 iceweasel/searchplugins/locale/en-US/google.xml
+ create mode 100644 iceweasel/searchplugins/locale/en-US/twitter.xml
+ create mode 100644 iceweasel/searchplugins/locale/en-US/wikipedia.xml
+ create mode 100644 iceweasel/searchplugins/locale/en-US/yahoo.xml
+ create mode 100644 idmapd.conf
+ create mode 120000 ifplugd/action.d/action_wpa
+ create mode 100644 init.d/README
+ create mode 100755 init.d/acpid
+ create mode 100755 init.d/alsa-utils
+ create mode 100755 init.d/anacron
+ create mode 100755 init.d/atd
+ create mode 100755 init.d/avahi-daemon
+ create mode 100755 init.d/binfmt-support
+ create mode 100755 init.d/bluetooth
+ create mode 100755 init.d/bootlogs
+ create mode 100755 init.d/bootmisc.sh
+ create mode 100755 init.d/checkfs.sh
+ create mode 100755 init.d/checkroot-bootclean.sh
+ create mode 100755 init.d/checkroot.sh
+ create mode 100755 init.d/console-setup
+ create mode 100755 init.d/cron
+ create mode 100755 init.d/cups
+ create mode 100755 init.d/dbus
+ create mode 100755 init.d/exim4
+ create mode 100755 init.d/gdm3
+ create mode 100755 init.d/halt
+ create mode 100755 init.d/hdparm
+ create mode 100755 init.d/hostname.sh
+ create mode 100755 init.d/hwclock.sh
+ create mode 100755 init.d/kbd
+ create mode 100755 init.d/keyboard-setup
+ create mode 100755 init.d/killprocs
+ create mode 100755 init.d/kmod
+ create mode 100755 init.d/minissdpd
+ create mode 100755 init.d/motd
+ create mode 100755 init.d/mountall-bootclean.sh
+ create mode 100755 init.d/mountall.sh
+ create mode 100755 init.d/mountdevsubfs.sh
+ create mode 100755 init.d/mountkernfs.sh
+ create mode 100755 init.d/mountnfs-bootclean.sh
+ create mode 100755 init.d/mountnfs.sh
+ create mode 100755 init.d/mtab.sh
+ create mode 100755 init.d/networking
+ create mode 100755 init.d/nfs-common
+ create mode 100755 init.d/pppd-dns
+ create mode 100755 init.d/procps
+ create mode 100755 init.d/pulseaudio
+ create mode 100755 init.d/puppet
+ create mode 100755 init.d/rc
+ create mode 100755 init.d/rc.local
+ create mode 100755 init.d/rcS
+ create mode 100755 init.d/reboot
+ create mode 100755 init.d/rmnologin
+ create mode 100755 init.d/rpcbind
+ create mode 100755 init.d/rsync
+ create mode 100755 init.d/rsyslog
+ create mode 100755 init.d/saned
+ create mode 100755 init.d/sendsigs
+ create mode 100755 init.d/single
+ create mode 100644 init.d/skeleton
+ create mode 100755 init.d/speech-dispatcher
+ create mode 100755 init.d/ssh
+ create mode 100755 init.d/sudo
+ create mode 100755 init.d/udev
+ create mode 100755 init.d/udev-mtab
+ create mode 100755 init.d/umountfs
+ create mode 100755 init.d/umountnfs.sh
+ create mode 100755 init.d/umountroot
+ create mode 100755 init.d/unattended-upgrades
+ create mode 100755 init.d/urandom
+ create mode 100755 init.d/x11-common
+ create mode 100644 init/anacron.conf
+ create mode 100644 init/network-interface-container.conf
+ create mode 100644 init/network-interface-security.conf
+ create mode 100644 init/network-interface.conf
+ create mode 100644 init/networking.conf
+ create mode 100644 init/startpar-bridge.conf
+ create mode 100644 init/udev-fallback-graphics.conf
+ create mode 100644 init/udev-finish.conf
+ create mode 100644 init/udev.conf
+ create mode 100644 init/udevmonitor.conf
+ create mode 100644 init/udevtrigger.conf
+ create mode 100644 initramfs-tools/conf.d/resume
+ create mode 100644 initramfs-tools/initramfs.conf
+ create mode 100644 initramfs-tools/modules
+ create mode 100644 initramfs-tools/update-initramfs.conf
+ create mode 100644 inittab
+ create mode 100644 inputrc
+ create mode 100644 insserv.conf
+ create mode 100644 insserv.conf.d/gdm3
+ create mode 100644 insserv.conf.d/rpcbind
+ create mode 100644 iproute2/ematch_map
+ create mode 100644 iproute2/group
+ create mode 100644 iproute2/rt_dsfield
+ create mode 100644 iproute2/rt_protos
+ create mode 100644 iproute2/rt_realms
+ create mode 100644 iproute2/rt_scopes
+ create mode 100644 iproute2/rt_tables
+ create mode 100644 issue
+ create mode 100644 issue.net
+ create mode 100644 java-6-openjdk/accessibility.properties
+ create mode 100644 java-6-openjdk/calendars.properties
+ create mode 100644 java-6-openjdk/content-types.properties
+ create mode 100644 java-6-openjdk/flavormap.properties
+ create mode 100644 java-6-openjdk/fontconfig.properties
+ create mode 100644 java-6-openjdk/images/cursors/cursors.properties
+ create mode 100644 java-6-openjdk/jvm-amd64.cfg
+ create mode 100644 java-6-openjdk/logging.properties
+ create mode 100644 java-6-openjdk/management/jmxremote.access
+ create mode 100644 java-6-openjdk/management/jmxremote.password
+ create mode 100644 java-6-openjdk/management/management.properties
+ create mode 100644 java-6-openjdk/management/snmp.acl
+ create mode 100644 java-6-openjdk/net.properties
+ create mode 100644 java-6-openjdk/psfont.properties.ja
+ create mode 100644 java-6-openjdk/psfontj2d.properties
+ create mode 100644 java-6-openjdk/security/java.policy
+ create mode 100644 java-6-openjdk/security/java.security
+ create mode 100644 java-6-openjdk/security/nss.cfg
+ create mode 100644 java-6-openjdk/sound.properties
+ create mode 100644 java-6-openjdk/swing.properties
+ create mode 100644 java-6-openjdk/tz.properties
+ create mode 100644 kbd/config
+ create mode 100644 kbd/remap
+ create mode 100644 kernel-img.conf
+ create mode 100755 kernel/postinst.d/initramfs-tools
+ create mode 100755 kernel/postinst.d/pm-utils
+ create mode 100755 kernel/postinst.d/zz-update-grub
+ create mode 100755 kernel/postrm.d/initramfs-tools
+ create mode 100755 kernel/postrm.d/zz-update-grub
+ create mode 100644 ld.so.conf
+ create mode 100644 ld.so.conf.d/libc.conf
+ create mode 100644 ld.so.conf.d/x86_64-linux-gnu.conf
+ create mode 100644 ldap/ldap.conf
+ create mode 100644 libao.conf
+ create mode 100644 libaudit.conf
+ create mode 100644 libnl-3/classid
+ create mode 100644 libnl-3/pktloc
+ create mode 100644 libreoffice/psprint.conf
+ create mode 100644 libreoffice/soffice.sh
+ create mode 100644 libreoffice/sofficerc
+ create mode 100644 locale.alias
+ create mode 100644 locale.gen
+ create mode 100644 localtime
+ create mode 100644 logcheck/ignore.d.server/puppet-common
+ create mode 100644 logcheck/ignore.d.server/rsyslog
+ create mode 100644 login.defs
+ create mode 100644 logrotate.conf
+ create mode 100644 logrotate.d/apt
+ create mode 100644 logrotate.d/aptitude
+ create mode 100644 logrotate.d/consolekit
+ create mode 100644 logrotate.d/cups
+ create mode 100644 logrotate.d/dpkg
+ create mode 100644 logrotate.d/exim4-base
+ create mode 100644 logrotate.d/exim4-paniclog
+ create mode 100644 logrotate.d/pm-utils
+ create mode 100644 logrotate.d/ppp
+ create mode 100644 logrotate.d/rsyslog
+ create mode 100644 logrotate.d/speech-dispatcher
+ create mode 100644 logrotate.d/unattended-upgrades
+ create mode 100644 magic
+ create mode 100644 magic.mime
+ create mode 100644 mail.rc
+ create mode 100644 mailcap
+ create mode 100644 mailcap.order
+ create mode 100644 mailname
+ create mode 100644 manpath.config
+ create mode 100644 menu-methods/README
+ create mode 100644 menu-methods/lang.h
+ create mode 100644 menu-methods/menu.config
+ create mode 100644 menu-methods/menu.h
+ create mode 100644 menu-methods/translate_menus
+ create mode 100644 menu/README
+ create mode 100644 mime.types
+ create mode 100644 mke2fs.conf
+ create mode 100644 modprobe.d/alsa-base-blacklist.conf
+ create mode 100644 modprobe.d/alsa-base.conf
+ create mode 100644 modprobe.d/fbdev-blacklist.conf
+ create mode 100644 modprobe.d/radeon-kms.conf
+ create mode 100644 modules
+ create mode 100644 mono/2.0/Browsers/Compat.browser
+ create mode 100644 mono/2.0/DefaultWsdlHelpGenerator.aspx
+ create mode 100644 mono/2.0/machine.config
+ create mode 100644 mono/2.0/settings.map
+ create mode 100644 mono/2.0/web.config
+ create mode 100644 mono/4.0/DefaultWsdlHelpGenerator.aspx
+ create mode 100644 mono/4.0/machine.config
+ create mode 100644 mono/4.0/settings.map
+ create mode 100644 mono/4.0/web.config
+ create mode 100644 mono/browscap.ini
+ create mode 100644 mono/config
+ create mode 100644 motd
+ create mode 100644 nanorc
+ create mode 100644 netconfig
+ create mode 100755 network/if-down.d/upstart
+ create mode 120000 network/if-down.d/wpasupplicant
+ create mode 120000 network/if-post-down.d/avahi-daemon
+ create mode 120000 network/if-post-down.d/wpasupplicant
+ create mode 120000 network/if-pre-up.d/wpasupplicant
+ create mode 100755 network/if-up.d/avahi-daemon
+ create mode 100755 network/if-up.d/mountnfs
+ create mode 100755 network/if-up.d/openssh-server
+ create mode 100755 network/if-up.d/upstart
+ create mode 120000 network/if-up.d/wpasupplicant
+ create mode 100644 network/interfaces
+ create mode 100644 networks
+ create mode 100644 nsswitch.conf
+ create mode 100644 obex-data-server/capability.xml
+ create mode 100644 obex-data-server/imaging_capabilities.xml
+ create mode 100644 openal/alsoft.conf
+ create mode 100644 os-release
+ create mode 100644 pam.conf
+ create mode 100644 pam.d/atd
+ create mode 100644 pam.d/chfn
+ create mode 100644 pam.d/chpasswd
+ create mode 100644 pam.d/chsh
+ create mode 100644 pam.d/common-account
+ create mode 100644 pam.d/common-auth
+ create mode 100644 pam.d/common-password
+ create mode 100644 pam.d/common-session
+ create mode 100644 pam.d/common-session-noninteractive
+ create mode 100644 pam.d/cron
+ create mode 100644 pam.d/cups
+ create mode 120000 pam.d/gdm-welcome
+ create mode 100644 pam.d/gdm3
+ create mode 100644 pam.d/gdm3-autologin
+ create mode 100644 pam.d/gnome-screensaver
+ create mode 100644 pam.d/login
+ create mode 100644 pam.d/newusers
+ create mode 100644 pam.d/other
+ create mode 100644 pam.d/passwd
+ create mode 100644 pam.d/polkit-1
+ create mode 100644 pam.d/ppp
+ create mode 100644 pam.d/samba
+ create mode 100644 pam.d/sshd
+ create mode 100644 pam.d/su
+ create mode 100644 pam.d/sudo
+ create mode 100644 papersize
+ create mode 100644 passwd
+ create mode 100644 passwd-
+ create mode 100644 perl/Net/libnet.cfg
+ create mode 100644 pkcs11/modules/gnome-keyring-module
+ create mode 100755 pm/sleep.d/10_unattended-upgrades-hibernate
+ create mode 100644 pnm2ppa.conf
+ create mode 100644 polkit-1/localauthority.conf.d/50-localauthority.conf
+ create mode 100644 polkit-1/localauthority.conf.d/51-debian-sudo.conf
+ create mode 100644 polkit-1/nullbackend.conf.d/50-nullbackend.conf
+ create mode 100644 ppp/chap-secrets
+ create mode 100755 ppp/ip-down
+ create mode 100755 ppp/ip-down.d/0000usepeerdns
+ create mode 100755 ppp/ip-up
+ create mode 100755 ppp/ip-up.d/0000usepeerdns
+ create mode 100755 ppp/ip-up.d/exim4
+ create mode 100755 ppp/ipv6-down
+ create mode 100755 ppp/ipv6-up
+ create mode 100644 ppp/options
+ create mode 100644 ppp/pap-secrets
+ create mode 100644 ppp/peers/provider
+ create mode 100644 profile
+ create mode 100644 profile.d/bash_completion.sh
+ create mode 100644 protocols
+ create mode 100644 pulse/client.conf
+ create mode 100644 pulse/daemon.conf
+ create mode 100644 pulse/default.pa
+ create mode 100644 pulse/system.pa
+ create mode 100755 puppet/etckeeper-commit-post
+ create mode 100755 puppet/etckeeper-commit-pre
+ create mode 100644 puppet/puppet.conf
+ create mode 100644 purple/prefs.xml
+ create mode 100644 python/debian_config
+ create mode 100644 python2.6/sitecustomize.py
+ create mode 100644 python2.7/sitecustomize.py
+ create mode 100755 rc.local
+ create mode 120000 rc0.d/K01alsa-utils
+ create mode 120000 rc0.d/K01atd
+ create mode 120000 rc0.d/K01bluetooth
+ create mode 120000 rc0.d/K01gdm3
+ create mode 120000 rc0.d/K01pulseaudio
+ create mode 120000 rc0.d/K01puppet
+ create mode 120000 rc0.d/K01saned
+ create mode 120000 rc0.d/K01speech-dispatcher
+ create mode 120000 rc0.d/K01unattended-upgrades
+ create mode 120000 rc0.d/K01urandom
+ create mode 120000 rc0.d/K03sendsigs
+ create mode 120000 rc0.d/K04rsyslog
+ create mode 120000 rc0.d/K05umountnfs.sh
+ create mode 120000 rc0.d/K06nfs-common
+ create mode 120000 rc0.d/K06rpcbind
+ create mode 120000 rc0.d/K07hwclock.sh
+ create mode 120000 rc0.d/K07networking
+ create mode 120000 rc0.d/K08umountfs
+ create mode 120000 rc0.d/K09umountroot
+ create mode 120000 rc0.d/K10halt
+ create mode 100644 rc0.d/README
+ create mode 120000 rc1.d/K01alsa-utils
+ create mode 120000 rc1.d/K01atd
+ create mode 120000 rc1.d/K01bluetooth
+ create mode 120000 rc1.d/K01gdm3
+ create mode 120000 rc1.d/K01pulseaudio
+ create mode 120000 rc1.d/K01puppet
+ create mode 120000 rc1.d/K01saned
+ create mode 120000 rc1.d/K01speech-dispatcher
+ create mode 120000 rc1.d/K04rsyslog
+ create mode 120000 rc1.d/K06nfs-common
+ create mode 120000 rc1.d/K06rpcbind
+ create mode 100644 rc1.d/README
+ create mode 120000 rc1.d/S01killprocs
+ create mode 120000 rc1.d/S01motd
+ create mode 120000 rc1.d/S19bootlogs
+ create mode 120000 rc1.d/S20single
+ create mode 100644 rc2.d/README
+ create mode 120000 rc2.d/S01motd
+ create mode 120000 rc2.d/S13rpcbind
+ create mode 120000 rc2.d/S14nfs-common
+ create mode 120000 rc2.d/S16binfmt-support
+ create mode 120000 rc2.d/S16rsyslog
+ create mode 120000 rc2.d/S16sudo
+ create mode 120000 rc2.d/S17acpid
+ create mode 120000 rc2.d/S17anacron
+ create mode 120000 rc2.d/S17atd
+ create mode 120000 rc2.d/S17cron
+ create mode 120000 rc2.d/S17dbus
+ create mode 120000 rc2.d/S17pulseaudio
+ create mode 120000 rc2.d/S17puppet
+ create mode 120000 rc2.d/S17rsync
+ create mode 120000 rc2.d/S17speech-dispatcher
+ create mode 120000 rc2.d/S17ssh
+ create mode 120000 rc2.d/S18bluetooth
+ create mode 120000 rc2.d/S18gdm3
+ create mode 120000 rc2.d/S19bootlogs
+ create mode 120000 rc2.d/S19saned
+ create mode 120000 rc2.d/S20rc.local
+ create mode 120000 rc2.d/S20rmnologin
+ create mode 100644 rc3.d/README
+ create mode 120000 rc3.d/S01motd
+ create mode 120000 rc3.d/S13rpcbind
+ create mode 120000 rc3.d/S14nfs-common
+ create mode 120000 rc3.d/S16binfmt-support
+ create mode 120000 rc3.d/S16rsyslog
+ create mode 120000 rc3.d/S16sudo
+ create mode 120000 rc3.d/S17acpid
+ create mode 120000 rc3.d/S17anacron
+ create mode 120000 rc3.d/S17atd
+ create mode 120000 rc3.d/S17cron
+ create mode 120000 rc3.d/S17dbus
+ create mode 120000 rc3.d/S17pulseaudio
+ create mode 120000 rc3.d/S17puppet
+ create mode 120000 rc3.d/S17rsync
+ create mode 120000 rc3.d/S17speech-dispatcher
+ create mode 120000 rc3.d/S17ssh
+ create mode 120000 rc3.d/S18bluetooth
+ create mode 120000 rc3.d/S18gdm3
+ create mode 120000 rc3.d/S19bootlogs
+ create mode 120000 rc3.d/S19saned
+ create mode 120000 rc3.d/S20rc.local
+ create mode 120000 rc3.d/S20rmnologin
+ create mode 100644 rc4.d/README
+ create mode 120000 rc4.d/S01motd
+ create mode 120000 rc4.d/S13rpcbind
+ create mode 120000 rc4.d/S14nfs-common
+ create mode 120000 rc4.d/S16binfmt-support
+ create mode 120000 rc4.d/S16rsyslog
+ create mode 120000 rc4.d/S16sudo
+ create mode 120000 rc4.d/S17acpid
+ create mode 120000 rc4.d/S17anacron
+ create mode 120000 rc4.d/S17atd
+ create mode 120000 rc4.d/S17cron
+ create mode 120000 rc4.d/S17dbus
+ create mode 120000 rc4.d/S17pulseaudio
+ create mode 120000 rc4.d/S17puppet
+ create mode 120000 rc4.d/S17rsync
+ create mode 120000 rc4.d/S17speech-dispatcher
+ create mode 120000 rc4.d/S17ssh
+ create mode 120000 rc4.d/S18bluetooth
+ create mode 120000 rc4.d/S18gdm3
+ create mode 120000 rc4.d/S19bootlogs
+ create mode 120000 rc4.d/S19saned
+ create mode 120000 rc4.d/S20rc.local
+ create mode 120000 rc4.d/S20rmnologin
+ create mode 100644 rc5.d/README
+ create mode 120000 rc5.d/S01motd
+ create mode 120000 rc5.d/S13rpcbind
+ create mode 120000 rc5.d/S14nfs-common
+ create mode 120000 rc5.d/S16binfmt-support
+ create mode 120000 rc5.d/S16rsyslog
+ create mode 120000 rc5.d/S16sudo
+ create mode 120000 rc5.d/S17acpid
+ create mode 120000 rc5.d/S17anacron
+ create mode 120000 rc5.d/S17atd
+ create mode 120000 rc5.d/S17cron
+ create mode 120000 rc5.d/S17dbus
+ create mode 120000 rc5.d/S17pulseaudio
+ create mode 120000 rc5.d/S17puppet
+ create mode 120000 rc5.d/S17rsync
+ create mode 120000 rc5.d/S17speech-dispatcher
+ create mode 120000 rc5.d/S17ssh
+ create mode 120000 rc5.d/S18bluetooth
+ create mode 120000 rc5.d/S18gdm3
+ create mode 120000 rc5.d/S19bootlogs
+ create mode 120000 rc5.d/S19saned
+ create mode 120000 rc5.d/S20rc.local
+ create mode 120000 rc5.d/S20rmnologin
+ create mode 120000 rc6.d/K01alsa-utils
+ create mode 120000 rc6.d/K01atd
+ create mode 120000 rc6.d/K01bluetooth
+ create mode 120000 rc6.d/K01gdm3
+ create mode 120000 rc6.d/K01pulseaudio
+ create mode 120000 rc6.d/K01puppet
+ create mode 120000 rc6.d/K01saned
+ create mode 120000 rc6.d/K01speech-dispatcher
+ create mode 120000 rc6.d/K01unattended-upgrades
+ create mode 120000 rc6.d/K01urandom
+ create mode 120000 rc6.d/K03sendsigs
+ create mode 120000 rc6.d/K04rsyslog
+ create mode 120000 rc6.d/K05umountnfs.sh
+ create mode 120000 rc6.d/K06nfs-common
+ create mode 120000 rc6.d/K06rpcbind
+ create mode 120000 rc6.d/K07hwclock.sh
+ create mode 120000 rc6.d/K07networking
+ create mode 120000 rc6.d/K08umountfs
+ create mode 120000 rc6.d/K09umountroot
+ create mode 120000 rc6.d/K10reboot
+ create mode 100644 rc6.d/README
+ create mode 100644 rcS.d/README
+ create mode 120000 rcS.d/S01hostname.sh
+ create mode 120000 rcS.d/S01mountkernfs.sh
+ create mode 120000 rcS.d/S02udev
+ create mode 120000 rcS.d/S03keyboard-setup
+ create mode 120000 rcS.d/S04mountdevsubfs.sh
+ create mode 120000 rcS.d/S05hdparm
+ create mode 120000 rcS.d/S05hwclock.sh
+ create mode 120000 rcS.d/S06checkroot.sh
+ create mode 120000 rcS.d/S07checkroot-bootclean.sh
+ create mode 120000 rcS.d/S07kmod
+ create mode 120000 rcS.d/S07mtab.sh
+ create mode 120000 rcS.d/S08checkfs.sh
+ create mode 120000 rcS.d/S09mountall.sh
+ create mode 120000 rcS.d/S10mountall-bootclean.sh
+ create mode 120000 rcS.d/S11pppd-dns
+ create mode 120000 rcS.d/S11procps
+ create mode 120000 rcS.d/S11udev-mtab
+ create mode 120000 rcS.d/S11urandom
+ create mode 120000 rcS.d/S12networking
+ create mode 120000 rcS.d/S13rpcbind
+ create mode 120000 rcS.d/S14nfs-common
+ create mode 120000 rcS.d/S15mountnfs.sh
+ create mode 120000 rcS.d/S16mountnfs-bootclean.sh
+ create mode 120000 rcS.d/S17kbd
+ create mode 120000 rcS.d/S18console-setup
+ create mode 120000 rcS.d/S19alsa-utils
+ create mode 120000 rcS.d/S19bootmisc.sh
+ create mode 120000 rcS.d/S19x11-common
+ create mode 100644 reportbug.conf
+ create mode 100644 resolv.conf
+ create mode 100755 resolvconf/update-libc.d/avahi-daemon
+ create mode 100755 rmt
+ create mode 100644 rpc
+ create mode 100644 rsyslog.conf
+ create mode 100644 rygel.conf
+ create mode 100644 samba/gdbcommands
+ create mode 100644 samba/smb.conf
+ create mode 100644 sane.d/abaton.conf
+ create mode 100644 sane.d/agfafocus.conf
+ create mode 100644 sane.d/apple.conf
+ create mode 100644 sane.d/artec.conf
+ create mode 100644 sane.d/artec_eplus48u.conf
+ create mode 100644 sane.d/avision.conf
+ create mode 100644 sane.d/bh.conf
+ create mode 100644 sane.d/canon.conf
+ create mode 100644 sane.d/canon630u.conf
+ create mode 100644 sane.d/canon_dr.conf
+ create mode 100644 sane.d/canon_pp.conf
+ create mode 100644 sane.d/cardscan.conf
+ create mode 100644 sane.d/coolscan.conf
+ create mode 100644 sane.d/coolscan2.conf
+ create mode 100644 sane.d/coolscan3.conf
+ create mode 100644 sane.d/dc210.conf
+ create mode 100644 sane.d/dc240.conf
+ create mode 100644 sane.d/dc25.conf
+ create mode 100644 sane.d/dell1600n_net.conf
+ create mode 100644 sane.d/dll.conf
+ create mode 100644 sane.d/dll.d/hplip
+ create mode 100644 sane.d/dll.d/libsane-extras
+ create mode 100644 sane.d/dmc.conf
+ create mode 100644 sane.d/epjitsu.conf
+ create mode 100644 sane.d/epson.conf
+ create mode 100644 sane.d/epson2.conf
+ create mode 100644 sane.d/fujitsu.conf
+ create mode 100644 sane.d/genesys.conf
+ create mode 100644 sane.d/geniusvp2.conf
+ create mode 100644 sane.d/gphoto2.conf
+ create mode 100644 sane.d/gt68xx.conf
+ create mode 100644 sane.d/hp.conf
+ create mode 100644 sane.d/hp3900.conf
+ create mode 100644 sane.d/hp4200.conf
+ create mode 100644 sane.d/hp5400.conf
+ create mode 100644 sane.d/hpsj5s.conf
+ create mode 100644 sane.d/hs2p.conf
+ create mode 100644 sane.d/ibm.conf
+ create mode 100644 sane.d/kodak.conf
+ create mode 100644 sane.d/leo.conf
+ create mode 100644 sane.d/lexmark.conf
+ create mode 100644 sane.d/ma1509.conf
+ create mode 100644 sane.d/magicolor.conf
+ create mode 100644 sane.d/matsushita.conf
+ create mode 100644 sane.d/microtek.conf
+ create mode 100644 sane.d/microtek2.conf
+ create mode 100644 sane.d/mustek.conf
+ create mode 100644 sane.d/mustek_pp.conf
+ create mode 100644 sane.d/mustek_usb.conf
+ create mode 100644 sane.d/nec.conf
+ create mode 100644 sane.d/net.conf
+ create mode 100644 sane.d/p5.conf
+ create mode 100644 sane.d/pie.conf
+ create mode 100644 sane.d/pixma.conf
+ create mode 100644 sane.d/plustek.conf
+ create mode 100644 sane.d/plustek_pp.conf
+ create mode 100644 sane.d/qcam.conf
+ create mode 100644 sane.d/ricoh.conf
+ create mode 100644 sane.d/rts8891.conf
+ create mode 100644 sane.d/s9036.conf
+ create mode 100644 sane.d/saned.conf
+ create mode 100644 sane.d/sceptre.conf
+ create mode 100644 sane.d/sharp.conf
+ create mode 100644 sane.d/sm3840.conf
+ create mode 100644 sane.d/snapscan.conf
+ create mode 100644 sane.d/sp15c.conf
+ create mode 100644 sane.d/st400.conf
+ create mode 100644 sane.d/stv680.conf
+ create mode 100644 sane.d/tamarack.conf
+ create mode 100644 sane.d/teco1.conf
+ create mode 100644 sane.d/teco2.conf
+ create mode 100644 sane.d/teco3.conf
+ create mode 100644 sane.d/test.conf
+ create mode 100644 sane.d/u12.conf
+ create mode 100644 sane.d/umax.conf
+ create mode 100644 sane.d/umax1220u.conf
+ create mode 100644 sane.d/umax_pp.conf
+ create mode 100644 sane.d/v4l.conf
+ create mode 100644 sane.d/xerox_mfp.conf
+ create mode 100644 securetty
+ create mode 100644 security/access.conf
+ create mode 100644 security/capability.conf
+ create mode 100644 security/group.conf
+ create mode 100644 security/limits.conf
+ create mode 100644 security/namespace.conf
+ create mode 100755 security/namespace.init
+ create mode 100644 security/opasswd
+ create mode 100644 security/pam_env.conf
+ create mode 100644 security/sepermit.conf
+ create mode 100644 security/time.conf
+ create mode 100644 selinux/semanage.conf
+ create mode 100644 sensors.d/.placeholder
+ create mode 100644 sensors3.conf
+ create mode 100644 services
+ create mode 120000 sgml/catalog
+ create mode 100644 sgml/docbook-xml.cat
+ create mode 100644 sgml/docbook-xml/4.0/dbgenent.ent
+ create mode 100644 sgml/docbook-xml/4.1.2/dbgenent.mod
+ create mode 100644 sgml/docbook-xml/4.2/dbgenent.mod
+ create mode 100644 sgml/docbook-xml/4.3/dbgenent.mod
+ create mode 100644 sgml/docbook-xml/4.4/dbgenent.mod
+ create mode 100644 sgml/docbook-xml/4.5/dbgenent.mod
+ create mode 100644 sgml/metacity-common.cat
+ create mode 100644 sgml/sgml-data.cat
+ create mode 100644 sgml/xml-core.cat
+ create mode 100644 shadow
+ create mode 100644 shadow-
+ create mode 100644 shells
+ create mode 100644 skel/.bash_logout
+ create mode 100644 skel/.bashrc
+ create mode 100644 skel/.profile
+ create mode 100644 snmp/snmp.conf
+ create mode 100644 sound/events/battstat_applet.soundlist
+ create mode 100644 sound/events/gnome-2.soundlist
+ create mode 100644 sound/events/gtk-events-2.soundlist
+ create mode 100644 speech-dispatcher/clients/emacs.conf
+ create mode 100644 speech-dispatcher/clients/gnome-speech.conf
+ create mode 100644 speech-dispatcher/modules/cicero.conf
+ create mode 100644 speech-dispatcher/modules/dtk-generic.conf
+ create mode 100644 speech-dispatcher/modules/epos-generic.conf
+ create mode 100644 speech-dispatcher/modules/espeak-generic.conf
+ create mode 100644 speech-dispatcher/modules/espeak-mbrola-generic.conf
+ create mode 100644 speech-dispatcher/modules/espeak.conf
+ create mode 100644 speech-dispatcher/modules/festival.conf
+ create mode 100644 speech-dispatcher/modules/flite.conf
+ create mode 100644 speech-dispatcher/modules/ibmtts.conf
+ create mode 100644 speech-dispatcher/modules/ivona.conf
+ create mode 100644 speech-dispatcher/modules/llia_phon-generic.conf
+ create mode 100644 speech-dispatcher/modules/pico-generic.conf
+ create mode 100644 speech-dispatcher/modules/swift-generic.conf
+ create mode 100644 speech-dispatcher/speechd.conf
+ create mode 100644 ssh/moduli
+ create mode 100644 ssh/ssh_config
+ create mode 100644 ssh/ssh_host_dsa_key
+ create mode 100644 ssh/ssh_host_dsa_key.pub
+ create mode 100644 ssh/ssh_host_ecdsa_key
+ create mode 100644 ssh/ssh_host_ecdsa_key.pub
+ create mode 100644 ssh/ssh_host_rsa_key
+ create mode 100644 ssh/ssh_host_rsa_key.pub
+ create mode 100644 ssh/sshd_config
+ create mode 120000 ssl/certs/00673b5b.0
+ create mode 120000 ssl/certs/024dc131.0
+ create mode 120000 ssl/certs/02b73561.0
+ create mode 120000 ssl/certs/039c618a.0
+ create mode 120000 ssl/certs/03f0efa4.0
+ create mode 120000 ssl/certs/052e396b.0
+ create mode 120000 ssl/certs/062cdee6.0
+ create mode 120000 ssl/certs/080911ac.0
+ create mode 120000 ssl/certs/0810ba98.0
+ create mode 120000 ssl/certs/08aef7bb.0
+ create mode 120000 ssl/certs/09789157.0
+ create mode 120000 ssl/certs/0b759015.0
+ create mode 120000 ssl/certs/0c4c9b6c.0
+ create mode 120000 ssl/certs/0d188d89.0
+ create mode 120000 ssl/certs/0d1b923b.0
+ create mode 120000 ssl/certs/10531352.0
+ create mode 120000 ssl/certs/111e6273.0
+ create mode 120000 ssl/certs/1155c94b.0
+ create mode 120000 ssl/certs/116bf586.0
+ create mode 120000 ssl/certs/119afc2e.0
+ create mode 120000 ssl/certs/11a09b38.0
+ create mode 120000 ssl/certs/11f154d6.0
+ create mode 120000 ssl/certs/124bbd54.0
+ create mode 120000 ssl/certs/128805a3.0
+ create mode 120000 ssl/certs/12d55845.0
+ create mode 120000 ssl/certs/157753a5.0
+ create mode 120000 ssl/certs/1636090b.0
+ create mode 120000 ssl/certs/17b51fe6.0
+ create mode 120000 ssl/certs/18856ac4.0
+ create mode 120000 ssl/certs/1dac3003.0
+ create mode 120000 ssl/certs/1dcd6f4c.0
+ create mode 120000 ssl/certs/1df5ec47.0
+ create mode 120000 ssl/certs/1e1eab7c.0
+ create mode 120000 ssl/certs/1e8e7201.0
+ create mode 120000 ssl/certs/1eb37bdf.0
+ create mode 120000 ssl/certs/1ec4d31a.0
+ create mode 120000 ssl/certs/201cada0.0
+ create mode 120000 ssl/certs/20d096ba.0
+ create mode 120000 ssl/certs/219d9499.0
+ create mode 120000 ssl/certs/2251b13a.0
+ create mode 120000 ssl/certs/23f4c490.0
+ create mode 120000 ssl/certs/244b5494.0
+ create mode 120000 ssl/certs/24ad0b63.0
+ create mode 120000 ssl/certs/27af790d.0
+ create mode 120000 ssl/certs/2ab3b959.0
+ create mode 120000 ssl/certs/2afc57aa.0
+ create mode 120000 ssl/certs/2b349938.0
+ create mode 120000 ssl/certs/2c543cd1.0
+ create mode 120000 ssl/certs/2cfc4974.0
+ create mode 120000 ssl/certs/2d9dafe4.0
+ create mode 120000 ssl/certs/2e4eed3c.0
+ create mode 120000 ssl/certs/2e5ac55d.0
+ create mode 120000 ssl/certs/2edf7016.0
+ create mode 120000 ssl/certs/2fa87019.0
+ create mode 120000 ssl/certs/2fb1850a.0
+ create mode 120000 ssl/certs/33815e15.0
+ create mode 120000 ssl/certs/343eb6cb.0
+ create mode 120000 ssl/certs/349f2832.0
+ create mode 120000 ssl/certs/3513523f.0
+ create mode 120000 ssl/certs/381ce4dd.0
+ create mode 120000 ssl/certs/399e7759.0
+ create mode 120000 ssl/certs/3a3b02ce.0
+ create mode 120000 ssl/certs/3ad48a91.0
+ create mode 120000 ssl/certs/3b2716e5.0
+ create mode 120000 ssl/certs/3bde41ac.0
+ create mode 120000 ssl/certs/3c58f906.0
+ create mode 120000 ssl/certs/3c860d51.0
+ create mode 120000 ssl/certs/3d441de8.0
+ create mode 120000 ssl/certs/3e45d192.0
+ create mode 120000 ssl/certs/3e7271e8.0
+ create mode 120000 ssl/certs/3ee7e181.0
+ create mode 120000 ssl/certs/40547a79.0
+ create mode 120000 ssl/certs/408e388a.0
+ create mode 120000 ssl/certs/40dc992e.0
+ create mode 120000 ssl/certs/415660c1.0
+ create mode 120000 ssl/certs/418595b9.0
+ create mode 120000 ssl/certs/4304c5e5.0
+ create mode 120000 ssl/certs/442adcac.0
+ create mode 120000 ssl/certs/4597689c.0
+ create mode 120000 ssl/certs/46b2fd3b.0
+ create mode 120000 ssl/certs/480720ec.0
+ create mode 120000 ssl/certs/48a195d8.0
+ create mode 120000 ssl/certs/48bec511.0
+ create mode 120000 ssl/certs/4a6481c9.0
+ create mode 120000 ssl/certs/4bfab552.0
+ create mode 120000 ssl/certs/4d654d1d.0
+ create mode 120000 ssl/certs/4e18c148.0
+ create mode 120000 ssl/certs/4f316efb.0
+ create mode 120000 ssl/certs/4fbd6bfa.0
+ create mode 120000 ssl/certs/5021a0a2.0
+ create mode 120000 ssl/certs/5046c355.0
+ create mode 120000 ssl/certs/524d9b43.0
+ create mode 120000 ssl/certs/5443e9e3.0
+ create mode 120000 ssl/certs/54657681.0
+ create mode 120000 ssl/certs/55a10908.0
+ create mode 120000 ssl/certs/5620c4aa.0
+ create mode 120000 ssl/certs/56657bde.0
+ create mode 120000 ssl/certs/56b8a0b6.0
+ create mode 120000 ssl/certs/56e29e75.0
+ create mode 120000 ssl/certs/57692373.0
+ create mode 120000 ssl/certs/578d5c04.0
+ create mode 120000 ssl/certs/57bbd831.0
+ create mode 120000 ssl/certs/57bcb2da.0
+ create mode 120000 ssl/certs/58a44af1.0
+ create mode 120000 ssl/certs/590d426f.0
+ create mode 120000 ssl/certs/594f1775.0
+ create mode 120000 ssl/certs/5a3f0ff8.0
+ create mode 120000 ssl/certs/5a5372fc.0
+ create mode 120000 ssl/certs/5ad8a5d6.0
+ create mode 120000 ssl/certs/5c44d531.0
+ create mode 120000 ssl/certs/5cf9d536.0
+ create mode 120000 ssl/certs/5e4e69e7.0
+ create mode 120000 ssl/certs/5ed36f99.0
+ create mode 120000 ssl/certs/5f267794.0
+ create mode 120000 ssl/certs/5f47b495.0
+ create mode 120000 ssl/certs/60afe812.0
+ create mode 120000 ssl/certs/635ccfd5.0
+ create mode 120000 ssl/certs/6410666e.0
+ create mode 120000 ssl/certs/653b494a.0
+ create mode 120000 ssl/certs/656b3e35.0
+ create mode 120000 ssl/certs/65b876bd.0
+ create mode 120000 ssl/certs/667c66d4.0
+ create mode 120000 ssl/certs/67495436.0
+ create mode 120000 ssl/certs/67d559d1.0
+ create mode 120000 ssl/certs/69105f4f.0
+ create mode 120000 ssl/certs/6adf0799.0
+ create mode 120000 ssl/certs/6b99d060.0
+ create mode 120000 ssl/certs/6cc3c4c3.0
+ create mode 120000 ssl/certs/6e52cc39.0
+ create mode 120000 ssl/certs/6e8bf996.0
+ create mode 120000 ssl/certs/6f2c1157.0
+ create mode 120000 ssl/certs/6fcc125d.0
+ create mode 120000 ssl/certs/706f604c.0
+ create mode 120000 ssl/certs/72f369af.0
+ create mode 120000 ssl/certs/72fa7371.0
+ create mode 120000 ssl/certs/74c26bd0.0
+ create mode 120000 ssl/certs/755f7420.0
+ create mode 120000 ssl/certs/75680d2e.0
+ create mode 120000 ssl/certs/7651b327.0
+ create mode 120000 ssl/certs/76579174.0
+ create mode 120000 ssl/certs/7672ac4b.0
+ create mode 120000 ssl/certs/76cb8f92.0
+ create mode 120000 ssl/certs/76faf6c0.0
+ create mode 120000 ssl/certs/778e3cb0.0
+ create mode 120000 ssl/certs/790a7190.0
+ create mode 120000 ssl/certs/7999be0d.0
+ create mode 120000 ssl/certs/79ad8b43.0
+ create mode 120000 ssl/certs/7a481e66.0
+ create mode 120000 ssl/certs/7a819ef2.0
+ create mode 120000 ssl/certs/7d0b38bd.0
+ create mode 120000 ssl/certs/7d3cd826.0
+ create mode 120000 ssl/certs/7d453d8f.0
+ create mode 120000 ssl/certs/7d5a75e4.0
+ create mode 120000 ssl/certs/812e17de.0
+ create mode 120000 ssl/certs/8160b96c.0
+ create mode 120000 ssl/certs/81b9768f.0
+ create mode 120000 ssl/certs/82223c44.0
+ create mode 120000 ssl/certs/8317b10c.0
+ create mode 120000 ssl/certs/8470719d.0
+ create mode 120000 ssl/certs/84cba82f.0
+ create mode 120000 ssl/certs/85cde254.0
+ create mode 120000 ssl/certs/861a399d.0
+ create mode 120000 ssl/certs/861e0100.0
+ create mode 120000 ssl/certs/86212b19.0
+ create mode 120000 ssl/certs/876f1e28.0
+ create mode 120000 ssl/certs/87753b0d.0
+ create mode 120000 ssl/certs/882de061.0
+ create mode 120000 ssl/certs/8867006a.0
+ create mode 120000 ssl/certs/88f89ea7.0
+ create mode 120000 ssl/certs/895cad1a.0
+ create mode 120000 ssl/certs/89c02a45.0
+ create mode 120000 ssl/certs/8b59b1ad.0
+ create mode 120000 ssl/certs/8d86cdd1.0
+ create mode 120000 ssl/certs/8e52d3cd.0
+ create mode 120000 ssl/certs/8f7b96c4.0
+ create mode 120000 ssl/certs/91739615.0
+ create mode 120000 ssl/certs/930ac5d2.0
+ create mode 120000 ssl/certs/9339512a.0
+ create mode 120000 ssl/certs/93bc0acc.0
+ create mode 120000 ssl/certs/95aff9e3.0
+ create mode 120000 ssl/certs/9685a493.0
+ create mode 120000 ssl/certs/9772ca32.0
+ create mode 120000 ssl/certs/9818ca0b.0
+ create mode 120000 ssl/certs/988a38cb.0
+ create mode 120000 ssl/certs/98ec67f0.0
+ create mode 120000 ssl/certs/99d0fa06.0
+ create mode 120000 ssl/certs/9af9f759.0
+ create mode 120000 ssl/certs/9b353c9a.0
+ create mode 120000 ssl/certs/9c2e7d30.0
+ create mode 120000 ssl/certs/9c472bf7.0
+ create mode 120000 ssl/certs/9c8dfbd4.0
+ create mode 120000 ssl/certs/9d520b32.0
+ create mode 120000 ssl/certs/9d6523ce.0
+ create mode 120000 ssl/certs/9dbefe7b.0
+ create mode 120000 ssl/certs/9ec3a561.0
+ create mode 120000 ssl/certs/9f533518.0
+ create mode 120000 ssl/certs/9f541fb4.0
+ create mode 120000 ssl/certs/A-Trust-nQual-03.pem
+ create mode 120000 ssl/certs/ACEDICOM_Root.pem
+ create mode 120000 "ssl/certs/AC_Ra\303\255z_Certic\303\241mara_S.A..pem"
+ create mode 120000 ssl/certs/Actalis_Authentication_Root_CA.pem
+ create mode 120000 ssl/certs/AddTrust_External_Root.pem
+ create mode 120000 ssl/certs/AddTrust_Low-Value_Services_Root.pem
+ create mode 120000 ssl/certs/AddTrust_Public_Services_Root.pem
+ create mode 120000 ssl/certs/AddTrust_Qualified_Certificates_Root.pem
+ create mode 120000 ssl/certs/AffirmTrust_Commercial.pem
+ create mode 120000 ssl/certs/AffirmTrust_Networking.pem
+ create mode 120000 ssl/certs/AffirmTrust_Premium.pem
+ create mode 120000 ssl/certs/AffirmTrust_Premium_ECC.pem
+ create mode 120000 ssl/certs/America_Online_Root_Certification_Authority_1.pem
+ create mode 120000 ssl/certs/America_Online_Root_Certification_Authority_2.pem
+ create mode 120000 ssl/certs/ApplicationCA_-_Japanese_Government.pem
+ create mode 120000 ssl/certs/Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+ create mode 120000 ssl/certs/Baltimore_CyberTrust_Root.pem
+ create mode 120000 ssl/certs/Buypass_Class_2_CA_1.pem
+ create mode 120000 ssl/certs/Buypass_Class_2_Root_CA.pem
+ create mode 120000 ssl/certs/Buypass_Class_3_CA_1.pem
+ create mode 120000 ssl/certs/Buypass_Class_3_Root_CA.pem
+ create mode 120000 ssl/certs/CA_Disig.pem
+ create mode 120000 ssl/certs/CNNIC_ROOT.pem
+ create mode 120000 ssl/certs/COMODO_Certification_Authority.pem
+ create mode 120000 ssl/certs/COMODO_ECC_Certification_Authority.pem
+ create mode 120000 ssl/certs/Camerfirma_Chambers_of_Commerce_Root.pem
+ create mode 120000 ssl/certs/Camerfirma_Global_Chambersign_Root.pem
+ create mode 120000 ssl/certs/Certigna.pem
+ create mode 120000 "ssl/certs/Certinomis_-_Autorit\303\251_Racine.pem"
+ create mode 120000 ssl/certs/Certplus_Class_2_Primary_CA.pem
+ create mode 120000 ssl/certs/Certum_Root_CA.pem
+ create mode 120000 ssl/certs/Certum_Trusted_Network_CA.pem
+ create mode 120000 ssl/certs/Chambers_of_Commerce_Root_-_2008.pem
+ create mode 120000 ssl/certs/ComSign_CA.pem
+ create mode 120000 ssl/certs/ComSign_Secured_CA.pem
+ create mode 120000 ssl/certs/Comodo_AAA_Services_root.pem
+ create mode 120000 ssl/certs/Comodo_Secure_Services_root.pem
+ create mode 120000 ssl/certs/Comodo_Trusted_Services_root.pem
+ create mode 120000 ssl/certs/Cybertrust_Global_Root.pem
+ create mode 120000 ssl/certs/DST_ACES_CA_X6.pem
+ create mode 120000 ssl/certs/DST_Root_CA_X3.pem
+ create mode 120000 ssl/certs/Deutsche_Telekom_Root_CA_2.pem
+ create mode 120000 ssl/certs/DigiCert_Assured_ID_Root_CA.pem
+ create mode 120000 ssl/certs/DigiCert_Global_Root_CA.pem
+ create mode 120000 ssl/certs/DigiCert_High_Assurance_EV_Root_CA.pem
+ create mode 120000 ssl/certs/Digital_Signature_Trust_Co._Global_CA_1.pem
+ create mode 120000 ssl/certs/Digital_Signature_Trust_Co._Global_CA_3.pem
+ create mode 120000 ssl/certs/E-Guven_Kok_Elektronik_Sertifika_Hizmet_Saglayicisi.pem
+ create mode 120000 "ssl/certs/EBG_Elektronik_Sertifika_Hizmet_Sa\304\237lay\304\261c\304\261s\304\261.pem"
+ create mode 120000 ssl/certs/EC-ACC.pem
+ create mode 120000 ssl/certs/EE_Certification_Centre_Root_CA.pem
+ create mode 120000 ssl/certs/Entrust.net_Premium_2048_Secure_Server_CA.pem
+ create mode 120000 ssl/certs/Entrust.net_Secure_Server_CA.pem
+ create mode 120000 ssl/certs/Entrust_Root_Certification_Authority.pem
+ create mode 120000 ssl/certs/Equifax_Secure_CA.pem
+ create mode 120000 ssl/certs/Equifax_Secure_Global_eBusiness_CA.pem
+ create mode 120000 ssl/certs/Equifax_Secure_eBusiness_CA_1.pem
+ create mode 120000 ssl/certs/Equifax_Secure_eBusiness_CA_2.pem
+ create mode 120000 ssl/certs/Firmaprofesional_Root_CA.pem
+ create mode 120000 ssl/certs/GTE_CyberTrust_Global_Root.pem
+ create mode 120000 ssl/certs/GeoTrust_Global_CA.pem
+ create mode 120000 ssl/certs/GeoTrust_Global_CA_2.pem
+ create mode 120000 ssl/certs/GeoTrust_Primary_Certification_Authority.pem
+ create mode 120000 ssl/certs/GeoTrust_Primary_Certification_Authority_-_G2.pem
+ create mode 120000 ssl/certs/GeoTrust_Primary_Certification_Authority_-_G3.pem
+ create mode 120000 ssl/certs/GeoTrust_Universal_CA.pem
+ create mode 120000 ssl/certs/GeoTrust_Universal_CA_2.pem
+ create mode 120000 ssl/certs/GlobalSign_Root_CA.pem
+ create mode 120000 ssl/certs/GlobalSign_Root_CA_-_R2.pem
+ create mode 120000 ssl/certs/GlobalSign_Root_CA_-_R3.pem
+ create mode 120000 ssl/certs/Global_Chambersign_Root_-_2008.pem
+ create mode 120000 ssl/certs/Go_Daddy_Class_2_CA.pem
+ create mode 120000 ssl/certs/Go_Daddy_Root_Certificate_Authority_-_G2.pem
+ create mode 120000 ssl/certs/Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
+ create mode 120000 ssl/certs/Hongkong_Post_Root_CA_1.pem
+ create mode 120000 ssl/certs/IGC_A.pem
+ create mode 120000 ssl/certs/Izenpe.com.pem
+ create mode 120000 ssl/certs/Juur-SK.pem
+ create mode 120000 ssl/certs/Microsec_e-Szigno_Root_CA.pem
+ create mode 120000 ssl/certs/Microsec_e-Szigno_Root_CA_2009.pem
+ create mode 120000 "ssl/certs/NetLock_Arany_=Class_Gold=_F\305\221tan\303\272s\303\255tv\303\241ny.pem"
+ create mode 120000 ssl/certs/NetLock_Business_=Class_B=_Root.pem
+ create mode 120000 ssl/certs/NetLock_Express_=Class_C=_Root.pem
+ create mode 120000 ssl/certs/NetLock_Notary_=Class_A=_Root.pem
+ create mode 120000 ssl/certs/NetLock_Qualified_=Class_QA=_Root.pem
+ create mode 120000 ssl/certs/Network_Solutions_Certificate_Authority.pem
+ create mode 120000 ssl/certs/OISTE_WISeKey_Global_Root_GA_CA.pem
+ create mode 120000 ssl/certs/QuoVadis_Root_CA.pem
+ create mode 120000 ssl/certs/QuoVadis_Root_CA_2.pem
+ create mode 120000 ssl/certs/QuoVadis_Root_CA_3.pem
+ create mode 120000 ssl/certs/RSA_Root_Certificate_1.pem
+ create mode 120000 ssl/certs/RSA_Security_2048_v3.pem
+ create mode 120000 ssl/certs/Root_CA_Generalitat_Valenciana.pem
+ create mode 120000 ssl/certs/S-TRUST_Authentication_and_Encryption_Root_CA_2005_PN.pem
+ create mode 120000 ssl/certs/SecureSign_RootCA11.pem
+ create mode 120000 ssl/certs/SecureTrust_CA.pem
+ create mode 120000 ssl/certs/Secure_Global_CA.pem
+ create mode 120000 ssl/certs/Security_Communication_EV_RootCA1.pem
+ create mode 120000 ssl/certs/Security_Communication_RootCA2.pem
+ create mode 120000 ssl/certs/Security_Communication_Root_CA.pem
+ create mode 120000 ssl/certs/Sonera_Class_1_Root_CA.pem
+ create mode 120000 ssl/certs/Sonera_Class_2_Root_CA.pem
+ create mode 120000 ssl/certs/Staat_der_Nederlanden_Root_CA.pem
+ create mode 120000 ssl/certs/Staat_der_Nederlanden_Root_CA_-_G2.pem
+ create mode 120000 ssl/certs/Starfield_Class_2_CA.pem
+ create mode 120000 ssl/certs/Starfield_Root_Certificate_Authority_-_G2.pem
+ create mode 120000 ssl/certs/Starfield_Services_Root_Certificate_Authority_-_G2.pem
+ create mode 120000 ssl/certs/StartCom_Certification_Authority.pem
+ create mode 120000 ssl/certs/StartCom_Certification_Authority_G2.pem
+ create mode 120000 ssl/certs/SwissSign_Gold_CA_-_G2.pem
+ create mode 120000 ssl/certs/SwissSign_Platinum_CA_-_G2.pem
+ create mode 120000 ssl/certs/SwissSign_Silver_CA_-_G2.pem
+ create mode 120000 ssl/certs/Swisscom_Root_CA_1.pem
+ create mode 120000 ssl/certs/T-TeleSec_GlobalRoot_Class_3.pem
+ create mode 120000 ssl/certs/TC_TrustCenter_Class_2_CA_II.pem
+ create mode 120000 ssl/certs/TC_TrustCenter_Class_3_CA_II.pem
+ create mode 120000 ssl/certs/TC_TrustCenter_Universal_CA_I.pem
+ create mode 120000 ssl/certs/TC_TrustCenter_Universal_CA_III.pem
+ create mode 120000 ssl/certs/TDC_Internet_Root_CA.pem
+ create mode 120000 ssl/certs/TDC_OCES_Root_CA.pem
+ create mode 120000 ssl/certs/TURKTRUST_Certificate_Services_Provider_Root_1.pem
+ create mode 120000 ssl/certs/TURKTRUST_Certificate_Services_Provider_Root_2.pem
+ create mode 120000 ssl/certs/TWCA_Root_Certification_Authority.pem
+ create mode 120000 ssl/certs/Taiwan_GRCA.pem
+ create mode 120000 ssl/certs/Thawte_Premium_Server_CA.pem
+ create mode 120000 ssl/certs/Thawte_Server_CA.pem
+ create mode 120000 ssl/certs/Trustis_FPS_Root_CA.pem
+ create mode 120000 "ssl/certs/T\303\234B\304\260TAK_UEKAE_K\303\266k_Sertifika_Hizmet_Sa\304\237lay\304\261c\304\261s\304\261_-_S\303\274r\303\274m_3.pem"
+ create mode 120000 ssl/certs/UTN_DATACorp_SGC_Root_CA.pem
+ create mode 120000 ssl/certs/UTN_USERFirst_Email_Root_CA.pem
+ create mode 120000 ssl/certs/UTN_USERFirst_Hardware_Root_CA.pem
+ create mode 120000 ssl/certs/ValiCert_Class_1_VA.pem
+ create mode 120000 ssl/certs/ValiCert_Class_2_VA.pem
+ create mode 120000 ssl/certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem
+ create mode 120000 ssl/certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
+ create mode 120000 ssl/certs/VeriSign_Universal_Root_Certification_Authority.pem
+ create mode 120000 ssl/certs/Verisign_Class_1_Public_Primary_Certification_Authority.pem
+ create mode 120000 ssl/certs/Verisign_Class_1_Public_Primary_Certification_Authority_-_G2.pem
+ create mode 120000 ssl/certs/Verisign_Class_1_Public_Primary_Certification_Authority_-_G3.pem
+ create mode 120000 ssl/certs/Verisign_Class_2_Public_Primary_Certification_Authority_-_G2.pem
+ create mode 120000 ssl/certs/Verisign_Class_2_Public_Primary_Certification_Authority_-_G3.pem
+ create mode 120000 ssl/certs/Verisign_Class_3_Public_Primary_Certification_Authority.pem
+ create mode 120000 ssl/certs/Verisign_Class_3_Public_Primary_Certification_Authority_-_G2.pem
+ create mode 120000 ssl/certs/Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem
+ create mode 120000 ssl/certs/Verisign_Class_4_Public_Primary_Certification_Authority_-_G3.pem
+ create mode 120000 ssl/certs/Visa_eCommerce_Root.pem
+ create mode 120000 ssl/certs/WellsSecure_Public_Root_Certificate_Authority.pem
+ create mode 120000 ssl/certs/Wells_Fargo_Root_CA.pem
+ create mode 120000 ssl/certs/XRamp_Global_CA_Root.pem
+ create mode 120000 ssl/certs/a0bc6fbb.0
+ create mode 120000 ssl/certs/a15b3b6b.0
+ create mode 120000 ssl/certs/a2df7ad7.0
+ create mode 120000 ssl/certs/a3896b44.0
+ create mode 120000 ssl/certs/a5fd78f0.0
+ create mode 120000 ssl/certs/a6a593ba.0
+ create mode 120000 ssl/certs/a7605362.0
+ create mode 120000 ssl/certs/a760e1bd.0
+ create mode 120000 ssl/certs/a7d2cf64.0
+ create mode 120000 ssl/certs/a8dee976.0
+ create mode 120000 ssl/certs/ab5346f4.0
+ create mode 120000 ssl/certs/ad088e1d.0
+ create mode 120000 ssl/certs/add67345.0
+ create mode 120000 ssl/certs/ae8153b9.0
+ create mode 120000 ssl/certs/aeb67534.0
+ create mode 120000 ssl/certs/aee5f10d.0
+ create mode 120000 ssl/certs/b097d71d.0
+ create mode 120000 ssl/certs/b0f3e76e.0
+ create mode 120000 ssl/certs/b1159c4c.0
+ create mode 120000 ssl/certs/b13cc6df.0
+ create mode 120000 ssl/certs/b1b8a7f3.0
+ create mode 120000 ssl/certs/b204d74a.0
+ create mode 120000 ssl/certs/b42ff584.0
+ create mode 120000 ssl/certs/b66938e9.0
+ create mode 120000 ssl/certs/b6c5745d.0
+ create mode 120000 ssl/certs/b727005e.0
+ create mode 120000 ssl/certs/b7a5b843.0
+ create mode 120000 ssl/certs/b7db1890.0
+ create mode 120000 ssl/certs/b7e7231a.0
+ create mode 120000 ssl/certs/b8e83700.0
+ create mode 120000 ssl/certs/ba89ed3b.0
+ create mode 120000 ssl/certs/bad35b78.0
+ create mode 120000 ssl/certs/bb2d49a0.0
+ create mode 120000 ssl/certs/bc3f2570.0
+ create mode 120000 ssl/certs/bcdd5959.0
+ create mode 120000 ssl/certs/bd1910d4.0
+ create mode 120000 ssl/certs/bda4cc84.0
+ create mode 120000 ssl/certs/bdacca6f.0
+ create mode 120000 ssl/certs/bf64f35b.0
+ create mode 120000 ssl/certs/c01cdfa2.0
+ create mode 120000 ssl/certs/c089bbbd.0
+ create mode 120000 ssl/certs/c0ff1f52.0
+ create mode 120000 ssl/certs/c19d42c7.0
+ create mode 120000 ssl/certs/c215bc69.0
+ create mode 120000 ssl/certs/c33a80d4.0
+ create mode 120000 ssl/certs/c3a6a9ad.0
+ create mode 120000 ssl/certs/c47d9980.0
+ create mode 120000 ssl/certs/c51c224c.0
+ create mode 120000 ssl/certs/c527e4ab.0
+ create mode 120000 ssl/certs/c5e082db.0
+ create mode 120000 ssl/certs/c692a373.0
+ create mode 120000 ssl/certs/c7e2a638.0
+ create mode 120000 ssl/certs/c8763593.0
+ create mode 120000 ssl/certs/c8841d13.0
+ create mode 120000 ssl/certs/c99398f3.0
+ create mode 120000 ssl/certs/c9f83a1c.0
+ create mode 100644 ssl/certs/ca-certificates.crt
+ create mode 120000 ssl/certs/ca.pem
+ create mode 120000 ssl/certs/ca6e4ad9.0
+ create mode 120000 ssl/certs/cacert.org.pem
+ create mode 120000 ssl/certs/cb357862.0
+ create mode 120000 ssl/certs/cb59f961.0
+ create mode 120000 ssl/certs/cbeee9e2.0
+ create mode 120000 ssl/certs/cbf06781.0
+ create mode 120000 ssl/certs/cc450945.0
+ create mode 120000 ssl/certs/ccc52f49.0
+ create mode 120000 ssl/certs/cd58d51e.0
+ create mode 120000 ssl/certs/cdaebb72.0
+ create mode 120000 ssl/certs/ce026bf8.0
+ create mode 120000 ssl/certs/certSIGN_ROOT_CA.pem
+ create mode 120000 ssl/certs/cf701eeb.0
+ create mode 120000 ssl/certs/cfa1c2ee.0
+ create mode 120000 ssl/certs/d16a5865.0
+ create mode 120000 ssl/certs/d1dae7e6.0
+ create mode 120000 ssl/certs/d537fba6.0
+ create mode 120000 ssl/certs/d59297b8.0
+ create mode 120000 ssl/certs/d64f06f3.0
+ create mode 120000 ssl/certs/d78a75c7.0
+ create mode 120000 ssl/certs/d7e8dc79.0
+ create mode 120000 ssl/certs/d853d49e.0
+ create mode 120000 ssl/certs/d957f522.0
+ create mode 120000 ssl/certs/d9d12c58.0
+ create mode 120000 ssl/certs/dbc54cab.0
+ create mode 120000 ssl/certs/dc45b0bd.0
+ create mode 120000 ssl/certs/ddc328ff.0
+ create mode 120000 ssl/certs/e113c810.0
+ create mode 120000 ssl/certs/e268a4c5.0
+ create mode 120000 ssl/certs/e2799e36.0
+ create mode 120000 ssl/certs/e48193cf.0
+ create mode 120000 ssl/certs/e536d871.0
+ create mode 120000 ssl/certs/e5662767.0
+ create mode 120000 ssl/certs/e60bf0c0.0
+ create mode 120000 ssl/certs/e775ed2d.0
+ create mode 120000 ssl/certs/e7b8d656.0
+ create mode 120000 ssl/certs/e8651083.0
+ create mode 120000 ssl/certs/e8de2f56.0
+ create mode 120000 ssl/certs/ePKI_Root_Certification_Authority.pem
+ create mode 120000 ssl/certs/ea169617.0
+ create mode 120000 ssl/certs/eacdeb40.0
+ create mode 120000 ssl/certs/eb375c3e.0
+ create mode 120000 ssl/certs/ec87c655.0
+ create mode 120000 ssl/certs/ed524cf5.0
+ create mode 120000 ssl/certs/ed62f4e3.0
+ create mode 120000 ssl/certs/ee1365c0.0
+ create mode 120000 ssl/certs/ee64a828.0
+ create mode 120000 ssl/certs/ee7cd6fb.0
+ create mode 120000 ssl/certs/ee90b008.0
+ create mode 120000 ssl/certs/eed8c118.0
+ create mode 120000 ssl/certs/ef2f636c.0
+ create mode 120000 ssl/certs/f060240e.0
+ create mode 120000 ssl/certs/f081611a.0
+ create mode 120000 ssl/certs/f3377b1b.0
+ create mode 120000 ssl/certs/f387163d.0
+ create mode 120000 ssl/certs/f39fc864.0
+ create mode 120000 ssl/certs/f4996e82.0
+ create mode 120000 ssl/certs/f559733c.0
+ create mode 120000 ssl/certs/f58a60fe.0
+ create mode 120000 ssl/certs/f61bff45.0
+ create mode 120000 ssl/certs/f80cc7f6.0
+ create mode 120000 ssl/certs/f90208f7.0
+ create mode 120000 ssl/certs/f9a828b9
+ create mode 120000 ssl/certs/f9a828b9.0
+ create mode 120000 ssl/certs/fac084d7.0
+ create mode 120000 ssl/certs/facacbc6.0
+ create mode 120000 ssl/certs/fb126c6d.0
+ create mode 120000 ssl/certs/fcac10e3.0
+ create mode 120000 ssl/certs/fde84897.0
+ create mode 120000 ssl/certs/ff588423.0
+ create mode 120000 ssl/certs/ff783690.0
+ create mode 100644 ssl/certs/java/cacerts
+ create mode 120000 ssl/certs/spi-ca-2003.pem
+ create mode 120000 ssl/certs/spi-cacert-2008.pem
+ create mode 100644 ssl/certs/ssl-cert-snakeoil.pem
+ create mode 120000 ssl/certs/thawte_Primary_Root_CA.pem
+ create mode 120000 ssl/certs/thawte_Primary_Root_CA_-_G2.pem
+ create mode 120000 ssl/certs/thawte_Primary_Root_CA_-_G3.pem
+ create mode 100644 ssl/openssl.cnf
+ create mode 100644 ssl/private/ssl-cert-snakeoil.key
+ create mode 100644 staff-group-for-usr-local
+ create mode 100644 sudoers
+ create mode 100644 sudoers.d/README
+ create mode 100644 sysctl.conf
+ create mode 100644 sysctl.d/30-tracker.conf
+ create mode 100644 sysctl.d/README.sysctl
+ create mode 120000 systemd/system/dbus-org.freedesktop.Avahi.service
+ create mode 120000 systemd/system/multi-user.target.wants/avahi-daemon.service
+ create mode 120000 systemd/system/multi-user.target.wants/rsyslog.service
+ create mode 120000 systemd/system/sockets.target.wants/acpid.socket
+ create mode 120000 systemd/system/sockets.target.wants/avahi-daemon.socket
+ create mode 120000 systemd/system/syslog.service
+ create mode 100644 terminfo/README
+ create mode 100644 texmf/fmt.d/50cyrtexinfo.cnf
+ create mode 100644 timezone
+ create mode 100644 timidity/freepats.cfg
+ create mode 100644 ts.conf
+ create mode 100644 ucf.conf
+ create mode 100644 udev/links.conf
+ create mode 100644 udev/rules.d/70-persistent-cd.rules
+ create mode 100644 udev/rules.d/70-persistent-net.rules
+ create mode 100644 udev/udev.conf
+ create mode 100644 ufw/applications.d/openssh-server
+ create mode 100644 updatedb.conf
+ create mode 100644 usb_modeswitch.conf
+ create mode 100644 vim/vimrc
+ create mode 100644 vim/vimrc.tiny
+ create mode 100644 w3m/config
+ create mode 100644 w3m/mailcap
+ create mode 100644 wgetrc
+ create mode 100644 wildmidi/wildmidi.cfg
+ create mode 100755 wpa_supplicant/action_wpa.sh
+ create mode 100755 wpa_supplicant/functions.sh
+ create mode 100755 wpa_supplicant/ifupdown.sh
+ create mode 100644 xdg/autostart/at-spi-dbus-bus.desktop
+ create mode 100644 xdg/autostart/caribou-autostart.desktop
+ create mode 100644 xdg/autostart/evolution-alarm-notify.desktop
+ create mode 100644 xdg/autostart/gdu-notification-daemon.desktop
+ create mode 100644 xdg/autostart/gnome-keyring-gpg.desktop
+ create mode 100644 xdg/autostart/gnome-keyring-pkcs11.desktop
+ create mode 100644 xdg/autostart/gnome-keyring-secrets.desktop
+ create mode 100644 xdg/autostart/gnome-keyring-ssh.desktop
+ create mode 100644 xdg/autostart/gnome-sound-applet.desktop
+ create mode 100644 xdg/autostart/gsettings-data-convert.desktop
+ create mode 100644 xdg/autostart/notification-daemon.desktop
+ create mode 100644 xdg/autostart/orca-autostart.desktop
+ create mode 100644 xdg/autostart/polkit-gnome-authentication-agent-1.desktop
+ create mode 100644 xdg/autostart/pulseaudio-kde.desktop
+ create mode 100644 xdg/autostart/pulseaudio.desktop
+ create mode 100644 xdg/autostart/tracker-miner-fs.desktop
+ create mode 100644 xdg/autostart/tracker-store.desktop
+ create mode 100644 xdg/autostart/user-dirs-update-gtk.desktop
+ create mode 100644 xdg/menus/gnome-applications.menu
+ create mode 100644 xdg/menus/gnomecc.menu
+ create mode 100644 xdg/user-dirs.conf
+ create mode 100644 xdg/user-dirs.defaults
+ create mode 100644 xml/catalog
+ create mode 100644 xml/docbook-xml.xml
+ create mode 100644 xml/rarian-compat.xml
+ create mode 100644 xml/resolver/CatalogManager.properties
+ create mode 100644 xml/sgml-data.xml
+ create mode 100644 xml/xml-core.xml
+ create mode 100644 zsh/newuser.zshrc.recommended
+ create mode 100644 zsh/zlogin
+ create mode 100644 zsh/zlogout
+ create mode 100644 zsh/zprofile
+ create mode 100644 zsh/zshenv
+ create mode 100644 zsh/zshrc
+Setting up puppet-el (2.7.23-1~deb7u3) ...
+Install puppet-el for emacs
+Setting up ruby-selinux (2.1.9-5) ...
+Setting up vim-puppet (2.7.23-1~deb7u3) ...
+Setting up vim-addon-manager (0.5.2) ...
+
+mike at pancakes in ~ 
+$ 
