@@ -2356,3 +2356,202 @@ Setting up vim-addon-manager (0.5.2) ...
 
 mike at pancakes in ~ 
 $ 
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 02:57]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 07:52:26 2014 from 128-223-223-121-wireless.uoregon.edu
+ 08:04:29 up 49 min,  2 users,  load average: 0.00, 0.04, 0.06
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 08:04    0.00s  0.10s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo apt-get install puppet-master
+[sudo] password for mike: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package puppet-master
+
+mike at pancakes in ~ 
+$ sudo apt-get install puppet-server
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package puppet-server
+
+mike at pancakes in ~ 
+$ 
+
+mike at pancakes in ~ 
+$ 
+
+mike at pancakes in ~ 
+$ 
+
+mike at pancakes in ~ 
+$ Write failed: Broken pipe
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 03:12]
+└─[$] <> sudo apt-get install librrd-ruby1.8 ri ruby-dev ruby1.8-examples ri1.8 ruby-switch
+[sudo] password for mike: 
+Sorry, try again.
+[sudo] password for mike: 
+sudo: apt-get: command not found
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 03:12]
+└─[$] <> ssh mike@128.223.203.17                                                           
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 08:04:29 2014 from 128-223-223-121-wireless.uoregon.edu
+ 08:15:18 up  1:00,  3 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 08:04   10:30   0.12s  0.12s -zsh
+mike     pts/1    128-223-223-121- 08:15    0.00s  0.10s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo apt-get librrd-ruby1.8 ri ruby-dev ruby1.8-examples ri1.8 ruby-switch
+[sudo] password for mike: 
+Sorry, try again.
+[sudo] password for mike: 
+E: Invalid operation librrd-ruby1.8
+
+mike at pancakes in ~ 
+$ sudo apt-get install librrd-ruby1.8 ri ruby-dev ruby1.8-examples ri1.8 ruby-switch
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  aisleriot argyll browser-plugin-gnash cheese crda dnsmasq-base file-roller finger gdebi gedit gedit-common gedit-plugins gir1.2-gdata-0.0
+  gir1.2-gnomekeyring-1.0 gir1.2-goa-1.0 gir1.2-gtop-2.0 gir1.2-gucharmap-2.90 gir1.2-javascriptcoregtk-3.0 gir1.2-rb-3.0 gir1.2-tracker-0.14
+  gir1.2-webkit-3.0 glchess glines gnash gnash-common gnect gnibbles gnobots2 gnome-color-manager gnome-documents gnome-games gnome-games-data
+  gnome-games-extra-data gnome-nettool gnome-shell-extensions gnome-sudoku gnome-tweak-tool gnome-video-effects gnomine gnotravex gnotski gnuchess
+  gnuchess-book grilo-plugins-0.1 gtali guile-2.0-libs hamster-applet iagno inkscape iputils-tracepath iw libblas3gf libboost-program-options1.49.0
+  libboost-thread1.49.0 libdee-1.0-4 libdiscid0 libdmapsharing-3.0-2 libgexiv2-1 libgpod-common libgpod4 libgrilo-0.1-0 libgtkmm-2.4-1c2a libgupnp-av-1.0-2
+  libgupnp-dlna-1.0-2 libicc2 libimdi0 libjim0debian2 liblinear-tools liblinear1 libminiupnpc5 libmtp-common libmtp-runtime libmtp9 libnatpmp1
+  libnetfilter-conntrack3 libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libraw5 librhythmbox-core6 libsofia-sip-ua-glib3 libsofia-sip-ua0 libsvm-tools
+  libwnck-common libwnck22 libxss1 lightsoff mahjongg media-player-info minissdpd mobile-broadband-provider-info modemmanager nmap p7zip-full perlmagick
+  python-gconf python-gnome2 python-mako python-markupsafe python-pyorbit python-wnck python-zeitgeist quadrapassel rhythmbox rhythmbox-data
+  rhythmbox-plugin-cdrecorder rhythmbox-plugins rygel rygel-playbin rygel-preferences rygel-tracker seahorse shotwell shotwell-common simple-scan
+  sound-juicer swell-foop telepathy-rakia transmission-common transmission-gtk unoconv usb-modeswitch usb-modeswitch-data wireless-regdb wpasupplicant
+  xdg-user-dirs-gtk zeitgeist-core
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  binutils gcc gcc-4.7 libc-dev-bin libc6-dev libdbi1 libitm1 librrd4 linux-libc-dev manpages-dev ri1.9.1 ruby1.9.1-dev
+Suggested packages:
+  binutils-doc gcc-multilib make autoconf automake1.9 libtool flex bison gdb gcc-doc gcc-4.7-multilib libmudflap0-4.7-dev gcc-4.7-doc gcc-4.7-locales
+  libgcc1-dbg libgomp1-dbg libitm1-dbg libquadmath0-dbg libmudflap0-dbg libcloog-ppl0 libppl-c2 libppl7 binutils-gold glibc-doc
+The following NEW packages will be installed:
+  binutils gcc gcc-4.7 libc-dev-bin libc6-dev libdbi1 libitm1 librrd-ruby1.8 librrd4 linux-libc-dev manpages-dev ri ri1.8 ri1.9.1 ruby-dev ruby-switch
+  ruby1.8-examples ruby1.9.1-dev
+0 upgraded, 18 newly installed, 0 to remove and 0 not upgraded.
+Need to get 24.4 MB of archives.
+After this operation, 79.2 MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Get:1 http://security.debian.org/ wheezy/updates/main libc-dev-bin amd64 2.13-38+deb7u3 [227 kB]
+Get:2 http://ftp.us.debian.org/debian/ wheezy/main libitm1 amd64 4.7.2-5 [36.6 kB]           
+Get:3 http://security.debian.org/ wheezy/updates/main linux-libc-dev amd64 3.2.60-1+deb7u1 [828 kB]
+Get:4 http://ftp.us.debian.org/debian/ wheezy/main binutils amd64 2.22-8 [4,800 kB]
+Get:5 http://security.debian.org/ wheezy/updates/main libc6-dev amd64 2.13-38+deb7u3 [2,654 kB]
+Get:6 http://ftp.us.debian.org/debian/ wheezy/main gcc-4.7 amd64 4.7.2-5 [8,296 kB]                                                                           
+Get:7 http://ftp.us.debian.org/debian/ wheezy/main gcc amd64 4:4.7.2-1 [5,064 B]                                                                              
+Get:8 http://ftp.us.debian.org/debian/ wheezy/main libdbi1 amd64 0.8.4-6 [31.7 kB]                                                                            
+Get:9 http://ftp.us.debian.org/debian/ wheezy/main librrd4 amd64 1.4.7-2 [322 kB]                                                                             
+Get:10 http://ftp.us.debian.org/debian/ wheezy/main librrd-ruby1.8 amd64 1.4.7-2 [106 kB]                                                                     
+Get:11 http://ftp.us.debian.org/debian/ wheezy/main manpages-dev all 3.44-1 [1,737 kB]                                                                        
+Get:12 http://ftp.us.debian.org/debian/ wheezy/main ri1.9.1 all 1.9.3.194-8.1+deb7u2 [2,174 kB]                                                               
+Get:13 http://ftp.us.debian.org/debian/ wheezy/main ri all 1:1.9.3 [6,072 B]                                                                                  
+Get:14 http://ftp.us.debian.org/debian/ wheezy/main ri1.8 all 1.8.7.358-7.1+deb7u1 [1,431 kB]                                                                 
+Get:15 http://ftp.us.debian.org/debian/ wheezy/main ruby1.9.1-dev amd64 1.9.3.194-8.1+deb7u2 [1,385 kB]                                                       
+Get:16 http://ftp.us.debian.org/debian/ wheezy/main ruby-dev all 1:1.9.3 [6,082 B]                                                                            
+Get:17 http://ftp.us.debian.org/debian/ wheezy/main ruby-switch all 0.1.0 [7,312 B]                                                                           
+Get:18 http://ftp.us.debian.org/debian/ wheezy/main ruby1.8-examples all 1.8.7.358-7.1+deb7u1 [346 kB]                                                        
+Fetched 24.4 MB in 30s (813 kB/s)                                                                                                                             
+[master 6753279] saving uncommitted changes in /etc prior to apt run
+ Author: mike <mike@pancakes>
+ 3 files changed, 117 insertions(+), 3 deletions(-)
+ create mode 100644 bash_completion.d/vim-addon-manager
+ create mode 100644 emacs/site-start.d/50puppet-el.el
+Selecting previously unselected package libitm1:amd64.
+(Reading database ... 135934 files and directories currently installed.)
+Unpacking libitm1:amd64 (from .../libitm1_4.7.2-5_amd64.deb) ...
+Selecting previously unselected package binutils.
+Unpacking binutils (from .../binutils_2.22-8_amd64.deb) ...
+Selecting previously unselected package gcc-4.7.
+Unpacking gcc-4.7 (from .../gcc-4.7_4.7.2-5_amd64.deb) ...
+Selecting previously unselected package gcc.
+Unpacking gcc (from .../gcc_4%3a4.7.2-1_amd64.deb) ...
+Selecting previously unselected package libc-dev-bin.
+Unpacking libc-dev-bin (from .../libc-dev-bin_2.13-38+deb7u3_amd64.deb) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Unpacking linux-libc-dev:amd64 (from .../linux-libc-dev_3.2.60-1+deb7u1_amd64.deb) ...
+Selecting previously unselected package libc6-dev:amd64.
+Unpacking libc6-dev:amd64 (from .../libc6-dev_2.13-38+deb7u3_amd64.deb) ...
+Selecting previously unselected package libdbi1.
+Unpacking libdbi1 (from .../libdbi1_0.8.4-6_amd64.deb) ...
+Selecting previously unselected package librrd4.
+Unpacking librrd4 (from .../librrd4_1.4.7-2_amd64.deb) ...
+Selecting previously unselected package librrd-ruby1.8.
+Unpacking librrd-ruby1.8 (from .../librrd-ruby1.8_1.4.7-2_amd64.deb) ...
+Selecting previously unselected package manpages-dev.
+Unpacking manpages-dev (from .../manpages-dev_3.44-1_all.deb) ...
+Selecting previously unselected package ri1.9.1.
+Unpacking ri1.9.1 (from .../ri1.9.1_1.9.3.194-8.1+deb7u2_all.deb) ...
+Selecting previously unselected package ri.
+Unpacking ri (from .../archives/ri_1%3a1.9.3_all.deb) ...
+Selecting previously unselected package ri1.8.
+Unpacking ri1.8 (from .../ri1.8_1.8.7.358-7.1+deb7u1_all.deb) ...
+Selecting previously unselected package ruby1.9.1-dev.
+Unpacking ruby1.9.1-dev (from .../ruby1.9.1-dev_1.9.3.194-8.1+deb7u2_amd64.deb) ...
+Selecting previously unselected package ruby-dev.
+Unpacking ruby-dev (from .../ruby-dev_1%3a1.9.3_all.deb) ...
+Selecting previously unselected package ruby-switch.
+Unpacking ruby-switch (from .../ruby-switch_0.1.0_all.deb) ...
+Selecting previously unselected package ruby1.8-examples.
+Unpacking ruby1.8-examples (from .../ruby1.8-examples_1.8.7.358-7.1+deb7u1_all.deb) ...
+Processing triggers for man-db ...
+Setting up libitm1:amd64 (4.7.2-5) ...
+Setting up binutils (2.22-8) ...
+Setting up gcc-4.7 (4.7.2-5) ...
+Setting up gcc (4:4.7.2-1) ...
+Setting up libc-dev-bin (2.13-38+deb7u3) ...
+Setting up linux-libc-dev:amd64 (3.2.60-1+deb7u1) ...
+Setting up libc6-dev:amd64 (2.13-38+deb7u3) ...
+Setting up libdbi1 (0.8.4-6) ...
+Setting up librrd4 (1.4.7-2) ...
+Setting up librrd-ruby1.8 (1.4.7-2) ...
+Setting up manpages-dev (3.44-1) ...
+Setting up ri1.9.1 (1.9.3.194-8.1+deb7u2) ...
+Setting up ri (1:1.9.3) ...
+Setting up ri1.8 (1.8.7.358-7.1+deb7u1) ...
+Setting up ruby1.9.1-dev (1.9.3.194-8.1+deb7u2) ...
+Setting up ruby-dev (1:1.9.3) ...
+Setting up ruby-switch (0.1.0) ...
+Setting up ruby1.8-examples (1.8.7.358-7.1+deb7u1) ...
+[master 7f5e638] committing changes in /etc after apt run
+ Author: mike <mike@pancakes>
+ 5 files changed, 5 insertions(+)
+ create mode 120000 alternatives/c89
+ create mode 120000 alternatives/c89.1.gz
+ create mode 120000 alternatives/c99
+ create mode 120000 alternatives/c99.1.gz
+ create mode 120000 alternatives/cc
+
+mike at pancakes in ~ 
+$ 
