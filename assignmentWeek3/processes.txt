@@ -1,3 +1,12 @@
+The following is the terminal output for the processes started and 
+running shortly after boot. 
+
+The command run was pstree.
+
+All the main processes started from init and then most of these started other 
+processes as listed below:
+
+
 mike@pancakes:~$ pstree
 init─┬─accounts-daemon───{accounts-daemon}
      ├─acpid
