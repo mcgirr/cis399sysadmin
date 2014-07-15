@@ -2554,4 +2554,765 @@ Setting up ruby1.8-examples (1.8.7.358-7.1+deb7u1) ...
  create mode 120000 alternatives/cc
 
 mike at pancakes in ~ 
+$ sudo reboot
+
+Broadcast message from root@pancakes (pts/1) (Mon Jul 14 08:17:33 2014):
+
+The system is going down for reboot NOW!
+
+mike at pancakes in ~ 
+$ Connection to 128.223.203.17 closed by remote host.
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 03:15]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 08:15:18 2014 from 128-223-223-121-wireless.uoregon.edu
+ 08:18:33 up 0 min,  2 users,  load average: 0.51, 0.13, 0.04
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 08:18    1.00s  0.11s  0.00s w
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 03:16]
+└─[$] <> 
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 03:46]
+└─[$] <> ssh mike@128.223.203.17                                                                                                                      
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 08:18:32 2014 from 128-223-223-121-wireless.uoregon.edu
+ 08:49:26 up 31 min,  2 users,  load average: 0.00, 0.01, 0.04
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 08:49    0.00s  0.09s  0.00s w
+
+mike at pancakes in ~ 
+$ w
+ 08:49:28 up 31 min,  2 users,  load average: 0.00, 0.01, 0.04
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 08:49    0.00s  0.11s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo netstat -utpaw                                                                     
+[sudo] password for mike: 
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 *:58088                 *:*                     LISTEN      1804/rpc.statd  
+tcp        0      0 *:sunrpc                *:*                     LISTEN      1773/rpcbind    
+tcp        0      0 *:ssh                   *:*                     LISTEN      2402/sshd       
+tcp        0    192 pancakes.ilab.cs.uo:ssh 128-223-223-121-w:27395 ESTABLISHED 2886/sshd: mike [pr
+tcp6       0      0 [::]:35464              [::]:*                  LISTEN      1804/rpc.statd  
+tcp6       0      0 [::]:sunrpc             [::]:*                  LISTEN      1773/rpcbind    
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      2402/sshd       
+udp        0      0 *:676                   *:*                                 1773/rpcbind    
+udp        0      0 localhost:708           *:*                                 1804/rpc.statd  
+udp        0      0 *:60201                 *:*                                 1804/rpc.statd  
+udp        0      0 *:sunrpc                *:*                                 1773/rpcbind    
+udp6       0      0 [::]:676                [::]:*                              1773/rpcbind    
+udp6       0      0 [::]:42807              [::]:*                              1804/rpc.statd  
+udp6       0      0 [::]:sunrpc             [::]:*                              1773/rpcbind    
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 03:47]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 08:49:26 2014 from 128-223-223-121-wireless.uoregon.edu
+ 08:51:16 up 33 min,  2 users,  load average: 0.00, 0.01, 0.04
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 08:51    1.00s  0.10s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo insserv -r rpcbind                                                                 
+[sudo] password for mike: 
+insserv: Service rpcbind has to be enabled to start service nfs-common
+insserv: exiting now!
+
+mike at pancakes in ~ 
 $ 
+
+mike at pancakes in ~ 
+$ sudo insserv -r rpcbind
+insserv: Service rpcbind has to be enabled to start service nfs-common
+insserv: exiting now!
+
+mike at pancakes in ~ 
+$ Write failed: Broken pipe
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 04:00]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 08:51:15 2014 from 128-223-223-121-wireless.uoregon.edu
+ 09:02:41 up 44 min,  3 users,  load average: 0.00, 0.01, 0.04
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 08:51    9:29   0.12s  0.12s -zsh
+mike     pts/1    128-223-223-121- 09:02    0.00s  0.09s  0.00s w
+
+mike at pancakes in ~ 
+$ ps alx
+F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
+4     0     1     0  20   0  10648   804 ?      Ss   ?          0:01 init [2]  
+1     0     2     0  20   0      0     0 ?      S    ?          0:00 [kthreadd]
+1     0     3     2  20   0      0     0 ?      S    ?          0:00 [ksoftirqd/0]
+1     0     6     2 -100  -      0     0 ?      S    ?          0:00 [migration/0]
+5     0     7     2 -100  -      0     0 ?      S    ?          0:00 [watchdog/0]
+1     0     8     2 -100  -      0     0 ?      S    ?          0:00 [migration/1]
+1     0    10     2  20   0      0     0 ?      S    ?          0:00 [ksoftirqd/1]
+1     0    11     2  20   0      0     0 ?      S    ?          0:00 [kworker/0:1]
+5     0    12     2 -100  -      0     0 ?      S    ?          0:00 [watchdog/1]
+1     0    13     2   0 -20      0     0 ?      S<   ?          0:00 [cpuset]
+1     0    14     2   0 -20      0     0 ?      S<   ?          0:00 [khelper]
+5     0    15     2  20   0      0     0 ?      S    ?          0:00 [kdevtmpfs]
+1     0    16     2   0 -20      0     0 ?      S<   ?          0:00 [netns]
+1     0    17     2  20   0      0     0 ?      S    ?          0:00 [sync_supers]
+1     0    18     2  20   0      0     0 ?      S    ?          0:00 [bdi-default]
+1     0    19     2   0 -20      0     0 ?      S<   ?          0:00 [kintegrityd]
+1     0    20     2   0 -20      0     0 ?      S<   ?          0:00 [kblockd]
+1     0    21     2  20   0      0     0 ?      S    ?          0:00 [kworker/1:1]
+1     0    22     2  20   0      0     0 ?      S    ?          0:00 [khungtaskd]
+1     0    23     2  20   0      0     0 ?      S    ?          0:00 [kswapd0]
+1     0    24     2  25   5      0     0 ?      SN   ?          0:00 [ksmd]
+1     0    25     2  39  19      0     0 ?      SN   ?          0:00 [khugepaged]
+1     0    26     2  20   0      0     0 ?      S    ?          0:00 [fsnotify_mark]
+1     0    27     2   0 -20      0     0 ?      S<   ?          0:00 [crypto]
+1     0    30     2  20   0      0     0 ?      S    ?          0:00 [kworker/0:2]
+1     0   105     2  20   0      0     0 ?      S    ?          0:00 [khubd]
+1     0   113     2   0 -20      0     0 ?      S<   ?          0:00 [ata_sff]
+1     0   137     2  20   0      0     0 ?      S    ?          0:00 [scsi_eh_0]
+1     0   138     2  20   0      0     0 ?      S    ?          0:00 [scsi_eh_1]
+1     0   140     2  20   0      0     0 ?      S    ?          0:00 [kworker/u:2]
+1     0   145     2  20   0      0     0 ?      S    ?          0:00 [scsi_eh_2]
+1     0   146     2  20   0      0     0 ?      S    ?          0:00 [scsi_eh_3]
+1     0   147     2  20   0      0     0 ?      S    ?          0:00 [kworker/u:3]
+1     0   156     2  20   0      0     0 ?      S    ?          0:00 [kworker/1:2]
+1     0   178     2  20   0      0     0 ?      S    ?          0:00 [jbd2/sda1-8]
+1     0   179     2   0 -20      0     0 ?      S<   ?          0:00 [ext4-dio-unwrit]
+5     0   323     1  20   0  21704  1712 ?      Ss   ?          0:00 udevd --daemon
+5     0   449   323  20   0  21700  1392 ?      S    ?          0:00 udevd --daemon
+1     0   503     2   0 -20      0     0 ?      S<   ?          0:00 [kpsmoused]
+1     0   505     2   0 -20      0     0 ?      S<   ?          0:00 [ttm_swap]
+1     0   508     2   0 -20      0     0 ?      S<   ?          0:00 [hd-audio0]
+5     0  1773     1  20   0  18972   884 ?      Ss   ?          0:00 /sbin/rpcbind -w
+5   105  1804     1  20   0  23344  1340 ?      Ss   ?          0:00 /sbin/rpc.statd
+1     0  1809     2   0 -20      0     0 ?      S<   ?          0:00 [rpciod]
+1     0  1811     2   0 -20      0     0 ?      S<   ?          0:00 [nfsiod]
+1     0  1818     1  20   0  25292   424 ?      Ss   ?          0:00 /usr/sbin/rpc.idmapd
+5     0  2137     1  20   0  53044  1780 ?      Sl   ?          0:00 /usr/sbin/rsyslogd -c5
+1     0  2204     1  20   0   4116   632 ?      Ss   ?          0:00 /usr/sbin/acpid
+1     1  2249     1  20   0  16672   156 ?      Ss   ?          0:00 /usr/sbin/atd
+5   101  2340     1  20   0  30328  1540 ?      Ss   ?          0:00 /usr/bin/dbus-daemon --system
+1     0  2363     1  20   0  20408  1044 ?      Ss   ?          0:00 /usr/sbin/cron
+5     0  2402     1  20   0  49932  1244 ?      Ss   ?          0:00 /usr/sbin/sshd
+5     0  2425     1  20   0  21004  1444 ?      Ss   ?          0:00 /usr/sbin/bluetoothd
+4     0  2432     1  20   0  83832  3100 ?      Sl   ?          0:00 /usr/sbin/gdm3
+5     0  2455   323  20   0  21700  1380 ?      S    ?          0:00 udevd --daemon
+5     0  2458     2  10 -10      0     0 ?      S<   ?          0:00 [krfcommd]
+4     0  2491  2432  20   0 105252  4632 ?      Sl   ?          0:00 /usr/lib/gdm3/gdm-simple-slave --display-id /org/gnome/DisplayManager/Display1
+4     0  2500  2491  20   0 149080 28184 ?      Ssl+ tty7       0:00 /usr/bin/Xorg :0 -br -verbose -novtswitch -auth /var/run/gdm3/auth-for-Debian-gdm-c5eQxT/d
+4     0  2509     1  20   0  16256   956 ?      Ss+  tty1       0:00 /sbin/getty 38400 tty1
+4     0  2510     1  20   0  16256   968 ?      Ss+  tty2       0:00 /sbin/getty 38400 tty2
+4     0  2511     1  20   0  16256   960 ?      Ss+  tty3       0:00 /sbin/getty 38400 tty3
+4     0  2512     1  20   0  16256   960 ?      Ss+  tty4       0:00 /sbin/getty 38400 tty4
+4     0  2513     1  20   0  16256   960 ?      Ss+  tty5       0:00 /sbin/getty 38400 tty5
+4     0  2514     1  20   0  16256   960 ?      Ss+  tty6       0:00 /sbin/getty 38400 tty6
+1   113  2530     1  20   0  30208  1180 ?      Ss   ?          0:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+4     0  2531  2491  20   0 186696  4444 ?      Sl   ?          0:00 gdm-session-worker [pam/gdm-welcome]
+4     0  2534     1  20   0 126936  3280 ?      Sl   ?          0:00 /usr/lib/accountsservice/accounts-daemon
+4     0  2538     1  20   0 132252  4388 ?      Sl   ?          0:00 /usr/lib/policykit-1/polkitd --no-debug
+4     0  2542     1  20   0 127564  3944 ?      Sl   ?          0:00 /usr/sbin/console-kit-daemon --no-daemon
+4   113  2616  2531  20   0 281216 10372 ?      Ssl  ?          0:00 /usr/bin/gnome-session -f --start /usr/share/gdm/greeter/autostart --debug
+0   113  2620  2616  20   0 579236 23504 ?      Sl   ?          0:00 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+4     0  2627     1  20   0 157956  4264 ?      Sl   ?          0:00 /usr/lib/upower/upowerd
+0   113  2656     1  20   0  53484  2304 ?      S    ?          0:00 /usr/lib/gvfs/gvfsd
+1   113  2744     1   9 -11 232444  5584 ?      S<l  ?          0:00 /usr/bin/pulseaudio --start --log-target=syslog
+0   113  2746     1  20   0 152964  3348 ?      Sl   ?          0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+4   111  2748     1  21   1 105172  1348 ?      SNl  ?          0:00 /usr/lib/rtkit/rtkit-daemon
+0   113  2755  2746  20   0  29936  1556 ?      S    ?          0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-addres
+0   113  2758     1  20   0 128624  3344 ?      Sl   ?          0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+0   113  2792  2616  20   0 344164  9888 ?      Sl   ?          0:00 metacity
+0   113  2795  2616  20   0 367912 15840 ?      Sl   ?          0:00 /usr/lib/gdm3/gdm-simple-greeter
+0   113  2796  2616  20   0 247404  9432 ?      Sl   ?          0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+0     0  2804  2491  20   0 139020  3620 ?      Sl   ?          0:00 gdm-session-worker [pam/gdm3]
+4     0  2927  2402  20   0  90124  4036 ?      Ss   ?          0:00 sshd: mike [priv]
+5  1000  2932  2927  20   0  90124  1756 ?      S    ?          0:00 sshd: mike@pts/0 
+0  1000  2933  2932  20   0  40256  4092 -      Ss+  pts/0      0:00 -zsh
+4     0  2967  2402  20   0  90124  4028 ?      Ss   ?          0:00 sshd: mike [priv]
+5  1000  2972  2967  20   0  90124  1748 ?      S    ?          0:00 sshd: mike@pts/1 
+0  1000  2973  2972  20   0  40256  4088 -      Ss   pts/1      0:00 -zsh
+1     0  2992     2  20   0      0     0 ?      S    ?          0:00 [flush-8:0]
+0  1000  2994  2973  20   0   8424   836 -      R+   pts/1      0:00 ps alx
+
+mike at pancakes in ~ 
+$ pstree
+init─┬─accounts-daemon───{accounts-daemon}
+     ├─acpid
+     ├─at-spi-bus-laun─┬─dbus-daemon
+     │                 └─3*[{at-spi-bus-laun}]
+     ├─at-spi2-registr───{at-spi2-registr}
+     ├─atd
+     ├─bluetoothd
+     ├─console-kit-dae───64*[{console-kit-dae}]
+     ├─cron
+     ├─2*[dbus-daemon]
+     ├─gdm3─┬─gdm-simple-slav─┬─Xorg───2*[{Xorg}]
+     │      │                 ├─gdm-session-wor─┬─gnome-session─┬─gdm-simple-gree───2*[{gdm-simple-gree}]
+     │      │                 │                 │               ├─gnome-settings-───2*[{gnome-settings-}]
+     │      │                 │                 │               ├─metacity───2*[{metacity}]
+     │      │                 │                 │               ├─polkit-gnome-au───{polkit-gnome-au}
+     │      │                 │                 │               └─3*[{gnome-session}]
+     │      │                 │                 └─2*[{gdm-session-wor}]
+     │      │                 ├─gdm-session-wor───{gdm-session-wor}
+     │      │                 └─{gdm-simple-slav}
+     │      └─{gdm3}
+     ├─6*[getty]
+     ├─gvfsd
+     ├─polkitd───{polkitd}
+     ├─pulseaudio───2*[{pulseaudio}]
+     ├─rpc.idmapd
+     ├─rpc.statd
+     ├─rpcbind
+     ├─rsyslogd───3*[{rsyslogd}]
+     ├─rtkit-daemon───2*[{rtkit-daemon}]
+     ├─sshd─┬─sshd───sshd───zsh
+     │      └─sshd───sshd───zsh───pstree
+     ├─udevd───2*[udevd]
+     └─upowerd───2*[{upowerd}]
+
+mike at pancakes in ~ 
+$ Write failed: Broken pipe
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 04:06]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 09:02:41 2014 from 128-223-223-121-wireless.uoregon.edu
+ 09:08:50 up 50 min,  4 users,  load average: 0.00, 0.01, 0.04
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 08:51   15:38   0.12s  0.12s -zsh
+mike     pts/1    128-223-223-121- 09:02    5:38   0.11s  0.11s -zsh
+mike     pts/2    128-223-223-121- 09:08    0.00s  0.09s  0.00s w
+
+mike at pancakes in ~ 
+$ aptitude
+
+mike at pancakes in ~ 
+$ w
+ 09:10:59 up 53 min,  4 users,  load average: 0.01, 0.02, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-121- 08:51   17:47   0.12s  0.12s -zsh
+mike     pts/1    128-223-223-121- 09:02    7:47   0.11s  0.11s -zsh
+mike     pts/2    128-223-223-121- 09:08    3.00s  0.15s  0.00s w
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 04:10]
+└─[$] <>  
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 06:31]
+└─[$] <> 
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 06:31]
+└─[$] <> 
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 06:31]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 09:08:50 2014 from 128-223-223-121-wireless.uoregon.edu
+ 11:34:19 up  3:16,  2 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    c-67-171-229-3.h 11:34    0.00s  0.09s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo reboot
+[sudo] password for mike: 
+
+Broadcast message from root@pancakes (pts/0) (Mon Jul 14 11:34:29 2014):
+
+The system is going down for reboot NOW!
+
+mike at pancakes in ~ 
+$ Connection to 128.223.203.17 closed by remote host.
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 06:32]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 11:34:19 2014 from c-67-171-229-3.hsd1.wa.comcast.net
+ 11:35:54 up 1 min,  2 users,  load average: 0.22, 0.07, 0.03
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    c-67-171-229-3.h 11:35    1.00s  0.11s  0.00s w
+
+mike at pancakes in ~ 
+$ 
+
+mike at pancakes in ~ 
+$ 
+
+mike at pancakes in ~ 
+$ 
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 06:33]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 11:35:53 2014 from c-67-171-229-3.hsd1.wa.comcast.net
+ 13:49:30 up  2:14,  2 users,  load average: 0.00, 0.01, 0.03
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    c-67-171-229-3.h 13:49    1.00s  0.09s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo apt-get autoremove
+[sudo] password for mike: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages will be REMOVED:
+  aisleriot argyll browser-plugin-gnash cheese crda dnsmasq-base file-roller finger gdebi gedit gedit-common gedit-plugins gir1.2-gdata-0.0
+  gir1.2-gnomekeyring-1.0 gir1.2-goa-1.0 gir1.2-gtop-2.0 gir1.2-gucharmap-2.90 gir1.2-javascriptcoregtk-3.0 gir1.2-rb-3.0 gir1.2-tracker-0.14
+  gir1.2-webkit-3.0 glchess glines gnash gnash-common gnect gnibbles gnobots2 gnome-color-manager gnome-documents gnome-games gnome-games-data
+  gnome-games-extra-data gnome-nettool gnome-shell-extensions gnome-sudoku gnome-tweak-tool gnome-video-effects gnomine gnotravex gnotski gnuchess
+  gnuchess-book grilo-plugins-0.1 gtali guile-2.0-libs hamster-applet iagno inkscape iputils-tracepath iw libblas3gf libboost-program-options1.49.0
+  libboost-thread1.49.0 libdee-1.0-4 libdiscid0 libdmapsharing-3.0-2 libgexiv2-1 libgpod-common libgpod4 libgrilo-0.1-0 libgtkmm-2.4-1c2a libgupnp-av-1.0-2
+  libgupnp-dlna-1.0-2 libicc2 libimdi0 libjim0debian2 liblinear-tools liblinear1 libminiupnpc5 libmtp-common libmtp-runtime libmtp9 libnatpmp1
+  libnetfilter-conntrack3 libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libraw5 librhythmbox-core6 libsofia-sip-ua-glib3 libsofia-sip-ua0 libsvm-tools
+  libwnck-common libwnck22 libxss1 lightsoff mahjongg media-player-info minissdpd mobile-broadband-provider-info modemmanager nmap p7zip-full perlmagick
+  python-gconf python-gnome2 python-mako python-markupsafe python-pyorbit python-wnck python-zeitgeist quadrapassel rhythmbox rhythmbox-data
+  rhythmbox-plugin-cdrecorder rhythmbox-plugins rygel rygel-playbin rygel-preferences rygel-tracker seahorse shotwell shotwell-common simple-scan
+  sound-juicer swell-foop telepathy-rakia transmission-common transmission-gtk unoconv usb-modeswitch usb-modeswitch-data wireless-regdb wpasupplicant
+  xdg-user-dirs-gtk zeitgeist-core
+0 upgraded, 0 newly installed, 127 to remove and 0 not upgraded.
+After this operation, 321 MB disk space will be freed.
+Do you want to continue [Y/n]? Y
+(Reading database ... 165627 files and directories currently installed.)
+Removing aisleriot ...
+Removing argyll ...
+Removing browser-plugin-gnash ...
+Removing cheese ...
+Removing crda ...
+Removing dnsmasq-base ...
+Removing file-roller ...
+Removing gnome-nettool ...
+Removing finger ...
+Removing gdebi ...
+Removing gedit-plugins ...
+Removing gedit ...
+Removing gedit-common ...
+Removing gnome-documents ...
+Removing gir1.2-gdata-0.0 ...
+Removing rhythmbox-plugins ...
+Removing gir1.2-gnomekeyring-1.0 ...
+Removing gir1.2-goa-1.0 ...
+Removing gnome-shell-extensions ...
+Removing gir1.2-gtop-2.0 ...
+Removing gir1.2-gucharmap-2.90 ...
+Removing gir1.2-webkit-3.0 ...
+Removing gir1.2-javascriptcoregtk-3.0 ...
+Removing gir1.2-rb-3.0 ...
+Removing gir1.2-tracker-0.14 ...
+Removing gnome-games ...
+Removing glchess ...
+Removing glines ...
+Removing gnash ...
+Removing gnash-common ...
+Removing gnect ...
+Removing gnibbles ...
+Removing gnobots2 ...
+Removing gnome-color-manager ...
+Removing swell-foop ...
+Removing quadrapassel ...
+Removing mahjongg ...
+Removing lightsoff ...
+Removing iagno ...
+Removing gtali ...
+Removing gnotski ...
+Removing gnotravex ...
+Removing gnomine ...
+Removing gnome-sudoku ...
+Removing gnome-games-data ...
+Removing gnome-games-extra-data ...
+Removing gnome-tweak-tool ...
+Removing gnome-video-effects ...
+Removing gnuchess-book ...
+Removing gnuchess ...
+Removing grilo-plugins-0.1:amd64 ...
+Removing guile-2.0-libs ...
+Removing hamster-applet ...
+Removing inkscape ...
+Removing iputils-tracepath ...
+Removing iw ...
+Removing libblas3gf ...
+Removing libboost-program-options1.49.0 ...
+Removing libboost-thread1.49.0 ...
+Removing zeitgeist-core ...
+Removing libdee-1.0-4 ...
+Removing sound-juicer ...
+Removing libdiscid0:amd64 ...
+Removing libdmapsharing-3.0-2 ...
+Removing shotwell ...
+Removing libgexiv2-1 ...
+Removing libgpod-common ...
+Removing libgpod4:amd64 ...
+Removing libgrilo-0.1-0:amd64 ...
+Removing libgtkmm-2.4-1c2a ...
+Removing rygel-tracker ...
+Removing rygel-preferences ...
+Removing rygel-playbin ...
+Removing rygel ...
+Removing libgupnp-av-1.0-2 ...
+Removing libgupnp-dlna-1.0-2 ...
+Removing libicc2:amd64 ...
+Removing libimdi0:amd64 ...
+Removing usb-modeswitch ...
+Removing libjim0debian2:amd64 ...
+Removing liblinear-tools ...
+Removing nmap ...
+Removing liblinear1 ...
+Removing transmission-gtk ...
+Removing libminiupnpc5 ...
+Removing libmtp-runtime ...
+Removing libmtp9:amd64 ...
+Removing libmtp-common ...
+Removing libnatpmp1 ...
+Removing libnetfilter-conntrack3:amd64 ...
+Removing wpasupplicant ...
+Removing libnl-route-3-200:amd64 ...
+Removing libnl-genl-3-200:amd64 ...
+Removing libnl-3-200:amd64 ...
+Removing libraw5:amd64 ...
+Removing rhythmbox-plugin-cdrecorder ...
+Removing rhythmbox ...
+Removing librhythmbox-core6 ...
+Removing telepathy-rakia ...
+Removing libsofia-sip-ua-glib3 ...
+Removing libsofia-sip-ua0 ...
+Removing libsvm-tools ...
+Removing python-wnck ...
+Removing libwnck22 ...
+Removing libwnck-common ...
+Removing libxss1:amd64 ...
+Removing media-player-info ...
+Removing minissdpd ...
+No process in pidfile '/var/run/minissdpd.pid' found running; none killed.
+Removing mobile-broadband-provider-info ...
+Removing modemmanager ...
+Removing p7zip-full ...
+Removing perlmagick ...
+Removing python-gnome2 ...
+Removing python-gconf ...
+Removing python-mako ...
+Removing python-markupsafe ...
+Removing python-pyorbit ...
+Removing python-zeitgeist ...
+Removing rhythmbox-data ...
+Removing seahorse ...
+Removing shotwell-common ...
+Removing simple-scan ...
+Removing transmission-common ...
+Removing unoconv ...
+Removing usb-modeswitch-data ...
+Removing wireless-regdb ...
+Removing xdg-user-dirs-gtk ...
+Processing triggers for menu ...
+Processing triggers for hicolor-icon-theme ...
+Processing triggers for man-db ...
+Processing triggers for libglib2.0-0:amd64 ...
+Processing triggers for gconf2 ...
+Processing triggers for desktop-file-utils ...
+Processing triggers for gnome-menus ...
+Processing triggers for mime-support ...
+Processing triggers for shared-mime-info ...
+Processing triggers for install-info ...
+Processing triggers for python-support ...
+[master ec9279c] committing changes in /etc after apt run
+ Author: mike <mike@pancakes>
+ 12 files changed, 1 insertion(+), 29 deletions(-)
+ delete mode 120000 alternatives/flash-mozilla.so
+ delete mode 120000 alternatives/gnome-text-editor
+ delete mode 120000 alternatives/gnome-text-editor.1.gz
+ delete mode 120000 alternatives/odt2txt
+ delete mode 120000 alternatives/odt2txt.1.gz
+ delete mode 120000 ifplugd/action.d/action_wpa
+ delete mode 120000 network/if-down.d/wpasupplicant
+ delete mode 120000 network/if-post-down.d/wpasupplicant
+ delete mode 120000 network/if-pre-up.d/wpasupplicant
+ delete mode 120000 network/if-up.d/wpasupplicant
+
+mike at pancakes in ~ 
+$ sudo reboot
+
+Broadcast message from root@pancakes (pts/0) (Mon Jul 14 13:52:42 2014):
+
+The system is going down for reboot NOW!
+
+mike at pancakes in ~ 
+$ Connection to 128.223.203.17 closed by remote host.
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 08:50]
+└─[$] <> ssh mike@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 08:50]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 13:49:29 2014 from c-67-171-229-3.hsd1.wa.comcast.net
+
+ 13:53:39 up 0 min,  2 users,  load average: 0.56, 0.13, 0.04
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    c-67-171-229-3.h 13:53    4.00s  0.11s  0.00s w
+
+mike at pancakes in ~ 
+$ 
+
+mike at pancakes in ~ 
+$ 
+
+mike at pancakes in ~ 
+$ sudo apt-get update 
+[sudo] password for mike: 
+Hit http://security.debian.org wheezy/updates Release.gpg
+Hit http://ftp.us.debian.org wheezy Release.gpg
+Hit http://security.debian.org wheezy/updates Release
+Get:1 http://ftp.us.debian.org wheezy-updates Release.gpg [836 B]
+Hit http://security.debian.org wheezy/updates/main Sources 
+Hit http://ftp.us.debian.org wheezy Release
+Hit http://security.debian.org wheezy/updates/contrib Sources        
+Hit http://security.debian.org wheezy/updates/main amd64 Packages    
+Hit http://security.debian.org wheezy/updates/contrib amd64 Packages
+Get:2 http://ftp.us.debian.org wheezy-updates Release [124 kB]
+Hit http://security.debian.org wheezy/updates/contrib Translation-en
+Hit http://security.debian.org wheezy/updates/main Translation-en
+Hit http://ftp.us.debian.org wheezy/main Sources
+Hit http://ftp.us.debian.org wheezy/contrib Sources
+Hit http://ftp.us.debian.org wheezy/non-free Sources
+Hit http://ftp.us.debian.org wheezy/main amd64 Packages
+Hit http://ftp.us.debian.org wheezy/contrib amd64 Packages
+Hit http://ftp.us.debian.org wheezy/non-free amd64 Packages
+Hit http://ftp.us.debian.org wheezy/contrib Translation-en
+Hit http://ftp.us.debian.org wheezy/main Translation-en
+Hit http://ftp.us.debian.org wheezy/non-free Translation-en
+Get:3 http://ftp.us.debian.org wheezy-updates/main Sources [4,478 B]
+Get:4 http://ftp.us.debian.org wheezy-updates/contrib Sources [14 B]
+Get:5 http://ftp.us.debian.org wheezy-updates/non-free Sources [14 B]
+Hit http://ftp.us.debian.org wheezy-updates/main amd64 Packages/DiffIndex
+Get:6 http://ftp.us.debian.org wheezy-updates/contrib amd64 Packages [14 B]
+Get:7 http://ftp.us.debian.org wheezy-updates/non-free amd64 Packages [14 B]
+Get:8 http://ftp.us.debian.org wheezy-updates/contrib Translation-en [14 B]
+Hit http://ftp.us.debian.org wheezy-updates/main Translation-en/DiffIndex
+Get:9 http://ftp.us.debian.org wheezy-updates/non-free Translation-en [14 B]
+Fetched 129 kB in 2s (47.2 kB/s)      
+Reading package lists... Done
+
+mike at pancakes in ~ 
+$ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+mike at pancakes in ~ 
+$ w
+ 13:54:21 up 1 min,  2 users,  load average: 0.41, 0.16, 0.06
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    c-67-171-229-3.h 13:53    5.00s  0.14s  0.00s w
+
+mike at pancakes in ~ 
+$ htop
+
+mike at pancakes in ~ 
+$ vim
+
+mike at pancakes in ~ 
+$ ls -a
+.              .bashrc  Documents        .gstreamer-0.10  .local            .profile       Templates         .xsession-errors.old
+..             .cache   Downloads        .gtk-bookmarks   .mission-control  Public         Videos            .zcompdump
+.aptitude      .config  .gconf           .gvfs            .mozilla          .pulse         .viminfo          .zcompdump-pancakes-4.3.17
+.bash_history  .dbus    .gnome2          .histfile        Music             .pulse-cookie  .vimrc            .zshrc
+.bash_logout   Desktop  .gnome2_private  .ICEauthority    Pictures          .ssh           .xsession-errors
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 08:53]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Mon Jul 14 13:53:35 2014 from c-67-171-229-3.hsd1.wa.comcast.net
+ 13:57:06 up 3 min,  2 users,  load average: 0.05, 0.11, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    c-67-171-229-3.h 13:57    0.00s  0.09s  0.00s w
+
+mike at pancakes in ~ 
+$ ps alx                 
+F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
+4     0     1     0  20   0  10648   812 ?      Ss   ?          0:01 init [2]  
+1     0     2     0  20   0      0     0 ?      S    ?          0:00 [kthreadd]
+1     0     3     2  20   0      0     0 ?      S    ?          0:00 [ksoftirqd/0]
+1     0     4     2  20   0      0     0 ?      S    ?          0:00 [kworker/0:0]
+1     0     5     2  20   0      0     0 ?      S    ?          0:00 [kworker/u:0]
+1     0     6     2 -100  -      0     0 ?      S    ?          0:00 [migration/0]
+5     0     7     2 -100  -      0     0 ?      S    ?          0:00 [watchdog/0]
+1     0     8     2 -100  -      0     0 ?      S    ?          0:00 [migration/1]
+1     0     9     2  20   0      0     0 ?      S    ?          0:00 [kworker/1:0]
+1     0    10     2  20   0      0     0 ?      S    ?          0:00 [ksoftirqd/1]
+1     0    11     2  20   0      0     0 ?      S    ?          0:00 [kworker/0:1]
+5     0    12     2 -100  -      0     0 ?      S    ?          0:00 [watchdog/1]
+1     0    13     2   0 -20      0     0 ?      S<   ?          0:00 [cpuset]
+1     0    14     2   0 -20      0     0 ?      S<   ?          0:00 [khelper]
+5     0    15     2  20   0      0     0 ?      S    ?          0:00 [kdevtmpfs]
+1     0    16     2   0 -20      0     0 ?      S<   ?          0:00 [netns]
+1     0    17     2  20   0      0     0 ?      S    ?          0:00 [sync_supers]
+1     0    18     2  20   0      0     0 ?      S    ?          0:00 [bdi-default]
+1     0    19     2   0 -20      0     0 ?      S<   ?          0:00 [kintegrityd]
+1     0    20     2   0 -20      0     0 ?      S<   ?          0:00 [kblockd]
+1     0    21     2  20   0      0     0 ?      S    ?          0:00 [kworker/1:1]
+1     0    22     2  20   0      0     0 ?      S    ?          0:00 [khungtaskd]
+1     0    23     2  20   0      0     0 ?      S    ?          0:00 [kswapd0]
+1     0    24     2  25   5      0     0 ?      SN   ?          0:00 [ksmd]
+1     0    25     2  39  19      0     0 ?      SN   ?          0:00 [khugepaged]
+1     0    26     2  20   0      0     0 ?      S    ?          0:00 [fsnotify_mark]
+1     0    27     2   0 -20      0     0 ?      S<   ?          0:00 [crypto]
+1     0    30     2  20   0      0     0 ?      S    ?          0:00 [kworker/0:2]
+1     0   106     2  20   0      0     0 ?      S    ?          0:00 [khubd]
+1     0   108     2   0 -20      0     0 ?      S<   ?          0:00 [ata_sff]
+1     0   139     2  20   0      0     0 ?      S    ?          0:00 [scsi_eh_0]
+1     0   140     2  20   0      0     0 ?      S    ?          0:00 [scsi_eh_1]
+1     0   141     2  20   0      0     0 ?      S    ?          0:00 [kworker/u:1]
+1     0   142     2  20   0      0     0 ?      S    ?          0:00 [kworker/u:2]
+1     0   147     2  20   0      0     0 ?      S    ?          0:00 [scsi_eh_2]
+1     0   148     2  20   0      0     0 ?      S    ?          0:00 [scsi_eh_3]
+1     0   149     2  20   0      0     0 ?      S    ?          0:00 [kworker/u:3]
+1     0   150     2  20   0      0     0 ?      S    ?          0:00 [kworker/u:4]
+1     0   164     2  20   0      0     0 ?      S    ?          0:00 [kworker/1:2]
+1     0   181     2  20   0      0     0 ?      S    ?          0:00 [jbd2/sda1-8]
+1     0   182     2   0 -20      0     0 ?      S<   ?          0:00 [ext4-dio-unwrit]
+5     0   326     1  20   0  21532  1528 ?      Ss   ?          0:00 udevd --daemon
+5     0   435   326  20   0  21528  1200 ?      S    ?          0:00 udevd --daemon
+1     0   487     2   0 -20      0     0 ?      S<   ?          0:00 [kpsmoused]
+1     0   488     2   0 -20      0     0 ?      S<   ?          0:00 [hd-audio0]
+1     0   491     2   0 -20      0     0 ?      S<   ?          0:00 [ttm_swap]
+1     0  1688     2  20   0      0     0 ?      S    ?          0:00 [flush-8:0]
+5     0  1743     1  20   0  18972   888 ?      Ss   ?          0:00 /sbin/rpcbind -w
+5   105  1774     1  20   0  23344  1336 ?      Ss   ?          0:00 /sbin/rpc.statd
+1     0  1779     2   0 -20      0     0 ?      S<   ?          0:00 [rpciod]
+1     0  1781     2   0 -20      0     0 ?      S<   ?          0:00 [nfsiod]
+1     0  1788     1  20   0  25292   424 ?      Ss   ?          0:00 /usr/sbin/rpc.idmapd
+5     0  2107     1  20   0  53044  1784 ?      Sl   ?          0:00 /usr/sbin/rsyslogd -c5
+1     0  2195     1  20   0   4116   636 ?      Ss   ?          0:00 /usr/sbin/acpid
+1     1  2221     1  20   0  16672   148 ?      Ss   ?          0:00 /usr/sbin/atd
+1     0  2262     1  20   0  20408  1040 ?      Ss   ?          0:00 /usr/sbin/cron
+5   101  2333     1  20   0  30496  1716 ?      Ss   ?          0:00 /usr/bin/dbus-daemon --system
+5     0  2376     1  20   0  21004  1444 ?      Ss   ?          0:00 /usr/sbin/bluetoothd
+5     0  2382   326  20   0  21528  1200 ?      S    ?          0:00 udevd --daemon
+5     0  2385     2  10 -10      0     0 ?      S<   ?          0:00 [krfcommd]
+4     0  2408     1  20   0  83832  3104 ?      Sl   ?          0:00 /usr/sbin/gdm3
+5     0  2426     1  20   0  49932  1212 ?      Ss   ?          0:00 /usr/sbin/sshd
+4     0  2454  2408  20   0 105252  4636 ?      Sl   ?          0:00 /usr/lib/gdm3/gdm-simple-slave --display-id /org/gnome/DisplayManager/Display1
+4     0  2469  2454  20   0 149080 27936 ?      Ssl+ tty7       0:00 /usr/bin/Xorg :0 -br -verbose -novtswitch -auth /var/run/gdm3/auth-for-Debian-gdm-AHDRjY/d
+4     0  2477     1  20   0  16256   964 ?      Ss+  tty1       0:00 /sbin/getty 38400 tty1
+4     0  2478     1  20   0  16256   964 ?      Ss+  tty2       0:00 /sbin/getty 38400 tty2
+4     0  2479     1  20   0  16256   964 ?      Ss+  tty3       0:00 /sbin/getty 38400 tty3
+4     0  2480     1  20   0  16256   964 ?      Ss+  tty4       0:00 /sbin/getty 38400 tty4
+4     0  2481     1  20   0  16256   964 ?      Ss+  tty5       0:00 /sbin/getty 38400 tty5
+4     0  2482     1  20   0  16256   964 ?      Ss+  tty6       0:00 /sbin/getty 38400 tty6
+1   113  2498     1  20   0  30204  1172 ?      Ss   ?          0:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+4     0  2499  2454  20   0 186700  4344 ?      Sl   ?          0:00 gdm-session-worker [pam/gdm-welcome]
+4     0  2502     1  20   0 126940  3280 ?      Sl   ?          0:00 /usr/lib/accountsservice/accounts-daemon
+4     0  2506     1  20   0 132308  4420 ?      Sl   ?          0:00 /usr/lib/policykit-1/polkitd --no-debug
+4     0  2510     1  20   0 127568  3852 ?      Sl   ?          0:00 /usr/sbin/console-kit-daemon --no-daemon
+4   113  2584  2499  20   0 281176 10324 ?      Ssl  ?          0:00 /usr/bin/gnome-session -f --start /usr/share/gdm/greeter/autostart --debug
+0   113  2590  2584  20   0 509376 23424 ?      Sl   ?          0:00 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+4     0  2597     1  20   0 157956  4248 ?      Sl   ?          0:00 /usr/lib/upower/upowerd
+0   113  2630     1  20   0  53484  2304 ?      S    ?          0:00 /usr/lib/gvfs/gvfsd
+1   113  2681     1   9 -11 232444  5580 ?      S<l  ?          0:00 /usr/bin/pulseaudio --start --log-target=syslog
+0   113  2683     1  20   0 152916  3444 ?      Sl   ?          0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+4   111  2685     1  21   1 105172  1340 ?      SNl  ?          0:00 /usr/lib/rtkit/rtkit-daemon
+0   113  2692  2683  20   0  29804  1556 ?      S    ?          0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-addres
+0   113  2695     1  20   0 128624  3352 ?      Sl   ?          0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+0   113  2782  2584  20   0 340456  9884 ?      Sl   ?          0:00 metacity
+0   113  2788  2584  20   0 364200 15976 ?      Sl   ?          0:00 /usr/lib/gdm3/gdm-simple-greeter
+0   113  2789  2584  20   0 181868  9428 ?      Sl   ?          0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+0     0  2797  2454  20   0 139020  3616 ?      Sl   ?          0:00 gdm-session-worker [pam/gdm3]
+4     0  2822     1  20   0 186704  6008 ?      Sl   ?          0:00 /usr/lib/packagekit/packagekitd
+4     0  2871  2426  20   0  90124  4028 ?      Ss   ?          0:00 sshd: mike [priv]
+5  1000  2876  2871  20   0  90124  1752 ?      S    ?          0:00 sshd: mike@pts/0 
+0  1000  2877  2876  20   0  40244  4084 -      Ss   pts/0      0:00 -zsh
+0  1000  2897  2877  20   0   8424   832 -      R+   pts/0      0:00 ps alx
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Mon Jul 14, 08:55]
+└─[$] <> 
