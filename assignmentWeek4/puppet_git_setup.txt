@@ -597,5 +597,83 @@ root@pancakes:/var/git# cd
 .bash_history  .bashrc        .profile       
 .bash_logout   .gitconfig     puppet.git/    
 root@pancakes:/var/git# cd
-root@pancakes:~# 
+root@pancakes:~# cd /etc/puppet
+root@pancakes:/etc/puppet# git pull
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From /var/git/puppet
+   a642231..1db867f  master     -> master
+Warning: fetch updated the current branch head.
+Warning: fast-forwarding your working tree from
+Warning: commit a642231c3cf657a990d0c1a679868c273bacc674.
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details
 
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream master origin/<branch>
+
+root@pancakes:/etc/puppet# ls -a
+.	   etckeeper-commit-post  .git	     puppet.conf
+..	   etckeeper-commit-pre   manifests  templates
+auth.conf  fileserver.conf	  modules
+root@pancakes:/etc/puppet# git status
+# On branch master
+nothing to commit (working directory clean)
+root@pancakes:/etc/puppet# git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream master origin/<branch>
+
+root@pancakes:/etc/puppet# git remote add --mirror=fetch origin /var/git/puppet.git
+fatal: remote origin already exists.
+root@pancakes:/etc/puppet# git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream master origin/<branch>
+
+root@pancakes:/etc/puppet# vim fileserver.conf 
+root@pancakes:/etc/puppet# vim puppet.conf 
+root@pancakes:/etc/puppet# puppet agent --test
+info: Caching catalog for pancakes.ilab.cs.uoregon.edu
+info: Applying configuration version '1405525940'
+info: Creating state file /var/lib/puppet/state/state.yaml
+notice: Finished catalog run in 0.02 seconds
+root@pancakes:/etc/puppet# cd
+root@pancakes:~# puppet agent --test
+info: Caching catalog for pancakes.ilab.cs.uoregon.edu
+info: Applying configuration version '1405525974'
+notice: Finished catalog run in 0.02 seconds
+root@pancakes:~# puppet ca list
+
+root@pancakes:~# puppet ca list
+
+root@pancakes:~# cd /etc/puppet
+root@pancakes:/etc/puppet# git pull origin master
+From /var/git/puppet
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+root@pancakes:/etc/puppet# 
+root@pancakes:/etc/puppet# 
+root@pancakes:/etc/puppet# 
+root@pancakes:/etc/puppet# git remote -v
+origin	/var/git/puppet.git (fetch)
+origin	/var/git/puppet.git (push)
+root@pancakes:/etc/puppet# 
