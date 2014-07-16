@@ -1,0 +1,601 @@
+
+               +                
+               #                
+              ###               
+             #####              
+             ######             
+            ; #####;            User: mike
+           +##.#####            Hostname: uselinuxonyourmacbookpro
+          +##########           Distro: Arch Linux
+         #############;         Kernel: 3.15.5-1-ARCH
+        ###############+        Uptime: 0:38
+       #######   #######        Window Manager: 
+     .######;     ;###;`".      Desktop Environment: GNOME
+    .#######;     ;#####.       Shell: /usr/bin/zsh
+    #########.   .########`     Terminal: xterm-256color
+   ######'           '######    Packages: 1575
+  ;####                 ####;   CPU: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+  ##'                     '##   RAM: 2359 MB / 7863 MB 
+ #'                         `#  Disk: 150G / 175G
+
+ 14:56:31 up 38 min,  4 users,  load average: 0.78, 0.59, 0.47
+USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     :0        14:18   ?xdm?  12:03   0.16s gdm-session-worker [pam/gdm-pas
+mike     pts/0     14:24   29:51   0.21s  0.21s /usr/bin/zsh
+mike     pts/1     14:41    1:11   0.13s  0.13s zsh
+mike     pts/2     14:56    0.00s  0.04s  0.00s w
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Wed Jul 16, 02:56]
+└─[$] <> ssh mike@128.223.203.17      
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Wed Jul 16 07:54:14 2014 from 128-223-223-120-wireless.uoregon.edu
+ 07:58:58 up 1 day, 18:05,  2 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-120- 07:58    0.00s  0.10s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo reboot
+[sudo] password for mike: 
+
+Broadcast message from root@pancakes (pts/0) (Wed Jul 16 07:59:03 2014):
+
+The system is going down for reboot NOW!
+
+mike at pancakes in ~ 
+$ Connection to 128.223.203.17 closed by remote host.
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Wed Jul 16, 02:56]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Wed Jul 16 07:58:58 2014 from 128-223-223-120-wireless.uoregon.edu
+ 08:00:19 up 0 min,  2 users,  load average: 0.51, 0.15, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-120- 08:00    1.00s  0.12s  0.00s w
+
+mike at pancakes in ~ 
+$ exit
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Wed Jul 16, 02:58]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Wed Jul 16 08:00:18 2014 from 128-223-223-120-wireless.uoregon.edu
+ 08:02:27 up 3 min,  2 users,  load average: 0.06, 0.10, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-120- 08:02    0.00s  0.09s  0.00s w
+
+mike at pancakes in ~ 
+$ cd /etc/
+
+mike at pancakes in /etc 
+$ ls -a
+.                       gshadow           passwd
+..                      gshadow-          passwd-
+acpi                    gssapi_mech.conf  perl
+adduser.conf            gtk-2.0           pkcs11
+adjtime                 gtk-3.0           pm
+aliases                 hdparm.conf       pnm2ppa.conf
+alternatives            host.conf         polkit-1
+anacrontab              hostname          ppp
+apache2                 hosts             profile
+apg.conf                hosts.allow       profile.d
+apm                     hosts.deny        protocols
+apt                     hotplug           pulse
+at.deny                 hp                puppet
+at-spi2                 icedtea-web       purple
+avahi                   iceweasel         .pwd.lock
+bash.bashrc             idmapd.conf       python
+bash_completion         ImageMagick       python2.6
+bash_completion.d       init              python2.7
+bindresvport.blacklist  init.d            rc0.d
+blkid.tab               initramfs-tools   rc1.d
+blkid.tab.old           inittab           rc2.d
+bluetooth               inputrc           rc3.d
+bogofilter.cf           insserv           rc4.d
+bonobo-activation       insserv.conf      rc5.d
+ca-certificates         insserv.conf.d    rc6.d
+ca-certificates.conf    iproute2          rc.local
+calendar                issue             rcS.d
+chatscripts             issue.net         reportbug.conf
+clutter-imcontext       .java             resolvconf
+colord.conf             java-6-openjdk    resolv.conf
+ConsoleKit              kbd               rmt
+console-setup           kernel            rpc
+cron.d                  kernel-img.conf   rsyslog.conf
+cron.daily              ldap              rsyslog.d
+cron.hourly             ld.so.cache       rygel.conf
+cron.monthly            ld.so.conf        samba
+crontab                 ld.so.conf.d      sane.d
+cron.weekly             libao.conf        securetty
+cruft                   libaudit.conf     security
+cups                    libnl-3           selinux
+dbus-1                  libpaper.d        sensors3.conf
+debconf.conf            libreoffice       sensors.d
+debian_version          locale.alias      services
+default                 locale.gen        sgml
+deluser.conf            localtime         shadow
+dhcp                    logcheck          shadow-
+dhcp3                   login.defs        shells
+dictionaries-common     logrotate.conf    skel
+discover.conf.d         logrotate.d       snmp
+discover-modprobe.conf  magic             sound
+dpkg                    magic.mime        speech-dispatcher
+drirc                   mailcap           ssh
+emacs                   mailcap.order     ssl
+email-addresses         mailname          staff-group-for-usr-local
+environment             mail.rc           sudoers
+etckeeper               manpath.config    sudoers.d
+.etckeeper              menu              sysctl.conf
+exim4                   menu-methods      sysctl.d
+fonts                   mime.types        systemd
+foomatic                mke2fs.conf       terminfo
+fstab                   modprobe.d        texmf
+fstab.d                 modules           timezone
+fuse.conf               mono              timidity
+gai.conf                motd              ts.conf
+gconf                   mtab              ucf.conf
+gdm3                    Muttrc            udev
+ghostscript             Muttrc.d          ufw
+gimp                    nanorc            updatedb.conf
+.git                    netconfig         UPower
+.gitignore              network           usb_modeswitch.conf
+gnashpluginrc           networks          vim
+gnashrc                 nsswitch.conf     w3m
+gnashthumbnailrc        obex-data-server  wgetrc
+gnome                   openal            wildmidi
+gnome-vfs-2.0           opt               wpa_supplicant
+gnome-vfs-mime-magic    os-release        X11
+groff                   PackageKit        xdg
+group                   pam.conf          xml
+group-                  pam.d             zsh
+grub.d                  papersize
+
+mike at pancakes in /etc 
+$ vim .etckeeper
+
+mike at pancakes in /etc 
+$ sudo vim .etckeeper
+[sudo] password for mike: 
+
+mike at pancakes in /etc 
+$ cd 
+
+mike at pancakes in ~ 
+$ sudo apt-get --purge remove etckeeper
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages will be REMOVED:
+  etckeeper*
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+After this operation, 249 kB disk space will be freed.
+Do you want to continue [Y/n]? Y
+[master 7c0b36f] saving uncommitted changes in /etc prior to apt run
+ Author: mike <mike@pancakes>
+ 1 file changed, 2 insertions(+)
+(Reading database ... 148970 files and directories currently installed.)
+Removing etckeeper ...
+Purging configuration files for etckeeper ...
+Processing triggers for man-db ...
+
+mike at pancakes in ~ 
+$ ls -a
+.              Documents        .local            Templates
+..             Downloads        .mission-control  Videos
+.aptitude      .gconf           .mozilla          .vim
+.bash_history  .gnome2          Music             .viminfo
+.bash_logout   .gnome2_private  Pictures          .vimrc
+.bashrc        .gstreamer-0.10  .profile          .xsession-errors
+.cache         .gtk-bookmarks   Public            .xsession-errors.old
+.config        .gvfs            .pulse            .zcompdump
+.dbus          .histfile        .pulse-cookie     .zcompdump-pancakes-4.3.17
+Desktop        .ICEauthority    .ssh              .zshrc
+
+mike at pancakes in ~ 
+$ cd /etc/
+
+mike at pancakes in /etc 
+$ ls -a
+.                       gtk-2.0           passwd-
+..                      gtk-3.0           perl
+acpi                    hdparm.conf       pkcs11
+adduser.conf            host.conf         pm
+adjtime                 hostname          pnm2ppa.conf
+aliases                 hosts             polkit-1
+alternatives            hosts.allow       ppp
+anacrontab              hosts.deny        profile
+apache2                 hotplug           profile.d
+apg.conf                hp                protocols
+apm                     icedtea-web       pulse
+apt                     iceweasel         puppet
+at.deny                 idmapd.conf       purple
+at-spi2                 ImageMagick       .pwd.lock
+avahi                   init              python
+bash.bashrc             init.d            python2.6
+bash_completion         initramfs-tools   python2.7
+bash_completion.d       inittab           rc0.d
+bindresvport.blacklist  inputrc           rc1.d
+blkid.tab               insserv           rc2.d
+blkid.tab.old           insserv.conf      rc3.d
+bluetooth               insserv.conf.d    rc4.d
+bogofilter.cf           iproute2          rc5.d
+bonobo-activation       issue             rc6.d
+ca-certificates         issue.net         rc.local
+ca-certificates.conf    .java             rcS.d
+calendar                java-6-openjdk    reportbug.conf
+chatscripts             kbd               resolvconf
+clutter-imcontext       kernel            resolv.conf
+colord.conf             kernel-img.conf   rmt
+ConsoleKit              ldap              rpc
+console-setup           ld.so.cache       rsyslog.conf
+cron.d                  ld.so.conf        rsyslog.d
+cron.daily              ld.so.conf.d      rygel.conf
+cron.hourly             libao.conf        samba
+cron.monthly            libaudit.conf     sane.d
+crontab                 libnl-3           securetty
+cron.weekly             libpaper.d        security
+cups                    libreoffice       selinux
+dbus-1                  locale.alias      sensors3.conf
+debconf.conf            locale.gen        sensors.d
+debian_version          localtime         services
+default                 logcheck          sgml
+deluser.conf            login.defs        shadow
+dhcp                    logrotate.conf    shadow-
+dhcp3                   logrotate.d       shells
+dictionaries-common     magic             skel
+discover.conf.d         magic.mime        snmp
+discover-modprobe.conf  mailcap           sound
+dpkg                    mailcap.order     speech-dispatcher
+drirc                   mailname          ssh
+emacs                   mail.rc           ssl
+email-addresses         manpath.config    staff-group-for-usr-local
+environment             menu              sudoers
+exim4                   menu-methods      sudoers.d
+fonts                   mime.types        sysctl.conf
+foomatic                mke2fs.conf       sysctl.d
+fstab                   modprobe.d        systemd
+fstab.d                 modules           terminfo
+fuse.conf               mono              texmf
+gai.conf                motd              timezone
+gconf                   mtab              timidity
+gdm3                    Muttrc            ts.conf
+ghostscript             Muttrc.d          ucf.conf
+gimp                    nanorc            udev
+gnashpluginrc           netconfig         ufw
+gnashrc                 network           updatedb.conf
+gnashthumbnailrc        networks          UPower
+gnome                   nsswitch.conf     usb_modeswitch.conf
+gnome-vfs-2.0           obex-data-server  vim
+gnome-vfs-mime-magic    openal            w3m
+groff                   opt               wgetrc
+group                   os-release        wildmidi
+group-                  PackageKit        wpa_supplicant
+grub.d                  pam.conf          X11
+gshadow                 pam.d             xdg
+gshadow-                papersize         xml
+gssapi_mech.conf        passwd            zsh
+
+mike at pancakes in /etc 
+$ cd
+
+mike at pancakes in ~ 
+$ ls -a
+.              Documents        .local            Templates
+..             Downloads        .mission-control  Videos
+.aptitude      .gconf           .mozilla          .vim
+.bash_history  .gnome2          Music             .viminfo
+.bash_logout   .gnome2_private  Pictures          .vimrc
+.bashrc        .gstreamer-0.10  .profile          .xsession-errors
+.cache         .gtk-bookmarks   Public            .xsession-errors.old
+.config        .gvfs            .pulse            .zcompdump
+.dbus          .histfile        .pulse-cookie     .zcompdump-pancakes-4.3.17
+Desktop        .ICEauthority    .ssh              .zshrc
+
+mike at pancakes in ~ 
+$ sudo apt-get install puppetmaster
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  puppetmaster-common
+Suggested packages:
+  apache2 nginx rails ruby-ldap ruby-stomp stompserver
+The following NEW packages will be installed:
+  puppetmaster puppetmaster-common
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 545 kB of archives.
+After this operation, 687 kB of additional disk space will be used.
+Do you want to continue [Y/n]? Y
+Get:1 http://ftp.us.debian.org/debian/ wheezy/main puppetmaster-common all 2.7.23-1~deb7u3 [274 kB]
+Get:2 http://ftp.us.debian.org/debian/ wheezy/main puppetmaster all 2.7.23-1~deb7u3 [271 kB]
+Fetched 545 kB in 1s (296 kB/s)       
+Selecting previously unselected package puppetmaster-common.
+(Reading database ... 148896 files and directories currently installed.)
+Unpacking puppetmaster-common (from .../puppetmaster-common_2.7.23-1~deb7u3_all.deb) ...
+Selecting previously unselected package puppetmaster.
+Unpacking puppetmaster (from .../puppetmaster_2.7.23-1~deb7u3_all.deb) ...
+Processing triggers for man-db ...
+Setting up puppetmaster-common (2.7.23-1~deb7u3) ...
+[ ok ] Starting puppet queue.
+Setting up puppetmaster (2.7.23-1~deb7u3) ...
+[ ok ] Starting puppet master.
+
+mike at pancakes in ~ 
+$ sudo reboot
+
+Broadcast message from root@pancakes (pts/0) (Wed Jul 16 08:06:49 2014):
+
+The system is going down for reboot NOW!
+
+mike at pancakes in ~ 
+$ Connection to 128.223.203.17 closed by remote host.
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Wed Jul 16, 03:04]
+└─[$] <> ssh mike@128.223.203.17
+^C
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Wed Jul 16, 03:05]
+└─[$] <> ssh mike@128.223.203.17
+ssh: connect to host 128.223.203.17 port 22: Connection refused
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Wed Jul 16, 03:05]
+└─[$] <> ssh mike@128.223.203.17
+ssh: connect to host 128.223.203.17 port 22: Connection refused
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Wed Jul 16, 03:05]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Wed Jul 16 08:02:27 2014 from 128-223-223-120-wireless.uoregon.edu
+ 08:09:27 up 0 min,  2 users,  load average: 0.74, 0.19, 0.06
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-120- 08:09    1.00s  0.11s  0.00s w
+
+mike at pancakes in ~ 
+$ sudo reboot
+[sudo] password for mike: 
+
+Broadcast message from root@pancakes (pts/0) (Wed Jul 16 08:09:46 2014):
+
+The system is going down for reboot NOW!
+
+mike at pancakes in ~ 
+$ Connection to 128.223.203.17 closed by remote host.
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Wed Jul 16, 03:07]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Wed Jul 16 08:09:26 2014 from 128-223-223-120-wireless.uoregon.edu
+ 08:10:52 up 0 min,  2 users,  load average: 0.71, 0.19, 0.06
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-120- 08:10    0.00s  0.11s  0.00s w
+
+mike at pancakes in ~ 
+$ su
+Password: 
+su: Authentication failure
+
+mike at pancakes in ~ 
+$ su          
+Password: 
+root@pancakes:/home/mike# cd /etc/puppet
+root@pancakes:/etc/puppet# git init
+Initialized empty Git repository in /etc/puppet/.git/
+root@pancakes:/etc/puppet# git add .
+root@pancakes:/etc/puppet# git commit
+[master (root-commit) a642231] First Commit
+ Committer: root <root@pancakes>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 153 insertions(+)
+ create mode 100644 auth.conf
+ create mode 100755 etckeeper-commit-post
+ create mode 100755 etckeeper-commit-pre
+ create mode 100644 fileserver.conf
+ create mode 100644 puppet.conf
+root@pancakes:/etc/puppet# adduser --home /var/git git
+Adding user `git' ...
+Adding new group `git' (1002) ...
+Adding new user `git' (1002) with group `git' ...
+Creating home directory `/var/git' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password: 
+Retype new UNIX password: 
+Sorry, passwords do not match
+passwd: Authentication token manipulation error
+passwd: password unchanged
+Try again? [y/N] N
+Changing the user information for git
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: ^Cadduser: `/usr/bin/chfn git' exited from signal 2. Exiting.
+root@pancakes:/etc/puppet# adduser --home /var/git git
+Warning: The home dir /var/git you specified already exists.
+adduser: The user `git' already exists.
+root@pancakes:/etc/puppet# su - git
+git@pancakes:~$ git clone --bare /etc/puppet
+Cloning into bare repository 'puppet.git'...
+done.
+git@pancakes:~$ exit
+logout
+root@pancakes:/etc/puppet# cd /etc/puppet
+root@pancakes:/etc/puppet# git remote add --mirror=fetch
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+root@pancakes:/etc/puppet# su - git
+git@pancakes:~$ git clone --bare /etc/puppet puppet.git
+fatal: destination path 'puppet.git' already exists and is not an empty directory.
+git@pancakes:~$ exit
+logout
+root@pancakes:/etc/puppet# cd /etc/puppet
+root@pancakes:/etc/puppet# ls -a
+.	   etckeeper-commit-post  .git	     puppet.conf
+..	   etckeeper-commit-pre   manifests  templates
+auth.conf  fileserver.conf	  modules
+root@pancakes:/etc/puppet# git remove add --mirror=fetch origin /var/git/puppet.git
+git: 'remove' is not a git command. See 'git --help'.
+
+Did you mean this?
+	remote
+root@pancakes:/etc/puppet# git remote add --mirror=fetch origin /var/git/puppet.git
+root@pancakes:/etc/puppet# git status
+# On branch master
+nothing to commit (working directory clean)
+root@pancakes:/etc/puppet# 
+root@pancakes:/etc/puppet# 
+root@pancakes:/etc/puppet# ls -a
+.	   etckeeper-commit-post  .git	     puppet.conf
+..	   etckeeper-commit-pre   manifests  templates
+auth.conf  fileserver.conf	  modules
+root@pancakes:/etc/puppet# su - git
+git@pancakes:~$ passwd
+Changing password for git.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+git@pancakes:~$ passwd
+Changing password for git.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+git@pancakes:~$ passwd
+Changing password for git.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+git@pancakes:~$ 
+git@pancakes:~$ 
+git@pancakes:~$ 
+git@pancakes:~$ 
+git@pancakes:~$ exit
+logout
+root@pancakes:/etc/puppet# passwd git
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+root@pancakes:/etc/puppet# su - git
+git@pancakes:~$ passwd
+Changing password for git.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+Password unchanged
+Enter new UNIX password: 
+Retype new UNIX password: 
+Password unchanged
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+git@pancakes:~$ exit
+logout
+root@pancakes:/etc/puppet# exit
+exit
+
+mike at pancakes in ~ 
+$ su                               
+Password: 
+root@pancakes:/home/mike# cd /etc/puppet
+root@pancakes:/etc/puppet# su - git
+git@pancakes:~$ exit
+logout
+root@pancakes:/etc/puppet# exit
+exit
+
+mike at pancakes in ~ 
+$ 
+
+mike at pancakes in ~ 
+$ exit                                 
+Connection to 128.223.203.17 closed.
+┌─[mike@uselinuxonyourmacbookpro] - [~] - [Wed Jul 16, 03:35]
+└─[$] <> ssh mike@128.223.203.17
+Linux pancakes 3.2.0-4-amd64 #1 SMP Debian 3.2.60-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Wed Jul 16 08:34:10 2014 from 128-223-223-120-wireless.uoregon.edu
+ 08:38:36 up 28 min,  3 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mike     pts/0    128-223-223-120- 08:38    0.00s  0.09s  0.00s w
+mike     pts/1    128-223-223-120- 08:34   60.00s  0.24s  0.01s sshd: mike [pr
+
+mike at pancakes in ~ 
+$ su 
+Password: 
+root@pancakes:/home/mike# cd /var/git 
+root@pancakes:/var/git# ls -a
+.  ..  .bash_history  .bash_logout  .bashrc  .gitconfig  .profile  puppet.git
+root@pancakes:/var/git# cd 
+.bash_history  .bashrc        .profile       
+.bash_logout   .gitconfig     puppet.git/    
+root@pancakes:/var/git# cd 
+.bash_history  .bashrc        .profile       
+.bash_logout   .gitconfig     puppet.git/    
+root@pancakes:/var/git# cd 
+.bash_history  .bashrc        .profile       
+.bash_logout   .gitconfig     puppet.git/    
+root@pancakes:/var/git# cd 
+.bash_history  .bashrc        .profile       
+.bash_logout   .gitconfig     puppet.git/    
+root@pancakes:/var/git# cd
+root@pancakes:~# 
+
